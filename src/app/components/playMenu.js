@@ -3,7 +3,7 @@ import { IoHomeOutline } from "react-icons/io5";
 import { CiCircleInfo } from "react-icons/ci";
 import { FaArrowDownAZ, FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
-const PlayMenu = ({ onPrev, onNext }) => {
+const PlayMenu = ({ onPrev, onNext, onInfo }) => {
   return (
     <div className="absolute bottom-0 w-full shadow-md">
       <div className="flex justify-between items-end">
@@ -18,9 +18,12 @@ const PlayMenu = ({ onPrev, onNext }) => {
         </div>
 
         {/* Center Info (raised + bigger) */}
-        <div className="p-2 rounded-full text-center mb-8 border border-gray-400">
+        <button
+          onClick={onInfo}
+          className="p-2 rounded-full text-center mb-8 border border-gray-400 hover:bg-gray-200 cursor-pointer"
+        >
           <CiCircleInfo size={36} />
-        </div>
+        </button>
 
         {/* Right Group */}
         <div className="flex">
