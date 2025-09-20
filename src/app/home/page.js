@@ -82,10 +82,18 @@ const Page = () => {
       </video>
 
       {/* Subtitle (above video) */}
-      <div className="absolute top-6 w-full text-center px-4">
-        <p className="text-white text-sm font-normal bg-black/40 px-3 py-1 rounded-lg inline-block">
-          {videos[currentIndex].subtitle}
-        </p>
+      {/* Subtitle (storybook style, limited text, no overlay) */}
+      {/* Subtitle (paragraph style, clean text) */}
+      <div className="absolute top-6 w-[80%] px-6 pointer-events-none">
+        <div className="max-h-[20vh] overflow-hidden">
+          <p className="text-white text-sm font-normal leading-snug text-justify drop-shadow-md">
+            {videos[currentIndex].subtitle
+              .split(" ")
+              .slice(0, 35) // limit to 35 words
+              .join(" ") +
+              (videos[currentIndex].subtitle.split(" ").length > 35 ? "…" : "")}
+          </p>
+        </div>
       </div>
 
       {/* Play Menu */}
@@ -135,8 +143,12 @@ const Page = () => {
         </div>
 
         {/* Subtitle inside popup */}
-        <div className="text-center text-lg font-light relative z-10">
-          {videos[currentIndex].subtitle}
+        <div className="text-center text-base font-light leading-snug px-4">
+          {videos[currentIndex].subtitle
+            .split(" ")
+            .slice(0, 30) 
+            .join(" ") +
+            (videos[currentIndex].subtitle.split(" ").length > 30 ? "…" : "")}
         </div>
 
         {/* Close button */}
