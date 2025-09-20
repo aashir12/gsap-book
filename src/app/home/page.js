@@ -144,13 +144,9 @@ const Page = () => {
 
         {/* Subtitle inside popup */}
         <div className="text-center text-base font-light leading-snug px-4">
-          {videos[currentIndex].subtitle
-            .split(" ")
-            .slice(0, 30) 
-            .join(" ") +
+          {videos[currentIndex].subtitle.split(" ").slice(0, 30).join(" ") +
             (videos[currentIndex].subtitle.split(" ").length > 30 ? "…" : "")}
         </div>
-
         {/* Close button */}
         <div className="absolute top-3 right-5 z-10">
           <button
