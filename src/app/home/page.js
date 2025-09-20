@@ -13,7 +13,6 @@ import {
 import { gsap } from "gsap";
 import "../styles/bg.css";
 
-
 const Page = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showInfo, setShowInfo] = useState(false);
@@ -53,21 +52,20 @@ const Page = () => {
   };
 
   // Animate popup with GSAP
-useEffect(() => {
-  if (!popupRef.current) return;
-  if (typeof window !== "undefined") {
-    if (showInfo) {
-      gsap.to(popupRef.current, { y: 0, duration: 0.6, ease: "power3.out" });
-    } else {
-      gsap.to(popupRef.current, {
-        y: "100%",
-        duration: 0.6,
-        ease: "power3.in",
-      });
+  useEffect(() => {
+    if (!popupRef.current) return;
+    if (typeof window !== "undefined") {
+      if (showInfo) {
+        gsap.to(popupRef.current, { y: 0, duration: 0.6, ease: "power3.out" });
+      } else {
+        gsap.to(popupRef.current, {
+          y: "100%",
+          duration: 0.6,
+          ease: "power3.in",
+        });
+      }
     }
-  }
-}, [showInfo]);
-
+  }, [showInfo]);
 
   return (
     <div className="w-[400px] h-[90vh] relative my-6 rounded-xl bg-white overflow-hidden m-auto flex items-center justify-center">
@@ -83,7 +81,7 @@ useEffect(() => {
         <source src={videos[currentIndex].url} type="video/mp4" />
       </video>
 
-      {/* Subtitle (above, simple text) */}
+      {/* Subtitle (above video) */}
       <div className="absolute top-6 w-full text-center px-4">
         <p className="text-white text-sm font-normal bg-black/40 px-3 py-1 rounded-lg inline-block">
           {videos[currentIndex].subtitle}
@@ -100,37 +98,49 @@ useEffect(() => {
       {/* Popup */}
       <div
         ref={popupRef}
-        className="absolute bottom-0 left-0 w-full h-1/3 text-white p-4 rounded-t-xl translate-y-full popup-bg"
+        className="absolute bottom-0 left-0 w-full h-1/2 text-white p-6 rounded-t-xl translate-y-full popup-bg"
       >
+        {/* Decorative vertical lines */}
+        <div className="absolute inset-0 opacity-15 pointer-events-none">
+          <div className="h-full w-[2px] bg-green-400 absolute left-1/4"></div>
+          <div className="h-full w-[2px] bg-green-400 absolute left-2/4"></div>
+          <div className="h-full w-[2px] bg-green-400 absolute left-3/4"></div>
+        </div>
+
         {/* Controls */}
-        <div className="flex justify-center gap-6 my-4">
-          <button
-            onClick={togglePlay}
-            className="p-3 rounded-full bg-white/20 hover:bg-white/40"
-          >
-            {isPlaying ? <FaPause /> : <FaPlay />}
-          </button>
+        <div className="flex justify-center items-center gap-10 relative z-10 my-6">
+          {/* Mute / Unmute */}
           <button
             onClick={toggleMute}
-            className="p-3 rounded-full bg-white/20 hover:bg-white/40"
+            className="p-4 bg-green-800 rounded-full hover:bg-green-700 transition"
           >
-            {isMuted ? <FaVolumeMute /> : <FaVolumeUp />}
+            {isMuted ? <FaVolumeMute size={22} /> : <FaVolumeUp size={22} />}
           </button>
+
+          {/* Play / Pause (center + bigger) */}
+          <button
+            onClick={togglePlay}
+            className="p-6 bg-green-700 rounded-full hover:bg-green-600 transition scale-110"
+          >
+            {isPlaying ? <FaPause size={28} /> : <FaPlay size={28} />}
+          </button>
+
+          {/* Fullscreen */}
           <button
             onClick={toggleFullscreen}
-            className="p-3 rounded-full bg-white/20 hover:bg-white/40"
+            className="p-4 bg-green-800 rounded-full hover:bg-green-700 transition"
           >
-            <FaExpand />
+            <FaExpand size={22} />
           </button>
         </div>
 
         {/* Subtitle inside popup */}
-        <div className="text-center text-lg font-light">
+        <div className="text-center text-lg font-light relative z-10">
           {videos[currentIndex].subtitle}
         </div>
 
-        {/* Close */}
-        <div className="absolute top-2 right-4">
+        {/* Close button */}
+        <div className="absolute top-3 right-5 z-10">
           <button
             onClick={() => setShowInfo(false)}
             className="text-white text-2xl"
