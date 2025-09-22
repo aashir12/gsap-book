@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Sea Lion",
+    "description": "A playful marine mammal found along coasts.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+  },
+  {
+    "id": 2,
+    "title": "Clownfish",
+    "description": "A small tropical fish swimming among sea anemones.",
+    "image": "https://ocean.si.edu/sites/default/files/styles/facebook_twitter_card_image/public/2023-11/turtle-863336_1280.jpg.webp?itok=_mIQDnrb"
+  },
+  {
+    "id": 3,
+    "title": "Crocodile",
+    "description": "A reptile that thrives in rivers and swamps.",
+    "image": "https://images.unsplash.com/photo-1559825481-12a05cc00344"
+  },
+  {
+    "id": 4,
+    "title": "Sea Turtle",
+    "description": "An ancient marine reptile known for long migrations.",
+    "image": "https://www.keywestaquarium.com/wp-content/uploads/2024/11/clownfish-mobile.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Jellyfish",
+    "description": "A transparent invertebrate floating gracefully.",
+    "image": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29"
+  }
+]
