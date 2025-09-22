@@ -67,6 +67,16 @@ const Page = () => {
     }
   }, [showInfo]);
 
+  // Reload video when index changes
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.load();
+      if (isPlaying) {
+        videoRef.current.play();
+      }
+    }
+  }, [currentIndex, isPlaying]);
+
   return (
     <div className="w-[400px] h-[90vh] relative my-6 rounded-xl bg-white overflow-hidden m-auto flex items-center justify-center">
       {/* Background Video */}
@@ -81,9 +91,7 @@ const Page = () => {
         <source src={videos[currentIndex].url} type="video/mp4" />
       </video>
 
-      {/* Subtitle (above video) */}
-      {/* Subtitle (storybook style, limited text, no overlay) */}
-      {/* Subtitle (paragraph style, clean text) */}
+      {/* Subtitle (paragraph style, limited text, no overlay) */}
       <div className="absolute top-6 w-[80%] px-6 pointer-events-none">
         <div className="max-h-[20vh] overflow-hidden">
           <p className="text-white text-sm font-normal leading-snug text-justify drop-shadow-md">
@@ -142,11 +150,12 @@ const Page = () => {
           </button>
         </div>
 
-        {/* Subtitle inside popup */}
+        {/* Subtitle inside popup (limited to 30 words) */}
         <div className="text-center text-base font-light leading-snug px-4">
           {videos[currentIndex].subtitle.split(" ").slice(0, 30).join(" ") +
             (videos[currentIndex].subtitle.split(" ").length > 30 ? "…" : "")}
         </div>
+
         {/* Close button */}
         <div className="absolute top-3 right-5 z-10">
           <button
