@@ -1,12 +1,17 @@
 [
   {
     "id": 1,
-    "url": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "url": "https://cdn.pixabay.com/vimeo/452225919/lagoon-36821.mp4?width=1280&hash=1cdb18f6f2b71a6b8f6a6249b5b2ac4b4f3db865",
     "subtitle": "Nelle acque di una splendida Laguna, in un magnifico pomeriggio di sole, il pesciolino Go, un piccolo gioiello vivace e curioso, si preparava a lasciare la sua casetta.\n\nCon il cuore pieno di emozione, si mise in viaggio verso luoghi inesplorati, dove i raggi di luce danzavano sull’acqua e i riflessi sembravano raccontare storie segrete."
   },
   {
     "id": 2,
-    "url": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+    "url": "https://cdn.pixabay.com/vimeo/430214471/flower-40722.mp4?width=1280&hash=8b41a628d4631ef2b2e0b73d4e27cf8c5a1c31c5",
     "subtitle": "Un magnifico pomeriggio di sole avvolgeva la laguna, illuminando ogni petalo e ogni foglia con una carezza dorata.\n\nIl vento leggero sussurrava tra i fiori, mentre le creature dell’acqua si muovevano con grazia, creando piccoli cerchi sulla superficie, come se volessero accompagnare la melodia silenziosa della natura."
+  },
+  {
+    "id": 3,
+    "url": "https://cdn.pixabay.com/vimeo/293593056/ocean-23254.mp4?width=1280&hash=fa2af7a3cdbd2a2a3643b31cf07e90c3a5e9b693",
+    "subtitle": "Il sole calava lentamente sull’orizzonte, tingendo il mare di arancio e rosa. Le onde si infrangevano dolcemente, come un respiro eterno della Terra.\n\nOgni istante sembrava sospeso, un invito a fermarsi e ad ascoltare la voce silenziosa del tramonto."
   }
 ]
