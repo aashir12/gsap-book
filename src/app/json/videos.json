@@ -2,16 +2,25 @@
   {
     "id": 1,
     "url": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "subtitle": "Nelle acque di una splendida Laguna, in un magnifico pomeriggio di sole, il pesciolino Go, un piccolo gioiello vivace e curioso, si preparava a lasciare la sua casetta.\n\nCon il cuore pieno di emozione, si mise in viaggio verso luoghi inesplorati, dove i raggi di luce danzavano sull’acqua e i riflessi sembravano raccontare storie segrete."
+    "subtitle": "Nelle acque di una splendida Laguna, in un magnifico pomeriggio di sole, il pesciolino Go, un piccolo gioiello vivace e curioso, si preparava a lasciare la sua casetta.\n\nCon il cuore pieno di emozione, si mise in viaggio verso luoghi inesplorati, dove i raggi di luce danzavano sull’acqua e i riflessi sembravano raccontare storie segrete.",
+    "title": "Sea Lion",
+    "description": "A playful marine mammal found along coasts.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
   },
   {
     "id": 2,
     "url": "https://www.w3schools.com/html/movie.mp4",
-    "subtitle": "Un magnifico pomeriggio di sole avvolgeva la laguna, illuminando ogni petalo e ogni foglia con una carezza dorata.\n\nIl vento leggero sussurrava tra i fiori, mentre le creature dell’acqua si muovevano con grazia, creando piccoli cerchi sulla superficie, come se volessero accompagnare la melodia silenziosa della natura."
+    "subtitle": "Un magnifico pomeriggio di sole avvolgeva la laguna, illuminando ogni petalo e ogni foglia con una carezza dorata.\n\nIl vento leggero sussurrava tra i fiori, mentre le creature dell’acqua si muovevano con grazia, creando piccoli cerchi sulla superficie, come se volessero accompagnare la melodia silenziosa della natura.",
+    "title": "Clownfish",
+    "description": "A small tropical fish swimming among sea anemones.",
+    "image": "https://ocean.si.edu/sites/default/files/styles/facebook_twitter_card_image/public/2023-11/turtle-863336_1280.jpg.webp?itok=_mIQDnrb"
   },
   {
     "id": 3,
-    "url": "https://cdn.pixabay.com/videos/flower-40722.mp4",
-    "subtitle": "In un silenzio dolce, il cielo si vestiva di rosa e arancio, mentre la brezza accarezzava l’acqua.\n\nOgni sfumatura sembrava dipingere un sogno che sfumava lentamente con il tramonto."
+    "url": "https://cdn.pixabay.com/video/2025/09/24/306169_tiny.mp4",
+    "subtitle": "In un silenzio dolce, il cielo si vestiva di rosa e arancio, mentre la brezza accarezzava l’acqua.\n\nOgni sfumatura sembrava dipingere un sogno che sfumava lentamente con il tramonto.",
+    "title": "Crocodile",
+    "description": "A reptile that thrives in rivers and swamps.",
+    "image": "https://images.unsplash.com/photo-1559825481-12a05cc00344"
   }
 ]

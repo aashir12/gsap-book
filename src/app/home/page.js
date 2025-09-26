@@ -78,92 +78,96 @@ const Page = () => {
   }, [currentIndex, isPlaying]);
 
   return (
-    <div className="w-[400px] h-[90vh] relative my-6 rounded-xl bg-white overflow-hidden m-auto flex items-center justify-center">
-      {/* Background Video */}
-      <video
-        ref={videoRef}
-        autoPlay
-        loop
-        muted={isMuted}
-        playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover rounded-xl"
-      >
-        <source src={videos[currentIndex].url} type="video/mp4" />
-      </video>
+    <div className="app-viewport">
+      <div className="app-frame relative rounded-xl bg-white overflow-hidden flex items-center justify-center">
+        {/* Background Video */}
+        <video
+          ref={videoRef}
+          autoPlay
+          loop
+          muted={isMuted}
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover rounded-xl"
+        >
+          <source src={videos[currentIndex].url} type="video/mp4" />
+        </video>
 
-      {/* Subtitle (paragraph style, limited text, no overlay) */}
-      <div className="absolute top-6 w-[80%] px-6 pointer-events-none">
-        <div className="max-h-[20vh] overflow-hidden">
-          <p className="text-white text-sm font-normal leading-snug text-justify drop-shadow-md">
-            {videos[currentIndex].subtitle
-              .split(" ")
-              .slice(0, 35) // limit to 35 words
-              .join(" ") +
-              (videos[currentIndex].subtitle.split(" ").length > 35 ? "…" : "")}
-          </p>
-        </div>
-      </div>
-
-      {/* Play Menu */}
-      <PlayMenu
-        onPrev={handlePrev}
-        onNext={handleNext}
-        onInfo={() => setShowInfo(true)}
-      />
-
-      {/* Popup */}
-      <div
-        ref={popupRef}
-        className="absolute bottom-0 left-0 w-full h-1/2 text-white p-6 rounded-t-xl translate-y-full popup-bg"
-      >
-        {/* Decorative vertical lines */}
-        <div className="absolute inset-0 opacity-15 pointer-events-none">
-          <div className="h-full w-[2px] bg-green-400 absolute left-1/4"></div>
-          <div className="h-full w-[2px] bg-green-400 absolute left-2/4"></div>
-          <div className="h-full w-[2px] bg-green-400 absolute left-3/4"></div>
+        {/* Subtitle (paragraph style, limited text, no overlay) */}
+        <div className="absolute top-6 w-[80%] px-6 pointer-events-none">
+          <div className="max-h-[20vh] overflow-hidden">
+            <p className="text-white text-sm font-normal leading-snug text-justify drop-shadow-md">
+              {videos[currentIndex].subtitle
+                .split(" ")
+                .slice(0, 35) // limit to 35 words
+                .join(" ") +
+                (videos[currentIndex].subtitle.split(" ").length > 35
+                  ? "…"
+                  : "")}
+            </p>
+          </div>
         </div>
 
-        {/* Controls */}
-        <div className="flex justify-center items-center gap-10 relative z-10 my-6">
-          {/* Mute / Unmute */}
-          <button
-            onClick={toggleMute}
-            className="p-4 bg-green-800 rounded-full hover:bg-green-700 transition"
-          >
-            {isMuted ? <FaVolumeMute size={22} /> : <FaVolumeUp size={22} />}
-          </button>
+        {/* Play Menu */}
+        <PlayMenu
+          onPrev={handlePrev}
+          onNext={handleNext}
+          onInfo={() => setShowInfo(true)}
+        />
 
-          {/* Play / Pause (center + bigger) */}
-          <button
-            onClick={togglePlay}
-            className="p-6 bg-green-700 rounded-full hover:bg-green-600 transition scale-110"
-          >
-            {isPlaying ? <FaPause size={28} /> : <FaPlay size={28} />}
-          </button>
+        {/* Popup */}
+        <div
+          ref={popupRef}
+          className="absolute bottom-0 left-0 w-full h-1/2 text-white p-6 rounded-t-xl translate-y-full popup-bg"
+        >
+          {/* Decorative vertical lines */}
+          <div className="absolute inset-0 opacity-15 pointer-events-none">
+            <div className="h-full w-[2px] bg-green-400 absolute left-1/4"></div>
+            <div className="h-full w-[2px] bg-green-400 absolute left-2/4"></div>
+            <div className="h-full w-[2px] bg-green-400 absolute left-3/4"></div>
+          </div>
 
-          {/* Fullscreen */}
-          <button
-            onClick={toggleFullscreen}
-            className="p-4 bg-green-800 rounded-full hover:bg-green-700 transition"
-          >
-            <FaExpand size={22} />
-          </button>
-        </div>
+          {/* Controls */}
+          <div className="flex justify-center items-center gap-10 relative z-10 my-6">
+            {/* Mute / Unmute */}
+            <button
+              onClick={toggleMute}
+              className="p-4 bg-green-800 rounded-full hover:bg-green-700 transition"
+            >
+              {isMuted ? <FaVolumeMute size={22} /> : <FaVolumeUp size={22} />}
+            </button>
 
-        {/* Subtitle inside popup (limited to 30 words) */}
-        <div className="text-center text-base font-light leading-snug px-4">
-          {videos[currentIndex].subtitle.split(" ").slice(0, 30).join(" ") +
-            (videos[currentIndex].subtitle.split(" ").length > 30 ? "…" : "")}
-        </div>
+            {/* Play / Pause (center + bigger) */}
+            <button
+              onClick={togglePlay}
+              className="p-6 bg-green-700 rounded-full hover:bg-green-600 transition scale-110"
+            >
+              {isPlaying ? <FaPause size={28} /> : <FaPlay size={28} />}
+            </button>
 
-        {/* Close button */}
-        <div className="absolute top-3 right-5 z-10">
-          <button
-            onClick={() => setShowInfo(false)}
-            className="text-white text-2xl"
-          >
-            ✖
-          </button>
+            {/* Fullscreen */}
+            <button
+              onClick={toggleFullscreen}
+              className="p-4 bg-green-800 rounded-full hover:bg-green-700 transition"
+            >
+              <FaExpand size={22} />
+            </button>
+          </div>
+
+          {/* Subtitle inside popup (limited to 30 words) */}
+          <div className="text-center text-base font-light leading-snug px-4">
+            {videos[currentIndex].subtitle.split(" ").slice(0, 30).join(" ") +
+              (videos[currentIndex].subtitle.split(" ").length > 30 ? "…" : "")}
+          </div>
+
+          {/* Close button */}
+          <div className="absolute top-3 right-5 z-10">
+            <button
+              onClick={() => setShowInfo(false)}
+              className="text-white text-2xl"
+            >
+              ✖
+            </button>
+          </div>
         </div>
       </div>
     </div>
