@@ -22,7 +22,7 @@ const PlayMenu = ({ onPrev, onNext, onInfo }) => {
           </div>
           <button
             onClick={goToAZ}
-            className="p-2 rounded-r text-center border border-gray-400 border-l-0 hover:bg-gray-200 cursor-pointer"
+            className="p-2 rounded-r text-center border-2 border-gray-400 border-l-0 hover:bg-[#b8ead9] cursor-pointer"
           >
             <FaArrowDownAZ size={24} />
           </button>
@@ -31,7 +31,7 @@ const PlayMenu = ({ onPrev, onNext, onInfo }) => {
         {/* Center Info (raised + bigger) */}
         <button
           onClick={onInfo}
-          className="p-2 rounded-full text-center mb-8 border border-gray-400 hover:bg-gray-200 cursor-pointer"
+          className="p-2 rounded-full text-center mb-8 border-2 border-gray-400 hover:bg-[#b8ead9] cursor-pointer"
         >
           <CiCircleInfo size={36} />
         </button>
@@ -40,13 +40,13 @@ const PlayMenu = ({ onPrev, onNext, onInfo }) => {
         <div className="flex">
           <button
             onClick={onPrev}
-            className="p-2 rounded-l text-center border border-gray-400 hover:bg-gray-200 cursor-pointer"
+            className="p-2 rounded-l text-center border-2 border-gray-400 hover:bg-[#b8ead9] cursor-pointer"
           >
             <FaArrowLeft size={24} />
           </button>
           <button
             onClick={onNext}
-            className="p-2 rounded-r text-center border border-gray-400 border-l-0 hover:bg-gray-200 cursor-pointer"
+            className="p-2 rounded-r text-center border-2 border-gray-400 border-l-0 hover:bg-[#b8ead9] cursor-pointer"
           >
             <FaArrowRight size={24} />
           </button>
