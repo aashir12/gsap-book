@@ -1,171 +1,148 @@
 "use client";
-
-import React, { useRef, useState, useEffect } from "react";
-import PlayMenu from "../components/playMenu";
-import videos from "../json/videos.json";
-import {
-  FaPlay,
-  FaPause,
-  FaVolumeMute,
-  FaVolumeUp,
-  FaExpand,
-} from "react-icons/fa";
-import { gsap } from "gsap";
 import "../styles/bg.css";
 
+const BubblesSVG = () => (
+  <svg
+    className="absolute top-0 left-0 w-full h-full pointer-events-none"
+    viewBox="0 0 400 800"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Example bubbles, add more as needed */}
+    <circle
+      cx="80"
+      cy="120"
+      r="18"
+      fill="#B7E4C7"
+      stroke="#222"
+      strokeWidth="2"
+    />
+    <circle
+      cx="200"
+      cy="180"
+      r="10"
+      fill="#B7E4C7"
+      stroke="#222"
+      strokeWidth="2"
+    />
+    <circle
+      cx="300"
+      cy="220"
+      r="22"
+      fill="#B7E4C7"
+      stroke="#222"
+      strokeWidth="2"
+    />
+    <circle
+      cx="150"
+      cy="300"
+      r="14"
+      fill="#B7E4C7"
+      stroke="#222"
+      strokeWidth="2"
+    />
+    <circle
+      cx="250"
+      cy="400"
+      r="16"
+      fill="#B7E4C7"
+      stroke="#222"
+      strokeWidth="2"
+    />
+    {/* More bubbles */}
+    <circle
+      cx="350"
+      cy="100"
+      r="12"
+      fill="#B7E4C7"
+      stroke="#222"
+      strokeWidth="2"
+    />
+    <circle
+      cx="50"
+      cy="500"
+      r="20"
+      fill="#B7E4C7"
+      stroke="#222"
+      strokeWidth="2"
+    />
+    <circle
+      cx="120"
+      cy="600"
+      r="8"
+      fill="#B7E4C7"
+      stroke="#222"
+      strokeWidth="2"
+    />
+    <circle
+      cx="320"
+      cy="700"
+      r="15"
+      fill="#B7E4C7"
+      stroke="#222"
+      strokeWidth="2"
+    />
+    <circle
+      cx="180"
+      cy="750"
+      r="10"
+      fill="#B7E4C7"
+      stroke="#222"
+      strokeWidth="2"
+    />
+    <circle
+      cx="370"
+      cy="350"
+      r="14"
+      fill="#B7E4C7"
+      stroke="#222"
+      strokeWidth="2"
+    />
+    <circle
+      cx="60"
+      cy="250"
+      r="9"
+      fill="#B7E4C7"
+      stroke="#222"
+      strokeWidth="2"
+    />
+    <circle
+      cx="220"
+      cy="550"
+      r="17"
+      fill="#B7E4C7"
+      stroke="#222"
+      strokeWidth="2"
+    />
+  </svg>
+);
+
 const Page = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [showInfo, setShowInfo] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(true);
-  const [isMuted, setIsMuted] = useState(true);
-
-  const videoRef = useRef(null);
-  const popupRef = useRef(null);
-
-  const handlePrev = () => {
-    setCurrentIndex((prev) => (prev === 0 ? videos.length - 1 : prev - 1));
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prev) => (prev === videos.length - 1 ? 0 : prev + 1));
-  };
-
-  const togglePlay = () => {
-    if (videoRef.current.paused) {
-      videoRef.current.play();
-      setIsPlaying(true);
-    } else {
-      videoRef.current.pause();
-      setIsPlaying(false);
-    }
-  };
-
-  const toggleMute = () => {
-    videoRef.current.muted = !videoRef.current.muted;
-    setIsMuted(videoRef.current.muted);
-  };
-
-  const toggleFullscreen = () => {
-    if (videoRef.current.requestFullscreen) {
-      videoRef.current.requestFullscreen();
-    }
-  };
-
-  // Animate popup with GSAP
-  useEffect(() => {
-    if (!popupRef.current) return;
-    if (typeof window !== "undefined") {
-      if (showInfo) {
-        gsap.to(popupRef.current, { y: 0, duration: 0.6, ease: "power3.out" });
-      } else {
-        gsap.to(popupRef.current, {
-          y: "100%",
-          duration: 0.6,
-          ease: "power3.in",
-        });
-      }
-    }
-  }, [showInfo]);
-
-  // Reload video when index changes
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.load();
-      if (isPlaying) {
-        videoRef.current.play();
-      }
-    }
-  }, [currentIndex, isPlaying]);
-
   return (
-    <div className="w-[400px] h-[90vh] relative my-6 rounded-xl bg-white overflow-hidden m-auto flex items-center justify-center">
-      {/* Background Video */}
-      <video
-        ref={videoRef}
-        autoPlay
-        loop
-        muted={isMuted}
-        playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover rounded-xl"
-      >
-        <source src={videos[currentIndex].url} type="video/mp4" />
-      </video>
-
-      {/* Subtitle (paragraph style, limited text, no overlay) */}
-      <div className="absolute top-6 w-[80%] px-6 pointer-events-none">
-        <div className="max-h-[20vh] overflow-hidden">
-          <p className="text-white text-sm font-normal leading-snug text-justify drop-shadow-md">
-            {videos[currentIndex].subtitle
-              .split(" ")
-              .slice(0, 35) // limit to 35 words
-              .join(" ") +
-              (videos[currentIndex].subtitle.split(" ").length > 35 ? "…" : "")}
-          </p>
-        </div>
+    <div className="w-[400px] h-[90vh] relative my-6 rounded-xl bg-white overflow-hidden m-auto flex flex-col items-center justify-between shadow-lg">
+      {/* Background waves are handled in bg.css */}
+      <BubblesSVG />
+      <div className="z-10 flex flex-col items-center mt-16">
+        <h1
+          className="text-3xl font-light text-center text-gray-700 mb-6"
+          style={{ fontFamily: "serif" }}
+        >
+          Il viaggio di Go
+          <br />
+          nella Laguna incantata
+        </h1>
+        <button className="px-8 py-3 rounded-xl bg-[#B7E4C7] text-gray-700 font-semibold shadow border border-[#90A98F] mb-8">
+          Inizia il viaggio
+        </button>
       </div>
-
-      {/* Play Menu */}
-      <PlayMenu
-        onPrev={handlePrev}
-        onNext={handleNext}
-        onInfo={() => setShowInfo(true)}
-      />
-
-      {/* Popup */}
-      <div
-        ref={popupRef}
-        className="absolute bottom-0 left-0 w-full h-1/2 text-white p-6 rounded-t-xl translate-y-full popup-bg"
-      >
-        {/* Decorative vertical lines */}
-        <div className="absolute inset-0 opacity-15 pointer-events-none">
-          <div className="h-full w-[2px] bg-green-400 absolute left-1/4"></div>
-          <div className="h-full w-[2px] bg-green-400 absolute left-2/4"></div>
-          <div className="h-full w-[2px] bg-green-400 absolute left-3/4"></div>
+      <footer className="absolute bottom-4 left-0 w-full flex flex-col items-center text-xs text-gray-600 z-10">
+        <div className="flex items-center gap-2 mb-1">
+          <img src="/logo-cnr.png" alt="CNR Logo" className="h-5" />
+          <img src="/logo-ismar.png" alt="ISMAR Logo" className="h-5" />
         </div>
-
-        {/* Controls */}
-        <div className="flex justify-center items-center gap-10 relative z-10 my-6">
-          {/* Mute / Unmute */}
-          <button
-            onClick={toggleMute}
-            className="p-4 bg-green-800 rounded-full hover:bg-green-700 transition"
-          >
-            {isMuted ? <FaVolumeMute size={22} /> : <FaVolumeUp size={22} />}
-          </button>
-
-          {/* Play / Pause (center + bigger) */}
-          <button
-            onClick={togglePlay}
-            className="p-6 bg-green-700 rounded-full hover:bg-green-600 transition scale-110"
-          >
-            {isPlaying ? <FaPause size={28} /> : <FaPlay size={28} />}
-          </button>
-
-          {/* Fullscreen */}
-          <button
-            onClick={toggleFullscreen}
-            className="p-4 bg-green-800 rounded-full hover:bg-green-700 transition"
-          >
-            <FaExpand size={22} />
-          </button>
-        </div>
-
-        {/* Subtitle inside popup (limited to 30 words) */}
-        <div className="text-center text-base font-light leading-snug px-4">
-          {videos[currentIndex].subtitle.split(" ").slice(0, 30).join(" ") +
-            (videos[currentIndex].subtitle.split(" ").length > 30 ? "…" : "")}
-        </div>
-
-        {/* Close button */}
-        <div className="absolute top-3 right-5 z-10">
-          <button
-            onClick={() => setShowInfo(false)}
-            className="text-white text-2xl"
-          >
-            ✖
-          </button>
-        </div>
-      </div>
+        <div>SPIN 2021.10019</div>
+        <div>CNR ISMAR</div>
+      </footer>
     </div>
   );
 };
