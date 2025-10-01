@@ -8,7 +8,6 @@ import PopupPlayer from "../../components/PopupPlayer";
 import "../../styles/bg.css";
 import { BubblesSVG } from "../../components/bubbleSvg";
 
-
 const Page = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showInfo, setShowInfo] = useState(false);
@@ -47,7 +46,7 @@ const Page = () => {
 
   return (
     <div className="app-viewport">
-      <div className="app-frame archer-book-pro font-light relative rounded-xl bg-white overflow-hidden flex items-center justify-center">
+      <div className="app-frame archer-book-pro relative rounded-xl bg-white overflow-hidden flex items-center justify-center">
         {/* Background Video */}
         <video
           ref={videoRef}
@@ -61,9 +60,12 @@ const Page = () => {
         </video>
 
         {/* Subtitle (paragraph style, limited text, no overlay) */}
-        <div className="absolute top-6 w-[80%] px-6 pointer-events-none">
+        <div className="absolute top-6 w-[80%] px-6 pointer-events-none ">
           <div className="max-h-[20vh] overflow-hidden">
-            <p className="text-white text-sm font-normal leading-snug text-justify drop-shadow-md">
+            <p
+              className="text-white archer-book-pro text-[32px] font-semibold leading-snug text-shadow-2xs
+ text-justify drop-shadow-md"
+            >
               {videos[currentIndex].subtitle
                 .split(" ")
                 .slice(0, 35) // limit to 35 words
