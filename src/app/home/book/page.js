@@ -59,21 +59,21 @@ const Page = () => {
           <source src={videos[currentIndex].url} type="video/mp4" />
         </video>
 
-        {/* Subtitle (paragraph style, limited text, no overlay) */}
-        <div className="absolute top-6 w-[80%] px-6 pointer-events-none ">
-          <div className="max-h-[20vh] overflow-hidden">
-            <p
-              className="text-white archer-book-pro text-[32px] font-semibold leading-snug text-shadow-2xs
- text-justify drop-shadow-md"
-            >
-              {videos[currentIndex].subtitle
-                .split(" ")
-                .slice(0, 35) // limit to 35 words
-                .join(" ") +
-                (videos[currentIndex].subtitle.split(" ").length > 35
-                  ? "…"
-                  : "")}
-            </p>
+        {/* Subtitle with background gradient instead of text shadow */}
+        <div className="absolute top-0 w-full pointer-events-none">
+          {/* Gradient overlay that covers until text ends */}
+          <div className="bg-gradient-to-b from-black/70 to-transparent w-full px-16 pt-6 pb-12">
+            <div className="max-h-[20vh] overflow-hidden">
+              <p className="text-white archer-book-pro text-[32px] font-semibold leading-snug text-justify">
+                {videos[currentIndex].subtitle
+                  .split(" ")
+                  .slice(0, 35)
+                  .join(" ") +
+                  (videos[currentIndex].subtitle.split(" ").length > 35
+                    ? "…"
+                    : "")}
+              </p>
+            </div>
           </div>
         </div>
 
