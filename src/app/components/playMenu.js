@@ -9,7 +9,7 @@ const PlayMenu = ({ onPrev, onNext, onInfo }) => {
   const router = useRouter();
 
   const goToAZ = () => {
-    router.push("/home/a-z");
+    router.push("/book/a-z");
   };
 
   return (

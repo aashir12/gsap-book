@@ -1,5 +1,5 @@
 "use client";
-
+import { BubblesSVG } from "../components/bubbleSvg";
 import React, { useRef, useState, useEffect } from "react";
 import PlayMenu from "../components/playMenu";
 import videos from "../json/videos.json";
@@ -90,6 +90,7 @@ const Page = () => {
       >
         <source src={videos[currentIndex].url} type="video/mp4" />
       </video>
+      <BubblesSVG />
 
       {/* Subtitle (paragraph style, limited text, no overlay) */}
       <div className="absolute top-6 w-[80%] px-6 pointer-events-none">
