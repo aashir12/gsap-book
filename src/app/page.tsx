@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useRef, useState, useEffect } from "react";
-import Image from "next/image";
 import { gsap } from "gsap";
 import "./styles/bg.css";
 import "./styles/fonts.css";
@@ -9,19 +8,30 @@ import Footer from "./components/footer";
 import PlayMenu from "./components/playMenu";
 import PopupPlayer from "./components/PopupPlayer";
 import videos from "./json/videos.json";
+import Image from "next/image";
 import { LuArrowLeft } from "react-icons/lu";
 import { FaPlay } from "react-icons/fa";
 
 // Define the possible views
 type ViewType = "home" | "book" | "a-z";
 
+interface ActiveItem {
+  id: number;
+  url: string;
+  subtitle: string;
+  title: string;
+  description: string;
+  image: string;
+}
+
+
 export default function Home() {
   const [currentView, setCurrentView] = useState<ViewType>("home");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showInfo, setShowInfo] = useState(false);
-  const [activeItem, setActiveItem] = useState<any>(null);
+  const [activeItem, setActiveItem] = useState<ActiveItem | null>(null);
 
-  const videoRef = useRef<HTMLVideoElement>(null);
+
   const homeContainerRef = useRef<HTMLDivElement>(null);
   const homeContentRef = useRef<HTMLDivElement>(null);
   const bookContainerRef = useRef<HTMLDivElement>(null);
@@ -157,6 +167,7 @@ export default function Home() {
       bookVideoRef.current.play();
     }
   }, [currentIndex, currentView]);
+
 
   // Animate home view on mount
   useEffect(() => {
@@ -384,11 +395,13 @@ export default function Home() {
                 className="relative flex items-center py-5 overflow-hidden cursor-pointer select-none transition-colors duration-150 hover:bg-white/10 active:scale-[0.98]"
               >
                 {/* Left side - Image */}
-                <div className="w-1/2 relative">
-                  <img
+                <div className="w-1/2 h-auto relative">
+                  <Image
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-34 object-cover rounded-tr-xl rounded-br-xl"
+                    width={400}
+                    height={400}
+                    className="w-full h-56 object-cover rounded-tr-xl rounded-br-xl"
                   />
                   <button
                     aria-label="Play"
@@ -416,14 +429,19 @@ export default function Home() {
 
           {/* Footer with logos */}
           <div className="flex items-center justify-between p-10 mt-10 border-t-2 border-[#b8ead9] rounded-2xl">
-            <img
+            <Image
               src="/logo/logo1.png"
               alt="Logo 1"
+              width={100}
+              height={32}
               className="h-8 w-auto object-contain"
             />
-            <img
+
+            <Image
               src="/logo/logo2.png"
               alt="Logo 2"
+              width={100}
+              height={32}
               className="h-8 w-auto object-contain"
             />
           </div>

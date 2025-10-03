@@ -1,8 +1,5 @@
 "use client";
 import React from "react";
-import { IoHomeOutline } from "react-icons/io5";
-import { CiCircleInfo } from "react-icons/ci";
-import { FaArrowDownAZ, FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 import Image from "next/image";
 
 const PlayMenu = ({ onPrev, onNext, onInfo, onHome, onAZ }) => {
