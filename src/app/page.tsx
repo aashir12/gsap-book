@@ -258,12 +258,14 @@ export default function Home() {
           className="z-10 flex flex-col items-center mt-16"
         >
           <h1
-            className="text-3xl font-medium text-white text-center mb-6"
+            className="text-[68px] font-medium text-white text-center mb-6"
             style={{ fontFamily: "serif" }}
           >
             Il viaggio di Go
             <br />
-            nella Laguna incantata
+            nella Laguna
+            <br />
+            incantata
           </h1>
           <button
             onClick={goToBook}
