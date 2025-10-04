@@ -254,7 +254,7 @@ export default function Home() {
     <div className="app-viewport">
       <div
         ref={homeContainerRef}
-        className="app-frame archer-book-pro font-light overflow-hidden relative my-6 rounded-xl bg-[#5a6e5c] bg-[url('/list-background.png')] bg-cover bg-center bg-no-repeat m-auto"
+        className="app-frame archer-book-pro font-light overflow-hidden relative my-6 rounded-xl bg-[#5a6e5c] bg-[url('/backgrounds/home-background.png')] bg-cover bg-center bg-no-repeat m-auto"
       >
         <div
           ref={homeContentRef}
@@ -349,7 +349,7 @@ export default function Home() {
     <div className="app-viewport">
       <div
         ref={azContainerRef}
-        className="app-frame archer-book-pro font-light overflow-hidden relative my-6 rounded-xl bg-[#5a6e5c] bg-[url('/list-background.png')] bg-cover bg-center bg-no-repeat m-auto flex flex-col"
+        className="app-frame archer-book-pro font-light overflow-hidden relative my-6 rounded-xl bg-[#5a6e5c] bg-[url('/backgrounds/list-background.png')] bg-cover bg-center bg-no-repeat m-auto flex flex-col"
       >
         {showInfo && activeItem && (
           <div className="absolute inset-0 z-50 archer-book-pro font-light">
@@ -362,7 +362,7 @@ export default function Home() {
           </div>
         )}
         {/* Sticky Header */}
-        <div className="sticky top-0 z-40 bg-[#5a6e5c] bg-[url('/list-background.png')] bg-cover bg-center bg-no-repeat">
+        <div className="sticky top-0 z-40 bg-[#5a6e5c] bg-[url('/backgrounds/list-background.png')] bg-cover bg-center bg-no-repeat">
           <div className="flex items-center border-[#b8ead9] border-b-2 rounded-2xl justify-between p-10">
             <button
               aria-label="Back"
