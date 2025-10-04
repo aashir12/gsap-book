@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const PlayMenu = ({ onPrev, onNext, onInfo, onHome, onAZ }) => {
   return (
-    <div className="absolute bottom-0 w-full shadow-md">
+    <div className="absolute bottom-0 w-full shadow-md bg-gradient-to-t from-black/70 to-transparent">
       <div className="flex justify-between items-end">
         {/* Left Group */}
         <div className="flex">
