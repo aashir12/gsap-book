@@ -24,13 +24,11 @@ interface ActiveItem {
   image: string;
 }
 
-
 export default function Home() {
   const [currentView, setCurrentView] = useState<ViewType>("home");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showInfo, setShowInfo] = useState(false);
   const [activeItem, setActiveItem] = useState<ActiveItem | null>(null);
-
 
   const homeContainerRef = useRef<HTMLDivElement>(null);
   const homeContentRef = useRef<HTMLDivElement>(null);
@@ -168,7 +166,6 @@ export default function Home() {
     }
   }, [currentIndex, currentView]);
 
-
   // Animate home view on mount
   useEffect(() => {
     if (currentView === "home" && homeContainerRef.current) {
@@ -275,7 +272,9 @@ export default function Home() {
             iniza a leggere
           </button>
         </div>
-        <Footer />
+        <div className="absolute bottom-0 w-full">
+          <Footer />
+        </div>
       </div>
     </div>
   );
