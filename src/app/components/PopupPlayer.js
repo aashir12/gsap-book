@@ -69,7 +69,7 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
         </div>
 
         {/* Lower half: background image with title and subtitle */}
-        <div className="relative h-1/2 bg-[url('/list-background.png')] bg-cover bg-center">
+        <div className="relative h-1/2 bg-[url('/backgrounds/list-background.png')] bg-cover bg-center">
           {/* Controls */}
           <div className="flex justify-center items-center gap-6 relative z-10 my-6">
             {/* Mute / Unmute */}

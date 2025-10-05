@@ -280,19 +280,21 @@ export default function Home() {
     <div className="app-viewport">
       <div
         ref={homeContainerRef}
-        className="app-frame archer-book-pro font-light overflow-hidden relative my-6 rounded-xl bg-[#5a6e5c] bg-[url('/list-background.png')] bg-cover bg-center bg-no-repeat m-auto"
+        className="app-frame archer-book-pro font-light overflow-hidden relative my-6 rounded-xl bg-[#5a6e5c] bg-[url('/backgrounds/home-background.png')] bg-cover bg-center bg-no-repeat m-auto"
       >
         <div
           ref={homeContentRef}
           className="z-10 flex flex-col items-center mt-16"
         >
           <h1
-            className="text-3xl font-medium text-white text-center mb-6"
+            className="text-[68px] font-medium text-white text-center mb-6"
             style={{ fontFamily: "serif" }}
           >
             Il viaggio di Go
             <br />
-            nella Laguna incantata
+            nella Laguna
+            <br />
+            incantata
           </h1>
           <button
             onClick={goToBook}
@@ -302,7 +304,9 @@ export default function Home() {
             Inizia a leggere
           </button>
         </div>
-        <Footer />
+        <div className="absolute bottom-0 w-full">
+          <Footer />
+        </div>
       </div>
     </div>
   );
@@ -365,7 +369,7 @@ export default function Home() {
     <div className="app-viewport">
       <div
         ref={azContainerRef}
-        className="app-frame archer-book-pro font-light overflow-hidden relative my-6 rounded-xl bg-[#5a6e5c] bg-[url('/list-background.png')] bg-cover bg-center bg-no-repeat m-auto flex flex-col"
+        className="app-frame archer-book-pro font-light overflow-hidden relative my-6 rounded-xl bg-[#5a6e5c] bg-[url('/backgrounds/list-background.png')] bg-cover bg-center bg-no-repeat m-auto flex flex-col"
       >
         {showInfo && activeItem && (
           <div className="absolute inset-0 z-50 archer-book-pro font-light">
@@ -378,7 +382,7 @@ export default function Home() {
           </div>
         )}
         {/* Sticky Header */}
-        <div className="sticky top-0 z-40 bg-[#5a6e5c] bg-[url('/list-background.png')] bg-cover bg-center bg-no-repeat">
+        <div className="sticky top-0 z-40 bg-[#5a6e5c] bg-[url('/backgrounds/list-background.png')] bg-cover bg-center bg-no-repeat">
           <div className="flex items-center border-[#b8ead9] border-b-2 rounded-2xl justify-between p-10">
             <button
               aria-label="Back"
