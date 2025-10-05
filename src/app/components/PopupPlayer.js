@@ -75,7 +75,7 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
             {/* Mute / Unmute */}
             <button
               onClick={toggleMute}
-              className="w-10 h-10 bg-transparent border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center hover:bg-white/10 transition cursor-pointer"
+              className="w-12 h-12 bg-transparent border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center hover:bg-white/10 transition cursor-pointer"
             >
               {isMuted ? <FaVolumeMute size={14} /> : <FaVolumeUp size={14} />}
             </button>
@@ -83,7 +83,8 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
             {/* Play / Pause */}
             <button
               onClick={togglePlay}
-              className="w-10 h-10 bg-transparent border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center hover:bg-white/10 transition cursor-pointer"
+              className="bg-transparent border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center hover:bg-white/10 transition cursor-pointer"
+              style={{ width: "64px", height: "64px" }}
             >
               {isPlaying ? <FaPause size={14} /> : <FaPlay size={14} />}
             </button>
@@ -95,7 +96,7 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
                   popupVideoRef.current.requestFullscreen();
                 }
               }}
-              className="w-10 h-10 bg-transparent border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center hover:bg-white/10 transition cursor-pointer"
+              className="w-12 h-12 bg-transparent border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center hover:bg-white/10 transition cursor-pointer"
             >
               <FaExpand size={14} />
             </button>
@@ -103,13 +104,29 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
 
           {/* Title */}
           <div className="relative z-10 text-center">
-            <h2 className="text-2xl font-medium mb-2">{title ?? ""}</h2>
+            <h2
+              className="text-2xl font-medium mb-2"
+              style={{
+                fontFamily: "Archer",
+                fontSize: "48px",
+                fontWeight: "400",
+              }}
+            >
+              {title ?? ""}
+            </h2>
           </div>
 
           {/* Subtitle inside popup (limited to 30 words) */}
-          <div className="relative z-10 text-center text-base font-light leading-snug px-6">
-            {subtitle.split(" ").slice(0, 60).join(" ") +
-              (subtitle.split(" ").length > 60 ? "…" : "")}
+          <div
+            className="relative z-10 text-center text-base font-light leading-snug px-6"
+            style={{
+              fontFamily: "Satoshi",
+              fontSize: "18px",
+              fontWeight: "500",
+              opacity: "0.8",
+            }}
+          >
+            {subtitle}
           </div>
 
           {/* Back button (same style as list page) */}
@@ -117,9 +134,15 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
             <button
               aria-label="Back"
               onClick={onClose}
-              className="w-[100px] h-10 bg-transparent cursor-pointer border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-start pl-3 hover:bg-white/5 transition"
+              className="w-[136px] h-12 bg-transparent cursor-pointer border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center hover:bg-white/5 transition"
+              style={{
+                fontFamily: "Satoshi",
+                fontSize: "18px",
+                fontWeight: "500",
+              }}
             >
               <LuArrowLeft size={18} />
+              <span className="ml-1">indietro</span>
             </button>
           </div>
         </div>

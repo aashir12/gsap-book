@@ -7,6 +7,7 @@ import "./styles/fonts.css";
 import Footer from "./components/footer";
 import PlayMenu from "./components/playMenu";
 import PopupPlayer from "./components/PopupPlayer";
+import Subtitle from "./components/Subtitle";
 import videos from "./json/videos.json";
 import Image from "next/image";
 import { LuArrowLeft } from "react-icons/lu";
@@ -18,19 +19,18 @@ type ViewType = "home" | "book" | "a-z";
 interface ActiveItem {
   id: number;
   url: string;
-  subtitle: string;
+  subtitle: string[];
   title: string;
   description: string;
   image: string;
 }
 
-
 export default function Home() {
   const [currentView, setCurrentView] = useState<ViewType>("home");
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentSubtitleIndex, setCurrentSubtitleIndex] = useState(0);
   const [showInfo, setShowInfo] = useState(false);
   const [activeItem, setActiveItem] = useState<ActiveItem | null>(null);
-
 
   const homeContainerRef = useRef<HTMLDivElement>(null);
   const homeContentRef = useRef<HTMLDivElement>(null);
@@ -54,7 +54,17 @@ export default function Home() {
       ease: "power2.inOut",
     })
       .call(() => {
-        setCurrentIndex((prev) => (prev === 0 ? videos.length - 1 : prev - 1));
+        // Check if we're at the first subtitle of current video
+        if (currentSubtitleIndex === 0) {
+          // Move to previous video, last subtitle
+          const prevVideoIndex =
+            currentIndex === 0 ? videos.length - 1 : currentIndex - 1;
+          setCurrentIndex(prevVideoIndex);
+          setCurrentSubtitleIndex(videos[prevVideoIndex].subtitle.length - 1);
+        } else {
+          // Move to previous subtitle of current video
+          setCurrentSubtitleIndex((prev) => prev - 1);
+        }
       })
       .set([bookVideoRef.current, subtitleRef.current], { x: -50 }) // Position for slide in from left
       .to([bookVideoRef.current, subtitleRef.current], {
@@ -78,7 +88,17 @@ export default function Home() {
       ease: "power2.inOut",
     })
       .call(() => {
-        setCurrentIndex((prev) => (prev === videos.length - 1 ? 0 : prev + 1));
+        // Check if we're at the last subtitle of current video
+        if (currentSubtitleIndex === videos[currentIndex].subtitle.length - 1) {
+          // Move to next video, first subtitle
+          const nextVideoIndex =
+            currentIndex === videos.length - 1 ? 0 : currentIndex + 1;
+          setCurrentIndex(nextVideoIndex);
+          setCurrentSubtitleIndex(0);
+        } else {
+          // Move to next subtitle of current video
+          setCurrentSubtitleIndex((prev) => prev + 1);
+        }
       })
       .set([bookVideoRef.current, subtitleRef.current], { x: 50 }) // Position for slide in from right
       .to([bookVideoRef.current, subtitleRef.current], {
@@ -168,6 +188,12 @@ export default function Home() {
     }
   }, [currentIndex, currentView]);
 
+  // Reset subtitle index when switching to book view
+  useEffect(() => {
+    if (currentView === "book") {
+      setCurrentSubtitleIndex(0);
+    }
+  }, [currentView]);
 
   // Animate home view on mount
   useEffect(() => {
@@ -271,8 +297,9 @@ export default function Home() {
           <button
             onClick={goToBook}
             className="px-8 py-3 rounded-xl border-2 border-purple-300 text-purple-700 font-medium bg-purple-200/10 backdrop-blur-sm hover:bg-purple-200/20 transition-all duration-300 hover:scale-105 active:scale-95"
+            style={{ fontFamily: "Satoshi", fontSize: "24px" }}
           >
-            iniza a leggere
+            Inizia a leggere
           </button>
         </div>
         <Footer />
@@ -301,25 +328,14 @@ export default function Home() {
 
         {/* Content wrapper for animations */}
         <div ref={bookContentRef} className="absolute inset-0">
-          {/* Subtitle with background gradient */}
-          <div className="absolute top-0 w-full pointer-events-none">
-            <div className="bg-gradient-to-b from-black/70 to-transparent w-full px-16 pt-6 pb-12">
-              <div className="max-h-[20vh] overflow-hidden">
-                <p
-                  ref={subtitleRef}
-                  className="text-white archer-book-pro text-[32px] font-semibold leading-snug text-justify"
-                >
-                  {videos[currentIndex].subtitle
-                    .split(" ")
-                    .slice(0, 35)
-                    .join(" ") +
-                    (videos[currentIndex].subtitle.split(" ").length > 35
-                      ? "…"
-                      : "")}
-                </p>
-              </div>
-            </div>
-          </div>
+          {/* Subtitle with dynamic styling from videos.json */}
+          <Subtitle
+            ref={subtitleRef}
+            text={videos[currentIndex].subtitle[currentSubtitleIndex] || ""}
+            fontSize={videos[currentIndex].fontSize}
+            alignment={videos[currentIndex].alignment}
+            position={videos[currentIndex].position}
+          />
 
           {/* Play Menu */}
           <PlayMenu
@@ -336,7 +352,7 @@ export default function Home() {
           <PopupPlayer
             url={videos[currentIndex].url}
             title={videos[currentIndex].title}
-            subtitle={videos[currentIndex].subtitle}
+            subtitle={videos[currentIndex].description}
             onClose={() => setShowInfo(false)}
           />
         )}
@@ -356,7 +372,7 @@ export default function Home() {
             <PopupPlayer
               url={activeItem.url}
               title={activeItem.title}
-              subtitle={activeItem.subtitle}
+              subtitle={activeItem.description}
               onClose={() => setShowInfo(false)}
             />
           </div>
@@ -367,11 +383,24 @@ export default function Home() {
             <button
               aria-label="Back"
               onClick={goToBook}
-              className="w-[100px] h-10 bg-transparent cursor-pointer border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-start pl-3 hover:bg-white/5 transition"
+              className="w-[136px] h-12 bg-transparent cursor-pointer border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center hover:bg-white/5 transition"
+              style={{
+                fontFamily: "Satoshi",
+                fontSize: "18px",
+                fontWeight: "500",
+              }}
             >
               <LuArrowLeft size={18} />
+              <span className="ml-1">indietro</span>
             </button>
-            <h1 className="text-3xl font-medium text-white">
+            <h1
+              className="text-3xl font-medium text-white"
+              style={{
+                fontFamily: "Archer",
+                fontWeight: "400",
+                fontSize: "48px",
+              }}
+            >
               Lista delle Specie
             </h1>
           </div>
@@ -395,7 +424,7 @@ export default function Home() {
                 className="relative flex items-center py-5 overflow-hidden cursor-pointer select-none transition-colors duration-150 hover:bg-white/10 active:scale-[0.98]"
               >
                 {/* Left side - Image */}
-                <div className="w-1/2 h-auto relative">
+                <div className="w-1/2 h-auto mr-4 relative">
                   <Image
                     src={item.image}
                     alt={item.title}
@@ -418,10 +447,27 @@ export default function Home() {
 
                 {/* Right side - Title & Description */}
                 <div className="w-1/2 p-2 text-white">
-                  <h2 className="text-lg font-semibold leading-tight">
+                  <h2
+                    className="text-lg font-semibold leading-tight"
+                    style={{
+                      fontFamily: "Archer",
+                      fontSize: "18px",
+                      fontWeight: "bold",
+                    }}
+                  >
                     {item.title}
                   </h2>
-                  <p className="text-xs opacity-90 mt-1">{item.description}</p>
+                  <p
+                    className=" mt-1"
+                    style={{
+                      fontFamily: "Satoshi",
+                      fontSize: "15px",
+                      fontWeight: "500",
+                      opacity: "0.8",
+                    }}
+                  >
+                    {item.description}
+                  </p>
                 </div>
               </div>
             ))}
