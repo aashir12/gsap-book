@@ -10,7 +10,7 @@ const PlayMenu = ({ onPrev, onNext, onInfo, onHome, onAZ }) => {
         <div className="flex">
           <button
             onClick={onHome}
-            className="p-2 rounded-l text-center border border-gray-400 cursor-pointer hover:bg-[#b8ead9] transition-all duration-300 bg-[#A8C2AC] border-gray-400 backdrop-blur-sm hover:bg-[#b8ead9] cursor-pointer "
+            className="p-2 text-center border-2 border-gray-400 border-l-0 bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-[#b8ead9]/40 cursor-pointer transition-all duration-300"
           >
             <Image
               src="/logo/home-icon.png"
@@ -22,7 +22,7 @@ const PlayMenu = ({ onPrev, onNext, onInfo, onHome, onAZ }) => {
           </button>
           <button
             onClick={onAZ}
-            className="p-2 rounded-r text-center border-2 border-gray-400 border-l-0 hover:bg-[#b8ead9] cursor-pointer transition-all duration-300 bg-[#A8C2AC] border-gray-400 backdrop-blur-sm hover:bg-[#b8ead9] cursor-pointer "
+            className="p-2 rounded-tr-2xl text-center border-2 border-gray-400 border-l-0 bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-[#b8ead9]/40 cursor-pointer transition-all duration-300"
           >
             <Image
               src="/logo/a-z-icon.png"
@@ -37,14 +37,14 @@ const PlayMenu = ({ onPrev, onNext, onInfo, onHome, onAZ }) => {
         {/* Center Info (raised + bigger) */}
         <button
           onClick={onInfo}
-          className="p-2 rounded-full text-center mb-8 border-2 transition-all duration-300 bg-[#A8C2AC] border-gray-400 backdrop-blur-sm hover:bg-[#b8ead9] cursor-pointer transition-all duration-300 bg-[#A8C2AC] border-gray-400 backdrop-blur-sm hover:bg-[#b8ead9] cursor-pointer "
+          className="rounded-full text-center mb-8 border-2 border-gray-400 bg-[#A8C2AC]/40 backdrop-blur-sm transition-all duration-300 hover:bg-[#b8ead9]/40 cursor-pointer"
         >
           {/* <CiCircleInfo size={36} /> */}
           <Image
             src="/logo/info-icon.png"
             alt="Info"
-            width={46}
-            height={46}
+            width={100}
+            height={100}
             className="object-contain"
           />
         </button>
@@ -53,7 +53,7 @@ const PlayMenu = ({ onPrev, onNext, onInfo, onHome, onAZ }) => {
         <div className="flex">
           <button
             onClick={onPrev}
-            className="p-2 rounded-l text-center border-2 border-gray-400 hover:bg-[#b8ead9] cursor-pointer transition-all duration-300 bg-[#A8C2AC] border-gray-400 backdrop-blur-sm hover:bg-[#b8ead9] cursor-pointer "
+            className="p-2 rounded-tl-2xl text-center border-2 border-gray-400 bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-[#b8ead9]/40 cursor-pointer transition-all duration-300"
           >
             <Image
               src="/logo/left-icon.png"
@@ -65,7 +65,7 @@ const PlayMenu = ({ onPrev, onNext, onInfo, onHome, onAZ }) => {
           </button>
           <button
             onClick={onNext}
-            className="p-2 rounded-r text-center border-2 border-gray-400 border-l-0 hover:bg-[#b8ead9] cursor-pointer transition-all duration-300 bg-[#A8C2AC] border-gray-400 backdrop-blur-sm hover:bg-[#b8ead9] cursor-pointer "
+            className="p-2  text-center border-2 border-gray-400 border-l-0 bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-[#b8ead9]/40 cursor-pointer transition-all duration-300"
           >
             <Image
               src="/logo/right-icon.png"
