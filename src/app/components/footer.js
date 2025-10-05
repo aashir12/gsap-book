@@ -14,6 +14,7 @@ const Footer = () => {
           width={80}
           height={32}
           className="h-8 w-auto object-contain"
+          style={{ filter: "invert(1) brightness(0) saturate(0)" }}
         />
       </div>
 
@@ -25,6 +26,7 @@ const Footer = () => {
           width={80}
           height={32}
           className="h-8 w-auto object-contain"
+          style={{ filter: "invert(1) brightness(0) saturate(0)" }}
         />
       </div>
       <div>
@@ -45,7 +47,7 @@ const Footer = () => {
             <CiLink />
             kinnouts.com
           </p>
-        </div> 
+        </div>
       </div>
       <div>
         <h6 className="text-[12px] font-bold">CODICE</h6>

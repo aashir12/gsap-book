@@ -277,7 +277,7 @@ export default function Home() {
 
   // Home View Component
   const HomeView = () => (
-    <div className="app-viewport">
+    <div className="app-viewport text-black">
       <div
         ref={homeContainerRef}
         className="app-frame archer-book-pro font-light overflow-hidden relative my-6 rounded-xl bg-[#5a6e5c] bg-[url('/backgrounds/home-background.png')] bg-cover bg-center bg-no-repeat m-auto"
