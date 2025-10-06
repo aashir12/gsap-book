@@ -69,9 +69,9 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
         </div>
 
         {/* Lower half: background image with title and subtitle */}
-        <div className="relative h-1/2 bg-[url('/backgrounds/list-background.png')] bg-cover bg-center">
+        <div className="relative h-1/2 bg-[url('/backgrounds/list-background.png')] flex flex-col justify-around py-6 bg-cover bg-center">
           {/* Controls */}
-          <div className="flex justify-center items-center gap-6 relative z-10 my-6">
+          <div className="flex justify-center items-center gap-6 relative z-10 ">
             {/* Mute / Unmute */}
             <button
               onClick={toggleMute}
@@ -101,36 +101,36 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
               <FaExpand size={14} />
             </button>
           </div>
+          <div>
+            {/* Title */}
+            <div className="relative z-10 text-center">
+              <h2
+                className="text-2xl font-medium mb-2"
+                style={{
+                  fontFamily: "Archer",
+                  fontSize: "48px",
+                  fontWeight: "400",
+                }}
+              >
+                {title ?? ""}
+              </h2>
+            </div>
 
-          {/* Title */}
-          <div className="relative z-10 text-center">
-            <h2
-              className="text-2xl font-medium mb-2"
+            {/* Subtitle inside popup (limited to 30 words) */}
+            <div
+              className="relative z-10 text-center text-base font-light leading-snug px-6"
               style={{
-                fontFamily: "Archer",
-                fontSize: "48px",
-                fontWeight: "400",
+                fontFamily: "Satoshi",
+                fontSize: "18px",
+                fontWeight: "500",
+                opacity: "0.8",
               }}
             >
-              {title ?? ""}
-            </h2>
+              {subtitle}
+            </div>
           </div>
 
-          {/* Subtitle inside popup (limited to 30 words) */}
-          <div
-            className="relative z-10 text-center text-base font-light leading-snug px-6"
-            style={{
-              fontFamily: "Satoshi",
-              fontSize: "18px",
-              fontWeight: "500",
-              opacity: "0.8",
-            }}
-          >
-            {subtitle}
-          </div>
-
-          {/* Back button (same style as list page) */}
-          <div className="absolute bottom-4 left-0 right-0 flex justify-center z-10">
+          <div className=" flex justify-center z-10">
             <button
               aria-label="Back"
               onClick={onClose}
