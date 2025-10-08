@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { CiLink } from "react-icons/ci";
 
-
 const Footer = () => {
   return (
     <div className="flex items-center justify-between gap-2 px-2 mt-10 border-t-2 border-[#b8ead9] rounded-2xl">
@@ -34,7 +33,14 @@ const Footer = () => {
         <div>
           <h1 className="text-[12px] font-bold">Tommaso Lodi</h1>
           <p className="link flex flex-row items-center text-center">
-            <CiLink />
+            <Image
+              src="/icons/link_18.png"
+              alt="Logo 2"
+              width={32}
+              height={32}
+              className="h-8 w-auto object-contain"
+              style={{ filter: "invert(1) brightness(0) saturate(0)" }}
+            />
             nerone.design
           </p>
         </div>
@@ -44,7 +50,14 @@ const Footer = () => {
         <div>
           <h1 className="text-[12px] font-bold">Matae Stocco</h1>
           <p className="link flex flex-row items-center text-center">
-            <CiLink />
+            <Image
+              src="/icons/link_18.png"
+              alt="Logo 2"
+              width={32}
+              height={32}
+              className="h-8 w-auto object-contain"
+              style={{ filter: "invert(1) brightness(0) saturate(0)" }}
+            />
             kinnouts.com
           </p>
         </div>
@@ -54,7 +67,14 @@ const Footer = () => {
         <div>
           <h1 className="text-[12px] font-bold">Anqa Digital Agency</h1>
           <p className="link flex flex-row items-center text-center">
-            <CiLink />
+            <Image
+              src="/icons/link_18.png"
+              alt="Logo 2"
+              width={32}
+              height={32}
+              className="h-8 w-auto object-contain"
+              style={{ filter: "invert(1) brightness(0) saturate(0)" }}
+            />
             Anqa.it
           </p>
         </div>
