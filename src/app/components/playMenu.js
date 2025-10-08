@@ -37,15 +37,14 @@ const PlayMenu = ({ onPrev, onNext, onInfo, onHome, onAZ }) => {
         {/* Center Info (raised + bigger) */}
         <button
           onClick={onInfo}
-          className="rounded-full text-center mb-8 border-2 border-gray-400 bg-[#A8C2AC]/40 backdrop-blur-sm transition-all duration-300 hover:bg-[#b8ead9]/40 cursor-pointer"
+          className="mb-8 cursor-pointer rounded-full bg-[#A8C2AC]/40 backdrop-blur-sm overflow-hidden "
         >
-          {/* <CiCircleInfo size={36} /> */}
           <Image
             src="/logo/info-icon.png"
             alt="Info"
-            width={100}
-            height={100}
-            className="object-contain"
+            width={64}
+            height={64}
+            className="rounded-full object-contain"
           />
         </button>
 
