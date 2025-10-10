@@ -118,7 +118,7 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
 
             {/* Subtitle inside popup (limited to 30 words) */}
             <div
-              className="relative z-10 text-center text-base font-light leading-snug px-6"
+              className="relative z-10 text-center text-base font-light leading-snug px-14"
               style={{
                 fontFamily: "Satoshi",
                 fontSize: "18px",

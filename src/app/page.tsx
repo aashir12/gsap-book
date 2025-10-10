@@ -323,11 +323,21 @@ export default function Home() {
         <div className="app-viewport text-black">
           <div
             ref={homeContainerRef}
-            className="app-frame archer-book-pro font-light overflow-hidden relative my-6 rounded-xl bg-[#5a6e5c] bg-[url('/backgrounds/home-background.png')] bg-cover bg-center bg-no-repeat m-auto"
+            className="app-frame archer-book-pro font-light overflow-hidden relative my-6 rounded-xl bg-[#5a6e5c] m-auto"
           >
+            {/* Background Video */}
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute top-0 left-0 w-full h-full object-cover rounded-xl"
+            >
+              <source src="/backgrounds/bgvideo.mp4" type="video/mp4" />
+            </video>
             <div
               ref={homeContentRef}
-              className="z-10 flex flex-col items-center mt-24"
+              className="z-10 flex flex-col items-center mt-24 relative"
             >
               <h1
                 className="text-[64px] font-medium text-black leading-tight text-center mb-12"
@@ -341,7 +351,7 @@ export default function Home() {
               </h1>
               <button
                 onClick={goToBook}
-                className="px-8 py-3 rounded-xl cursor-pointer border-2 border-[#C4A5FF] text-[#5800FF] font-medium bg-purple-200/10 backdrop-blur-md hover:bg-purple-200/20 transition-all duration-300 hover:scale-105 active:scale-95"
+                className="px-8 py-3 rounded-xl cursor-pointer border-2 border-[#C4A5FF] text-[#5800FF] font-medium bg-purple-200/10 backdrop-blur-md hover:bg-purple-200/20 transition-all duration-500 hover:rounded-4xl active:scale-95"
                 style={{ fontFamily: "Satoshi", fontSize: "24px" }}
               >
                 Inizia a leggere

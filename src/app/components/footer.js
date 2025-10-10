@@ -7,6 +7,7 @@ const Footer = () => {
     <div className="flex items-center justify-between gap-2 px-2 mt-10 rounded-2xl">
       <div>
         <h6 className="text-[12px] font-bold">UN PROGETTO DI</h6>
+
         <Image
           src="/logo/logo1.png"
           alt="Logo 1"
@@ -16,8 +17,8 @@ const Footer = () => {
           style={{ filter: "brightness(0)" }}
         />
       </div>
-      <div>
-        <h6 className="text-[12px] font-bold">CON IL SUPPORTO DI</h6>
+      <div className="flex flex-col gap-2">
+        <h6 className="text-[12px] font-bold mb-1">CON IL SUPPORTO DI</h6>
         <Image
           src="/logo/logo2.png"
           alt="Logo 2"
@@ -27,6 +28,7 @@ const Footer = () => {
           style={{ filter: "brightness(0)" }}
         />
       </div>
+
       <div>
         <h6 className="text-[12px] font-bold">DISEGNI E GRAFICA </h6>
         <div>
@@ -44,9 +46,10 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div>
-        <h6 className="text-[12px] font-bold">ANIMAZIONE</h6>
+      <div className="flex flex-col gap-2">
+        <h6 className="text-[12px] font-bold mb-1">ANIMAZIONE</h6>
         <div>
+
           <h1 className="text-[12px] font-bold">Matteo Stocco</h1>
           <p className="link flex flex-row items-center text-center">
             <Image
@@ -57,13 +60,15 @@ const Footer = () => {
               className="h-8 w-auto object-contain"
               style={{ filter: "brightness(0)" }}
             />
+
             kinnouts.com
           </p>
         </div>
       </div>
-      <div>
-        <h6 className="text-[12px] font-bold">CODICE</h6>
+      <div className="flex flex-col gap-2">
+        <h6 className="text-[12px] font-bold mb-1">CODICE</h6>
         <div>
+
           <h1 className="text-[12px] font-bold">Anqa Digital Agency</h1>
           <p className="link flex flex-row items-center text-center">
             <Image
