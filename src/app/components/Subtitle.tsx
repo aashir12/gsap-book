@@ -52,13 +52,13 @@ const Subtitle = forwardRef<HTMLParagraphElement, SubtitleProps>(
             <div
               className={`${
                 position === "left" || position === "right"
-                  ? "w-[60%]"
+                  ? "w-[50%]"
                   : "w-[90%] mx-auto"
               }`}
             >
               <p
                 ref={ref}
-                className={`text-white archer-book-pro font-semibold leading-snug ${getTextAlign(
+                className={`text-white archer-book-pro px-3 pt-10 font-semibold leading-snug ${getTextAlign(
                   alignment
                 )}`}
                 style={{ fontSize: `${fontSize}px` }}

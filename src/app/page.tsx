@@ -20,6 +20,7 @@ type ViewType = "home" | "book" | "a-z";
 interface ActiveItem {
   id: number;
   url: string;
+  "secondary-url": string;
   subtitle: string[];
   title: string;
   description: string;
@@ -383,7 +384,7 @@ export default function Home() {
             </div>
             {showInfo && (
               <PopupPlayer
-                url={videos[currentIndex].url}
+                url={videos[currentIndex]["secondary-url"]}
                 title={videos[currentIndex].title}
                 subtitle={videos[currentIndex].description}
                 onClose={() => setShowInfo(false)}
@@ -402,7 +403,7 @@ export default function Home() {
             {showInfo && activeItem && (
               <div className="absolute inset-0 z-50 archer-book-pro font-light">
                 <PopupPlayer
-                  url={activeItem.url}
+                  url={activeItem["secondary-url"]}
                   title={activeItem.title}
                   subtitle={activeItem.description}
                   onClose={() => setShowInfo(false)}
