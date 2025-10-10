@@ -2,9 +2,18 @@ import React from "react";
 import Image from "next/image";
 import { CiLink } from "react-icons/ci";
 
-const Footer = () => {
+const Footer = ({ variant = "dark" }) => {
+  const isLight = variant === "light";
+  const textColor = isLight ? "text-white" : "text-black";
+  const borderColor = isLight ? "border-white/60" : "border-[#b8ead9]";
+  const imgFilter = isLight
+    ? { filter: "brightness(0) invert(1)" }
+    : { filter: "brightness(0)" };
+
   return (
-    <div className="flex items-center justify-between gap-2 px-2 mt-10 rounded-2xl">
+    <div
+      className={`flex items-center justify-between gap-2 p-4 mt-10 rounded-2xl border-t-2 ${borderColor} ${textColor}`}
+    >
       <div>
         <h6 className="text-[12px] font-bold">UN PROGETTO DI</h6>
 
@@ -14,7 +23,7 @@ const Footer = () => {
           width={80}
           height={32}
           className="h-8 w-auto object-contain"
-          style={{ filter: "brightness(0)" }}
+          style={imgFilter}
         />
       </div>
       <div className="flex flex-col gap-2">
@@ -25,7 +34,7 @@ const Footer = () => {
           width={80}
           height={32}
           className="h-8 w-auto object-contain"
-          style={{ filter: "brightness(0)" }}
+          style={imgFilter}
         />
       </div>
 
@@ -40,7 +49,7 @@ const Footer = () => {
               width={24}
               height={24}
               className="h-8 w-auto object-contain"
-              style={{ filter: "brightness(0)" }}
+              style={imgFilter}
             />
             nerone.design
           </p>
@@ -49,7 +58,6 @@ const Footer = () => {
       <div className="flex flex-col gap-2">
         <h6 className="text-[12px] font-bold mb-1">ANIMAZIONE</h6>
         <div>
-
           <h1 className="text-[12px] font-bold">Matteo Stocco</h1>
           <p className="link flex flex-row items-center text-center">
             <Image
@@ -58,9 +66,8 @@ const Footer = () => {
               width={24}
               height={24}
               className="h-8 w-auto object-contain"
-              style={{ filter: "brightness(0)" }}
+              style={imgFilter}
             />
-
             kinnouts.com
           </p>
         </div>
@@ -68,7 +75,6 @@ const Footer = () => {
       <div className="flex flex-col gap-2">
         <h6 className="text-[12px] font-bold mb-1">CODICE</h6>
         <div>
-
           <h1 className="text-[12px] font-bold">Anqa Digital Agency</h1>
           <p className="link flex flex-row items-center text-center">
             <Image
@@ -77,7 +83,7 @@ const Footer = () => {
               width={24}
               height={24}
               className="h-8 w-auto object-contain"
-              style={{ filter: "brightness(0)" }}
+              style={imgFilter}
             />
             Anqa.it
           </p>
