@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { CiLink } from "react-icons/ci";
 
 const Footer = ({ variant = "dark" }) => {
   const isLight = variant === "light";
