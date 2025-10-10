@@ -14,10 +14,10 @@ const Footer = ({ variant = "dark" }) => {
 
   return (
     <div
-      className={`flex items-center justify-between gap-2 px-4 py-4 mt-10 border-t-2 ${borderColor} rounded-2xl ${textColor}`}
+      className={`flex items-start justify-between gap-6 px-6 py-6 mt-10 border-t-2 ${borderColor} rounded-2xl ${textColor}`}
     >
-      <div>
-        <h6 className="text-[12px] font-bold">UN PREGETTO DI</h6>
+      <div className="flex flex-col gap-2">
+        <h6 className="text-[12px] font-bold mb-1">UN PREGETTO DI</h6>
         <Image
           src="/logo/logo1.png"
           alt="Logo 1"
@@ -27,8 +27,8 @@ const Footer = ({ variant = "dark" }) => {
           style={imgFilter}
         />
       </div>
-      <div>
-        <h6 className="text-[12px] font-bold">CON IL SUPPORTO DI</h6>
+      <div className="flex flex-col gap-2">
+        <h6 className="text-[12px] font-bold mb-1">CON IL SUPPORTO DI</h6>
         <Image
           src="/logo/logo2.png"
           alt="Logo 2"
@@ -38,38 +38,32 @@ const Footer = ({ variant = "dark" }) => {
           style={imgFilter}
         />
       </div>
-      <div>
-        <h6 className="text-[12px] font-bold">DISEGNI E GRAPHICA</h6>
+      <div className="flex flex-col gap-2">
+        <h6 className="text-[12px] font-bold mb-1">DISEGNI E GRAPHICA</h6>
         <div>
-          <h1 className="text-[12px] font-bold">Tommaso Lodi</h1>
-          <p
-            className={`link flex flex-row items-center text-center ${linkExtra}`}
-          >
-            <CiLink />
+          <h1 className="text-[12px] font-bold mb-1">Tommaso Lodi</h1>
+          <p className={`text-[10px] flex flex-row items-center ${linkExtra}`}>
+            <CiLink size={12} className="mr-1" />
             nerone.design
           </p>
         </div>
       </div>
-      <div>
-        <h6 className="text-[12px] font-bold">ANIMAZIONE</h6>
+      <div className="flex flex-col gap-2">
+        <h6 className="text-[12px] font-bold mb-1">ANIMAZIONE</h6>
         <div>
-          <h1 className="text-[12px] font-bold">Matae Stocco</h1>
-          <p
-            className={`link flex flex-row items-center text-center ${linkExtra}`}
-          >
-            <CiLink />
+          <h1 className="text-[12px] font-bold mb-1">Matae Stocco</h1>
+          <p className={`text-[10px] flex flex-row items-center ${linkExtra}`}>
+            <CiLink size={12} className="mr-1" />
             kinnouts.com
           </p>
         </div>
       </div>
-      <div>
-        <h6 className="text-[12px] font-bold">CODICE</h6>
+      <div className="flex flex-col gap-2">
+        <h6 className="text-[12px] font-bold mb-1">CODICE</h6>
         <div>
-          <h1 className="text-[12px] font-bold">Anqa Digital Agency</h1>
-          <p
-            className={`link flex flex-row items-center text-center ${linkExtra}`}
-          >
-            <CiLink />
+          <h1 className="text-[12px] font-bold mb-1">Anqa Digital Agency</h1>
+          <p className={`text-[10px] flex flex-row items-center ${linkExtra}`}>
+            <CiLink size={12} className="mr-1" />
             Anqa.it
           </p>
         </div>
