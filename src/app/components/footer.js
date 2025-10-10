@@ -2,29 +2,19 @@ import React from "react";
 import Image from "next/image";
 import { CiLink } from "react-icons/ci";
 
-// variant: 'dark' (original black text) or 'light' (white text)
-const Footer = ({ variant = "dark" }) => {
-  const isLight = variant === "light";
-  const textColor = isLight ? "text-white" : "text-black";
-  const borderColor = isLight ? "border-white/60" : "border-[#b8ead9]";
-  const linkExtra = isLight ? "text-white" : "";
-  const imgFilter = isLight
-    ? undefined
-    : { filter: "invert(1) brightness(0) saturate(0)" };
-
+const Footer = () => {
   return (
-    <div
-      className={`flex items-start justify-between gap-6 px-6 py-6 mt-10 border-t-2 ${borderColor} rounded-2xl ${textColor}`}
-    >
-      <div className="flex flex-col gap-2">
-        <h6 className="text-[12px] font-bold mb-1">UN PREGETTO DI</h6>
+    <div className="flex items-center justify-between gap-2 px-2 mt-10 rounded-2xl">
+      <div>
+        <h6 className="text-[12px] font-bold">UN PROGETTO DI</h6>
+
         <Image
           src="/logo/logo1.png"
           alt="Logo 1"
           width={80}
           height={32}
           className="h-8 w-auto object-contain"
-          style={imgFilter}
+          style={{ filter: "brightness(0)" }}
         />
       </div>
       <div className="flex flex-col gap-2">
@@ -35,15 +25,23 @@ const Footer = ({ variant = "dark" }) => {
           width={80}
           height={32}
           className="h-8 w-auto object-contain"
-          style={imgFilter}
+          style={{ filter: "brightness(0)" }}
         />
       </div>
-      <div className="flex flex-col gap-2">
-        <h6 className="text-[12px] font-bold mb-1">DISEGNI E GRAPHICA</h6>
+
+      <div>
+        <h6 className="text-[12px] font-bold">DISEGNI E GRAFICA </h6>
         <div>
-          <h1 className="text-[12px] font-bold mb-1">Tommaso Lodi</h1>
-          <p className={`text-[10px] flex flex-row items-center ${linkExtra}`}>
-            <CiLink size={12} className="mr-1" />
+          <h1 className="text-[12px] font-bold">Tommaso Lodi</h1>
+          <p className="link flex flex-row items-center text-center">
+            <Image
+              src="/icons/link_18.png"
+              alt="Logo 2"
+              width={24}
+              height={24}
+              className="h-8 w-auto object-contain"
+              style={{ filter: "brightness(0)" }}
+            />
             nerone.design
           </p>
         </div>
@@ -51,9 +49,18 @@ const Footer = ({ variant = "dark" }) => {
       <div className="flex flex-col gap-2">
         <h6 className="text-[12px] font-bold mb-1">ANIMAZIONE</h6>
         <div>
-          <h1 className="text-[12px] font-bold mb-1">Matae Stocco</h1>
-          <p className={`text-[10px] flex flex-row items-center ${linkExtra}`}>
-            <CiLink size={12} className="mr-1" />
+
+          <h1 className="text-[12px] font-bold">Matteo Stocco</h1>
+          <p className="link flex flex-row items-center text-center">
+            <Image
+              src="/icons/link_18.png"
+              alt="Logo 2"
+              width={24}
+              height={24}
+              className="h-8 w-auto object-contain"
+              style={{ filter: "brightness(0)" }}
+            />
+
             kinnouts.com
           </p>
         </div>
@@ -61,9 +68,17 @@ const Footer = ({ variant = "dark" }) => {
       <div className="flex flex-col gap-2">
         <h6 className="text-[12px] font-bold mb-1">CODICE</h6>
         <div>
-          <h1 className="text-[12px] font-bold mb-1">Anqa Digital Agency</h1>
-          <p className={`text-[10px] flex flex-row items-center ${linkExtra}`}>
-            <CiLink size={12} className="mr-1" />
+
+          <h1 className="text-[12px] font-bold">Anqa Digital Agency</h1>
+          <p className="link flex flex-row items-center text-center">
+            <Image
+              src="/icons/link_18.png"
+              alt="Logo 2"
+              width={24}
+              height={24}
+              className="h-8 w-auto object-contain"
+              style={{ filter: "brightness(0)" }}
+            />
             Anqa.it
           </p>
         </div>
