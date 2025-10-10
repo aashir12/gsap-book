@@ -37,13 +37,13 @@ const PlayMenu = ({ onPrev, onNext, onInfo, onHome, onAZ }) => {
         {/* Center Info (raised + bigger) */}
         <button
           onClick={onInfo}
-          className="mb-8 cursor-pointer border-2 border-white rounded-full bg-[#A8C2AC]/40 backdrop-blur-sm "
+          className="mb-10 p-4 cursor-pointer border-2 border-white rounded-full bg-[#A8C2AC]/40 backdrop-blur-sm "
         >
           <Image
             src="/logo/info-icon.png"
             alt="Info"
-            width={64}
-            height={64}
+            width={50}
+            height={50}
             className="rounded-full object-contain"
           />
         </button>
