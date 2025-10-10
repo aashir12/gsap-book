@@ -13,10 +13,9 @@ const Footer = () => {
           width={80}
           height={32}
           className="h-8 w-auto object-contain"
-          style={{ filter: "invert(1) brightness(0) saturate(0)" }}
+          style={{ filter: "brightness(0)" }}
         />
       </div>
-
       <div>
         <h6 className="text-[12px] font-bold">CON IL SUPPORTO DI</h6>
         <Image
@@ -25,7 +24,7 @@ const Footer = () => {
           width={80}
           height={32}
           className="h-8 w-auto object-contain"
-          style={{ filter: "invert(1) brightness(0) saturate(0)" }}
+          style={{ filter: "brightness(0)" }}
         />
       </div>
       <div>
@@ -36,10 +35,10 @@ const Footer = () => {
             <Image
               src="/icons/link_18.png"
               alt="Logo 2"
-              width={32}
-              height={32}
+              width={24}
+              height={24}
               className="h-8 w-auto object-contain"
-              style={{ filter: "invert(1) brightness(0) saturate(0)" }}
+              style={{ filter: "brightness(0)" }}
             />
             nerone.design
           </p>
@@ -53,10 +52,10 @@ const Footer = () => {
             <Image
               src="/icons/link_18.png"
               alt="Logo 2"
-              width={32}
-              height={32}
+              width={24}
+              height={24}
               className="h-8 w-auto object-contain"
-              style={{ filter: "invert(1) brightness(0) saturate(0)" }}
+              style={{ filter: "brightness(0)" }}
             />
             kinnouts.com
           </p>
@@ -70,10 +69,10 @@ const Footer = () => {
             <Image
               src="/icons/link_18.png"
               alt="Logo 2"
-              width={32}
-              height={32}
+              width={24}
+              height={24}
               className="h-8 w-auto object-contain"
-              style={{ filter: "invert(1) brightness(0) saturate(0)" }}
+              style={{ filter: "brightness(0)" }}
             />
             Anqa.it
           </p>
