@@ -47,7 +47,7 @@ const Footer = ({ variant = "dark" }) => {
               alt="Logo 2"
               width={24}
               height={24}
-              className="h-8 w-auto object-contain"
+              className="h-4 w-auto object-contain"
               style={imgFilter}
             />
             nerone.design
@@ -64,7 +64,7 @@ const Footer = ({ variant = "dark" }) => {
               alt="Logo 2"
               width={24}
               height={24}
-              className="h-8 w-auto object-contain"
+              className="h-4 w-auto object-contain"
               style={imgFilter}
             />
             kinnouts.com
@@ -79,9 +79,9 @@ const Footer = ({ variant = "dark" }) => {
             <Image
               src="/icons/link_18.png"
               alt="Logo 2"
-              width={24}
-              height={24}
-              className="h-8 w-auto object-contain"
+              width={18}
+              height={18}
+              className="h-4 w-auto object-contain"
               style={imgFilter}
             />
             Anqa.it
