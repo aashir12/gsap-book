@@ -11,10 +11,10 @@ const Footer = ({ variant = "dark" }) => {
 
   return (
     <div
-      className={`flex items-center justify-between gap-2 p-4 mt-10 rounded-2xl border-t-2 ${borderColor} ${textColor}`}
+      className={`flex items-center justify-between gap-2 p-4 mt-10 rounded-2xl  ${textColor}`}
     >
       <div>
-        <h6 className="text-[12px] font-bold">UN PROGETTO DI</h6>
+        <h6 className="text-[12px] font-bold pb-2">UN PROGETTO DI</h6>
 
         <Image
           src="/logo/logo1.png"
@@ -26,7 +26,7 @@ const Footer = ({ variant = "dark" }) => {
         />
       </div>
       <div className="flex flex-col gap-2">
-        <h6 className="text-[12px] font-bold mb-1">CON IL SUPPORTO DI</h6>
+        <h6 className="text-[12px] font-bold ">CON IL SUPPORTO DI</h6>
         <Image
           src="/logo/logo2.png"
           alt="Logo 2"
@@ -55,7 +55,7 @@ const Footer = ({ variant = "dark" }) => {
         </div>
       </div>
       <div className="flex flex-col gap-2">
-        <h6 className="text-[12px] font-bold mb-1">ANIMAZIONE</h6>
+        <h6 className="text-[12px] font-bold mt-2">ANIMAZIONE</h6>
         <div>
           <h1 className="text-[12px] font-bold">Matteo Stocco</h1>
           <p className="link flex flex-row items-center text-center">
@@ -72,7 +72,7 @@ const Footer = ({ variant = "dark" }) => {
         </div>
       </div>
       <div className="flex flex-col gap-2">
-        <h6 className="text-[12px] font-bold mb-1">CODICE</h6>
+        <h6 className="text-[12px] font-bold mt-2">CODICE</h6>
         <div>
           <h1 className="text-[12px] font-bold">Anqa Digital Agency</h1>
           <p className="link flex flex-row items-center text-center">
