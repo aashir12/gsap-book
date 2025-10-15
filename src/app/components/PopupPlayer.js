@@ -75,7 +75,7 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
             {/* Mute / Unmute */}
             <button
               onClick={toggleMute}
-              className="w-12 h-12 bg-transparent border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center hover:bg-white/10 transition cursor-pointer"
+              className="w-12 h-12 bg-transparent border-2 border-[#919c7e] text-white rounded-full flex items-center justify-center hover:bg-white/10 transition cursor-pointer"
             >
               {isMuted ? <FaVolumeMute size={14} /> : <FaVolumeUp size={14} />}
             </button>
