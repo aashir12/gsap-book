@@ -54,10 +54,10 @@ const Footer = ({ variant = "dark" }) => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-2">
-        <h6 className="text-[12px] font-bold mt-2">ANIMAZIONE</h6>
+      <div>
+        <h6 className="text-[12px] font-bold">ANIMAZIONE </h6>
         <div>
-          <h1 className="text-[12px] font-bold">Matteo Stocco</h1>
+          <h1 className="text-[12px] font-bold">Mateo Stocco</h1>
           <p className="link flex flex-row items-center text-center">
             <Image
               src="/icons/link_18.png"
@@ -67,20 +67,20 @@ const Footer = ({ variant = "dark" }) => {
               className="h-4 w-auto object-contain"
               style={imgFilter}
             />
-            kinnouts.com
+            kinnouts
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-2">
-        <h6 className="text-[12px] font-bold mt-2">CODICE</h6>
+      <div>
+        <h6 className="text-[12px] font-bold">CODICE</h6>
         <div>
           <h1 className="text-[12px] font-bold">Anqa Digital Agency</h1>
           <p className="link flex flex-row items-center text-center">
             <Image
               src="/icons/link_18.png"
               alt="Logo 2"
-              width={18}
-              height={18}
+              width={24}
+              height={24}
               className="h-4 w-auto object-contain"
               style={imgFilter}
             />
