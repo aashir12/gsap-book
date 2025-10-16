@@ -40,6 +40,7 @@ export default function Home() {
   const bookVideoRef = useRef<HTMLVideoElement>(null);
   const bookContentRef = useRef<HTMLDivElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
+  const playMenuRef = useRef<HTMLDivElement>(null);
   const azContainerRef = useRef<HTMLDivElement>(null);
   const azContentRef = useRef<HTMLDivElement>(null);
 
@@ -164,37 +165,27 @@ export default function Home() {
         onComplete: () => {
           setCurrentView("home");
           setShowInfo(false);
+          // Reset home content position when going back to home
+          gsap.set(homeContentRef.current, { y: 0 });
         },
       }
     );
   };
 
   const goToBook = () => {
-    // Smooth transition from home to book
     const tl = gsap.timeline();
 
-    // Fade out home content
-    tl.to(homeContainerRef.current, {
-      opacity: 0,
-      duration: 0.4,
+    // Animate the entire home content container upward
+    tl.to(homeContentRef.current, {
+      y: "-100vh",
+      duration: 1,
       ease: "power2.inOut",
-    })
-      // Switch view and prepare book elements
-      .call(() => {
-        setCurrentView("book");
-      })
-      // Small delay to let the view switch
-      .set({}, {}, "+=0.1")
-      // Animate book view in smoothly
-      .fromTo(
-        bookContainerRef.current,
-        { opacity: 0 },
-        {
-          opacity: 1,
-          duration: 0.5,
-          ease: "power2.out",
-        }
-      );
+    }).call(() => {
+      setCurrentView("book");
+    });
+  };
+  const goToBookFromAZ = () => {
+    setCurrentView("book");
   };
 
   const goToAZ = () => {
@@ -241,7 +232,7 @@ export default function Home() {
   useEffect(() => {
     if (currentView === "home" && homeContainerRef.current) {
       gsap.set(homeContainerRef.current, { opacity: 0, y: 20 });
-      gsap.set(homeContentRef.current, { opacity: 0, y: 30 });
+      gsap.set(homeContentRef.current, { opacity: 0, y: 0 });
 
       const tl = gsap.timeline();
       tl.to(homeContainerRef.current, {
@@ -268,11 +259,21 @@ export default function Home() {
       currentView === "book" &&
       bookContainerRef.current &&
       bookVideoRef.current &&
-      bookContentRef.current
+      bookContentRef.current &&
+      subtitleRef.current
     ) {
       // Set initial states for smooth entrance
       gsap.set(bookVideoRef.current, { opacity: 0 });
-      gsap.set(bookContentRef.current, { opacity: 0, y: 20 });
+
+      // Set initial states for subtitle (hidden at top)
+      gsap.set(subtitleRef.current, { opacity: 0, y: -50 });
+
+      // Find PlayMenu element and set initial state (hidden at bottom)
+      const playMenuElement =
+        bookContentRef.current.querySelector(".absolute.bottom-0");
+      if (playMenuElement) {
+        gsap.set(playMenuElement, { opacity: 0, y: 50 });
+      }
 
       const tl = gsap.timeline({ delay: 0.1 });
 
@@ -282,16 +283,27 @@ export default function Home() {
         duration: 0.6,
         ease: "power2.out",
       })
-        // Fade in content elements
+        // Animate subtitle from top
         .to(
-          bookContentRef.current,
+          subtitleRef.current,
           {
             opacity: 1,
             y: 0,
-            duration: 0.5,
+            duration: 0.8,
             ease: "power2.out",
           },
           "-=0.3"
+        )
+        // Animate PlayMenu from bottom (same timing as subtitle)
+        .to(
+          playMenuElement,
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            ease: "power2.out",
+          },
+          "-=0.8"
         );
     }
   }, [currentView]);
@@ -385,6 +397,7 @@ export default function Home() {
                 position={videos[currentIndex].position}
               />
               <PlayMenu
+                ref={playMenuRef}
                 onPrev={handlePrev}
                 onNext={handleNext}
                 onInfo={() => setShowInfo(true)}
@@ -424,7 +437,7 @@ export default function Home() {
               <div className="flex items-center border-[#b8ead9] border-b-2 rounded-2xl justify-between p-10">
                 <button
                   aria-label="Back"
-                  onClick={goToBook}
+                  onClick={goToBookFromAZ}
                   className="w-[136px] h-12 bg-transparent cursor-pointer border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center hover:bg-white/5 transition"
                   style={{
                     fontFamily: "Satoshi",
