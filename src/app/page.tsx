@@ -307,7 +307,7 @@ export default function Home() {
               <source src="/backgrounds/bgvideo.mp4" type="video/mp4" />
             </video>
 
-            {/* 🫧 Reusable bubbles */}
+            {/* bubbles */}
             <Bubbles />
 
             <div
@@ -340,7 +340,7 @@ export default function Home() {
         </div>
       )}
 
-      {/* 📖 BOOK */}
+      {/* BOOK */}
       {currentView === "book" && (
         <div className="app-viewport">
           <div
