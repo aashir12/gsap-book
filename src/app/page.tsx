@@ -13,6 +13,7 @@ import videos from "./json/videos.json";
 import Image from "next/image";
 import { LuArrowLeft } from "react-icons/lu";
 import { FaPlay } from "react-icons/fa";
+import Bubbles from "./components/Bubbles"; // 🫧 Imported reusable bubbles
 
 // Define the possible views
 type ViewType = "home" | "book" | "a-z";
@@ -46,14 +47,11 @@ export default function Home() {
   const handlePrev = () => {
     if (currentView !== "book") return;
     const isFirstSubtitle = currentSubtitleIndex === 0;
-    const willChangeVideo = isFirstSubtitle; // in prev flow video changes only if we're at first subtitle
-
-    // Kill any ongoing subtitle (and optionally video) tweens to prevent stacking
+    const willChangeVideo = isFirstSubtitle;
     gsap.killTweensOf(subtitleRef.current);
     if (willChangeVideo) gsap.killTweensOf(bookVideoRef.current);
 
     if (!willChangeVideo) {
-      // Subtitle-only animation (keep video perfectly still)
       const tl = gsap.timeline();
       tl.to(subtitleRef.current, {
         opacity: 0,
@@ -74,7 +72,6 @@ export default function Home() {
       return;
     }
 
-    // Full (video + subtitle) animation because video changes
     const tl = gsap.timeline();
     tl.to([bookVideoRef.current, subtitleRef.current], {
       opacity: 0,
@@ -101,13 +98,11 @@ export default function Home() {
     if (currentView !== "book") return;
     const isLastSubtitle =
       currentSubtitleIndex === videos[currentIndex].subtitle.length - 1;
-    const willChangeVideo = isLastSubtitle; // in next flow video only changes at end
-
+    const willChangeVideo = isLastSubtitle;
     gsap.killTweensOf(subtitleRef.current);
     if (willChangeVideo) gsap.killTweensOf(bookVideoRef.current);
 
     if (!willChangeVideo) {
-      // Subtitle-only animation (next direction)
       const tl = gsap.timeline();
       tl.to(subtitleRef.current, {
         opacity: 0,
@@ -128,7 +123,6 @@ export default function Home() {
       return;
     }
 
-    // Full (video + subtitle) animation because video changes
     const tl = gsap.timeline();
     tl.to([bookVideoRef.current, subtitleRef.current], {
       opacity: 0,
@@ -152,7 +146,6 @@ export default function Home() {
   };
 
   const goToHome = () => {
-    // Fade out current view then switch
     gsap.to(
       currentView === "book"
         ? bookContainerRef.current
@@ -170,58 +163,36 @@ export default function Home() {
   };
 
   const goToBook = () => {
-    // Smooth transition from home to book
     const tl = gsap.timeline();
-
-    // Fade out home content
     tl.to(homeContainerRef.current, {
       opacity: 0,
       duration: 0.4,
       ease: "power2.inOut",
     })
-      // Switch view and prepare book elements
-      .call(() => {
-        setCurrentView("book");
-      })
-      // Small delay to let the view switch
+      .call(() => setCurrentView("book"))
       .set({}, {}, "+=0.1")
-      // Animate book view in smoothly
       .fromTo(
         bookContainerRef.current,
         { opacity: 0 },
-        {
-          opacity: 1,
-          duration: 0.5,
-          ease: "power2.out",
-        }
+        { opacity: 1, duration: 0.5, ease: "power2.out" }
       );
   };
 
   const goToAZ = () => {
-    // Smooth transition to A-Z page
     const tl = gsap.timeline();
-
-    // Fade out current view
     tl.to(
       currentView === "book"
         ? bookContainerRef.current
         : homeContainerRef.current,
-      {
-        opacity: 0,
-        duration: 0.4,
-        ease: "power2.inOut",
-      }
+      { opacity: 0, duration: 0.4, ease: "power2.inOut" }
     )
-      // Switch view and prepare A-Z elements
       .call(() => {
         setCurrentView("a-z");
         setShowInfo(false);
       })
-      // Small delay to let the view switch and refs update
       .set({}, {}, "+=0.2");
   };
 
-  // When video index changes, keep background playing muted
   useEffect(() => {
     if (bookVideoRef.current && currentView === "book") {
       bookVideoRef.current.load();
@@ -230,19 +201,14 @@ export default function Home() {
     }
   }, [currentIndex, currentView]);
 
-  // Reset subtitle index when switching to book view
   useEffect(() => {
-    if (currentView === "book") {
-      setCurrentSubtitleIndex(0);
-    }
+    if (currentView === "book") setCurrentSubtitleIndex(0);
   }, [currentView]);
 
-  // Animate home view on mount
   useEffect(() => {
     if (currentView === "home" && homeContainerRef.current) {
       gsap.set(homeContainerRef.current, { opacity: 0, y: 20 });
       gsap.set(homeContentRef.current, { opacity: 0, y: 30 });
-
       const tl = gsap.timeline();
       tl.to(homeContainerRef.current, {
         opacity: 1,
@@ -251,18 +217,12 @@ export default function Home() {
         ease: "power2.out",
       }).to(
         homeContentRef.current,
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.8,
-          ease: "power2.out",
-        },
+        { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" },
         "-=0.3"
       );
     }
   }, [currentView]);
 
-  // Animate book view on mount (only when not coming from goToBook transition)
   useEffect(() => {
     if (
       currentView === "book" &&
@@ -270,62 +230,40 @@ export default function Home() {
       bookVideoRef.current &&
       bookContentRef.current
     ) {
-      // Set initial states for smooth entrance
       gsap.set(bookVideoRef.current, { opacity: 0 });
       gsap.set(bookContentRef.current, { opacity: 0, y: 20 });
-
       const tl = gsap.timeline({ delay: 0.1 });
-
-      // Fade in video smoothly
       tl.to(bookVideoRef.current, {
         opacity: 1,
         duration: 0.6,
         ease: "power2.out",
-      })
-        // Fade in content elements
-        .to(
-          bookContentRef.current,
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.5,
-            ease: "power2.out",
-          },
-          "-=0.3"
-        );
+      }).to(
+        bookContentRef.current,
+        { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" },
+        "-=0.3"
+      );
     }
   }, [currentView]);
 
-  // Animate A-Z view when it mounts
   useEffect(() => {
     if (currentView === "a-z" && azContentRef.current) {
-      // Animate only the content, not the container (to avoid black screen)
       gsap.fromTo(
         azContentRef.current,
-        {
-          opacity: 0,
-          y: 20,
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.5,
-          ease: "power2.out",
-          delay: 0.1,
-        }
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 0.5, ease: "power2.out", delay: 0.1 }
       );
     }
   }, [currentView]);
 
   return (
     <div>
+      {/* 🏠 HOME */}
       {currentView === "home" && (
-        <div className="app-viewport text-black">
+        <div className="app-viewport text-black relative">
           <div
             ref={homeContainerRef}
             className="app-frame archer-book-pro font-light overflow-hidden relative my-6 rounded-xl bg-[#5a6e5c] m-auto"
           >
-            {/* Background Video */}
             <video
               autoPlay
               loop
@@ -335,6 +273,10 @@ export default function Home() {
             >
               <source src="/backgrounds/bgvideo.mp4" type="video/mp4" />
             </video>
+
+            {/* 🫧 Reusable bubbles */}
+            <Bubbles />
+
             <div
               ref={homeContentRef}
               className="z-10 flex flex-col items-center mt-24 relative"
@@ -357,25 +299,30 @@ export default function Home() {
                 Inizia a leggere
               </button>
             </div>
-            <div className="absolute bottom-0 w-full">
+
+            <div className="absolute bottom-0 w-full z-10">
               <Footer />
             </div>
           </div>
         </div>
       )}
 
+      {/* 📖 BOOK */}
       {currentView === "book" && (
         <div className="app-viewport">
           <div
             ref={bookContainerRef}
             className="app-frame archer-book-pro relative rounded-xl bg-white overflow-hidden flex items-center justify-center"
           >
-            {/* Stable background video */}
             <BackgroundVideo
               ref={bookVideoRef}
               src={videos[currentIndex].url}
               className="absolute top-0 left-0 w-full h-full object-cover rounded-xl"
             />
+
+            {/* 🫧 Reusable bubbles */}
+            <Bubbles />
+
             <div ref={bookContentRef} className="absolute inset-0">
               <Subtitle
                 ref={subtitleRef}
@@ -404,12 +351,16 @@ export default function Home() {
         </div>
       )}
 
+      {/* 🔤 A-Z */}
       {currentView === "a-z" && (
         <div className="app-viewport">
           <div
             ref={azContainerRef}
             className="app-frame archer-book-pro font-light overflow-hidden relative my-6 rounded-xl bg-[#5a6e5c] bg-[url('/backgrounds/list-background.png')] bg-cover bg-center bg-no-repeat m-auto flex flex-col"
           >
+            {/* 🫧 Reusable bubbles */}
+            <Bubbles />
+
             {showInfo && activeItem && (
               <div className="absolute inset-0 z-50 archer-book-pro font-light">
                 <PopupPlayer
@@ -420,6 +371,7 @@ export default function Home() {
                 />
               </div>
             )}
+
             <div className="sticky top-0 z-40 bg-[#5a6e5c] bg-[url('/backgrounds/list-background.png')] bg-cover bg-center bg-no-repeat">
               <div className="flex items-center border-[#b8ead9] border-b-2 rounded-2xl justify-between p-10">
                 <button
@@ -447,6 +399,7 @@ export default function Home() {
                 </h1>
               </div>
             </div>
+
             <div
               ref={azContentRef}
               className="w-full flex-1 overflow-y-auto no-scrollbar archer-book-pro font-light"
@@ -495,7 +448,7 @@ export default function Home() {
                         {item.title}
                       </h2>
                       <p
-                        className=" mt-1"
+                        className="mt-1"
                         style={{
                           fontFamily: "Satoshi",
                           fontSize: "15px",
@@ -509,12 +462,12 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              {/* Unified Footer (white variant) */}
               <Footer variant="light" />
             </div>
           </div>
         </div>
       )}
+
       <style jsx global>{`
         @font-face {
           font-family: "Archer Book Pro";
