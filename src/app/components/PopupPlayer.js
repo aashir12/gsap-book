@@ -51,7 +51,7 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
   return (
     <div
       ref={containerRef}
-      className="absolute bottom-0 left-0 w-full h-full text-white p-0 rounded-t-xl"
+      className="absolute bottom-0 left-0 w-full h-full text-white p-0 rounded-t-xl z-50"
     >
       <div className="flex flex-col h-full">
         {/* Upper half: looping video */}
