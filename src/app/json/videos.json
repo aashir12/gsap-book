@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "url": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/1_Cavalluccio_marino/cavalluccio%20marino1.mp4",
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/1_Cavalluccio_marino/cavalluccio%20marino1.mp4",
     "subtitle": [
       "Nelle acque di una splendida Laguna, in un magnifico pomeriggio di sole, il pesciolino Go, un piccolo ghiozzo vivace e curioso, si preparava a lasciare la sua casetta.",
@@ -16,7 +16,7 @@
   },
   {
     "id": 2,
-    "url": "https://www.w3schools.com/html/movie.mp4",
+    "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/2_Cefalo/Cefalo.mp4",
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/2_Cefalo/Cefalo.mp4",
     "subtitle": [
       "Qui trovavano rifugio tanti piccoli animali come Mario il paguro, il suo amico di sempre, che viveva in una conchiglia tutta colorata e che ogni tanto, quando diventata troppo piccola, usava cambiare."
@@ -44,7 +44,7 @@
   },
   {
     "id": 4,
-    "url": "https://www.shutterstock.com/shutterstock/videos/3419484595/preview/stock-footage-primary-school-children-learning-basic-information-about-water-cycles-geography-teacher-educating.webm",
+    "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/4_Granchioblu/4%20granchioblu.jpg",
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/4_Granchioblu/granchio%20blu-.mp4",
     "subtitle": [
       "\"Ciao Mario, Ciao Stella!\" esclamò Go.\n Come ogni giorno erano pronti per una giornata di giochi e avventure.\n \"Ciao Go\" disse Stella \n \"Ora manca solo Johnny all'appello!\""
@@ -58,7 +58,7 @@
   },
   {
     "id": 5,
-    "url": "https://www.shutterstock.com/shutterstock/videos/1093459677/preview/stock-footage-close-up-portrait-of-smiling-little-african-american-girl-looking-at-camera-at-primary-school.webm",
+    "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/10_paguro/Paguro.mp4",
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/10_paguro/Paguro.mp4",
     "subtitle": [
       "\"Va bene\" disse Mario \"Ma non è che nel frattempo potremmo fare uno spuntino? Io ho una fame da squali…\" aggiunse il paguro, toccandosi con le chele la pancia che brontolava."
@@ -72,7 +72,7 @@
   },
   {
     "id": 6,
-    "url": "https://www.shutterstock.com/shutterstock/videos/3771308621/preview/stock-footage-woman-teacher-and-helping-kids-with-drawing-in-kindergarten-classroom-for-early-childhood.webm",
+    "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/6_ostriche/Ostriche.mp4",
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/6_ostriche/Ostriche.mp4",
     "subtitle": [
       "Decisero quindi di fermarsi lungo la banchina vicino alla corrente, che era meglio di un ristorante:  grazie al movimento continuo dell’acqua, lì si trovavano sempre alghe fresche e mille altre delizie per le quali Go e i suoi amici andavano matti! "
@@ -86,14 +86,13 @@
   },
   {
     "id": 7,
-    "url": "https://www.shutterstock.com/shutterstock/videos/3765780969/preview/stock-footage-children-playing-with-blocks-at-home-selective-focus.webm",
-    "secondary-url": "https://media.gettyimages.com/id/951267540/video/trick-or-treating-at-dark-with-mother.mp4?s=mp4-640x640-gi&k=20&c=TjGFcSN5wAAZdQnXOYFw3QBmPXrEvgpMjJtrBy9QIg0=",
+    "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/7_pinnanobilis/PInnaNobilis.mp4",
     "subtitle": [
       "All’improvviso Go notò da lontano una nuvola di plastica che galleggiava vicino a loro. \n \"Oh no, guardate!\" esclamò preoccupato. \"Speriamo non \n ci raggiunga\". "
     ],
     "title": "PINNA NOBILIL",
     "description": "La nacchera di mare è una conchiglia gigante e bellissima che vive sul fondo del nostro mare Mediterraneo. Può diventare molto vecchia, ma purtroppo ultimamente tanti di questi animali si stanno ammalando e stanno scomparendo. Dobbiamo proteggerle!",
-    "image": "https://images.unsplash.com/photo-1559825481-12a05cc00344",
+    "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/7_pinnanobilis/7%20pinnanobilis.jpg",
     "fontSize": 24,
     "alignment": "left",
     "position": "right"

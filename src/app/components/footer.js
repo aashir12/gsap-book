@@ -84,7 +84,7 @@ const Footer = ({ variant = "dark" }) => {
               className="h-4 w-auto object-contain"
               style={imgFilter}
             />
-            Anqa.it
+            anqa.it
           </p>
         </div>
       </div>
