@@ -2,8 +2,17 @@
 import React, { forwardRef } from "react";
 import Image from "next/image";
 
-const PlayMenu = forwardRef(({ onPrev, onNext, onInfo, onHome, onAZ }, ref) => {
-  return (
+interface PlayMenuProps {
+  onPrev: () => void;
+  onNext: () => void;
+  onInfo: () => void;
+  onHome: () => void;
+  onAZ: () => void;
+}
+
+const PlayMenu = forwardRef<HTMLDivElement, PlayMenuProps>(
+  ({ onPrev, onNext, onInfo, onHome, onAZ }, ref) => {
+    return (
     <div
       ref={ref}
       className="absolute bottom-0 w-full shadow-md bg-gradient-to-t from-black/70 to-transparent"
