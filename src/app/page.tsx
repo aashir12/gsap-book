@@ -19,15 +19,19 @@ import AnimatedBubbles from "./components/AnimatedBubbles ";
 // Define the possible views
 type ViewType = "home" | "book" | "a-z";
 
-interface ActiveItem {
+type ActiveItem = {
   id: number;
   url: string;
-  "secondary-url": string;
+  "secondary-url"?: string; 
   subtitle: string[];
   title: string;
   description: string;
   image: string;
-}
+  fontSize: number;
+  alignment: string;
+  position: string;
+};
+
 
 export default function Home() {
   const [currentView, setCurrentView] = useState<ViewType>("home");
