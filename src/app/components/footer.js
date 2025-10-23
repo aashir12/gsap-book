@@ -13,7 +13,7 @@ const Footer = ({ variant = "dark" }) => {
     <div
       className={`flex items-center justify-between gap-2 p-4 mt-10 rounded-2xl  ${textColor}`}
     >
-      <div>
+      <div className="text-center">
         <h6 className="text-[12px] font-bold pb-2">UN PROGETTO DI</h6>
 
         <Image
@@ -25,7 +25,7 @@ const Footer = ({ variant = "dark" }) => {
           style={imgFilter}
         />
       </div>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 text-center">
         <h6 className="text-[12px] font-bold ">CON IL SUPPORTO DI</h6>
         <Image
           src="/logo/logo2.png"
@@ -37,7 +37,7 @@ const Footer = ({ variant = "dark" }) => {
         />
       </div>
 
-      <div>
+      <div className="text-center">
         <h6 className="text-[12px] font-bold">DISEGNI E GRAFICA </h6>
         <div>
           <h1 className="text-[12px] font-bold">Tommaso Lodi</h1>
@@ -54,7 +54,7 @@ const Footer = ({ variant = "dark" }) => {
           </p>
         </div>
       </div>
-      <div>
+      <div className="text-center">
         <h6 className="text-[12px] font-bold">ANIMAZIONE </h6>
         <div>
           <h1 className="text-[12px] font-bold">Mateo Stocco</h1>
@@ -71,7 +71,7 @@ const Footer = ({ variant = "dark" }) => {
           </p>
         </div>
       </div>
-      <div>
+      <div className="text-center">
         <h6 className="text-[12px] font-bold">CODICE</h6>
         <div>
           <h1 className="text-[12px] font-bold">Anqa Digital Agency</h1>
@@ -81,7 +81,7 @@ const Footer = ({ variant = "dark" }) => {
               alt="Logo 2"
               width={24}
               height={24}
-              className="h-4 w-auto object-contain"
+              className="h-4 ml-5 w-auto object-contain text-center"
               style={imgFilter}
             />
             anqa.it

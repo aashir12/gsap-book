@@ -13,7 +13,8 @@ import videos from "./json/videos.json";
 import Image from "next/image";
 import { LuArrowLeft } from "react-icons/lu";
 import { FaPlay } from "react-icons/fa";
-import Bubbles from "./components/Bubbles"; // 🫧 Imported reusable bubbles
+import Bubbles from "./components/Bubbles"; 
+import AnimatedBubbles from "./components/AnimatedBubbles ";
 
 // Define the possible views
 type ViewType = "home" | "book" | "a-z";
@@ -308,7 +309,7 @@ export default function Home() {
             </video>
 
             {/* bubbles */}
-            <Bubbles />
+            <AnimatedBubbles />
 
             <div
               ref={homeContentRef}
@@ -353,9 +354,6 @@ export default function Home() {
               className="absolute top-0 left-0 w-full h-full object-cover rounded-xl"
             />
 
-            {/* 🫧 Reusable bubbles */}
-            <Bubbles />
-
             <div ref={bookContentRef} className="absolute inset-0">
               <Subtitle
                 ref={subtitleRef}
@@ -392,9 +390,6 @@ export default function Home() {
             ref={azContainerRef}
             className="app-frame archer-book-pro font-light overflow-hidden relative my-6 rounded-xl bg-[#5a6e5c] bg-[url('/backgrounds/list-background.png')] bg-cover bg-center bg-no-repeat m-auto flex flex-col"
           >
-            {/* 🫧 Reusable bubbles */}
-            <Bubbles />
-
             {showInfo && activeItem && (
               <div className="absolute inset-0 z-50 archer-book-pro font-light">
                 <PopupPlayer
@@ -411,7 +406,7 @@ export default function Home() {
                 <button
                   aria-label="Back"
                   onClick={goToBookFromAZ}
-                  className="w-[136px] h-12 bg-transparent cursor-pointer border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center hover:bg-white/5 transition"
+                  className="w-[136px] h-12 cursor-pointer border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center hover:bg-white/5 transition  border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm  hover:bg-white/10 transition cursor-pointer"
                   style={{
                     fontFamily: "Satoshi",
                     fontSize: "18px",
@@ -453,14 +448,14 @@ export default function Home() {
                     <div className="w-1/2 h-auto mr-4 relative">
                       <Image
                         src={item.image}
-                        alt={item.title}
+                        alt={item.title.toUpperCase()}
                         width={400}
                         height={400}
                         className="w-full h-56 object-cover rounded-tr-xl rounded-br-xl"
                       />
                       <button
                         aria-label="Play"
-                        className="absolute bottom-2 right-2 w-10 h-10 bg-transparent border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center hover:bg-white/10 transition cursor-pointer"
+                        className="absolute bottom-2 right-2 w-10 h-10 border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center hover:bg-white/10 transition cursor-pointer  border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm  hover:bg-white/10 transition cursor-pointer"
                         onClick={(e) => {
                           e.stopPropagation();
                           setActiveItem(item);
