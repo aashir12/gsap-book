@@ -13,7 +13,7 @@ import videos from "./json/videos.json";
 import Image from "next/image";
 import { LuArrowLeft } from "react-icons/lu";
 import { FaPlay } from "react-icons/fa";
-import Bubbles from "./components/Bubbles"; 
+import Bubbles from "./components/Bubbles";
 import AnimatedBubbles from "./components/AnimatedBubbles ";
 
 // Define the possible views
@@ -22,7 +22,7 @@ type ViewType = "home" | "book" | "a-z";
 type ActiveItem = {
   id: number;
   url: string;
-  "secondary-url"?: string; 
+  "secondary-url"?: string;
   subtitle: string[];
   title: string;
   description: string;
@@ -31,7 +31,6 @@ type ActiveItem = {
   alignment: string;
   position: string;
 };
-
 
 export default function Home() {
   const [currentView, setCurrentView] = useState<ViewType>("home");
@@ -478,7 +477,7 @@ export default function Home() {
                           fontWeight: "bold",
                         }}
                       >
-                        {item.title}
+                        {item.title.toUpperCase()}
                       </h2>
                       <p
                         className="mt-1"
