@@ -12,18 +12,18 @@ export default function AnimatedBubbles() {
     if (bubbles) {
       bubbles.forEach((bubble, index) => {
         const delay = index * 1; 
-        const duration = 8 + Math.random() * 4; 
+        const duration = 8 + Math.random() * 5; 
 
         const animateBubble = () => {
           gsap.fromTo(
             bubble,
             { y: 200, opacity: 0 },
             {
-              y: -900, // go upward
+              y: -900, 
               opacity: 1,
               duration,
               ease: "sine.out",
-              onComplete: animateBubble, // restart animation once done
+              onComplete: animateBubble, 
               delay,
             }
           );
@@ -37,7 +37,7 @@ export default function AnimatedBubbles() {
   return (
     <div
       ref={containerRef}
-      className="absolute inset-0 z-[5] overflow-hidden pointer-events-none"
+      className="absolute inset-0 z-[99] overflow-hidden pointer-events-none"
     >
       {/* Large bubble */}
       <div className="absolute bottom-0 left-[5%] bubble">
@@ -50,7 +50,16 @@ export default function AnimatedBubbles() {
       </div>
 
       {/* Small bubble */}
-      <div className="absolute bottom-0 left-[25%] bubble">
+      <div className="absolute bottom-0 left-[45%] bubble">
+        <Image
+          src="/bolle_PNG/bolla-Small.png"
+          width={33}
+          height={33}
+          alt="bubble"
+        />
+      </div>
+      {/* Small bubble */}
+      <div className="absolute bottom-0 left-[89%] bubble">
         <Image
           src="/bolle_PNG/bolla-Small.png"
           width={33}
