@@ -62,8 +62,7 @@ const Subtitle = forwardRef<HTMLParagraphElement, SubtitleProps>(
                   alignment
                 )}`}
                 style={{
-                  fontSize: `${fontSize}px`,
-                  lineHeight: "38px;",
+                  fontSize: `${fontSize}px`
                 }}
               >
                 {formatText(text)}
