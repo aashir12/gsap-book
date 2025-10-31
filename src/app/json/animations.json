@@ -3,7 +3,7 @@
     "id": 1,
     "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/1_Cavalluccio_marino/cavalluccio%20marino1.mp4",
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/3_Go/Go.mp4",
-    "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_1%20v2.mp4",
+    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_1%20v2.mp4",
     "subtitle": [
       "Nelle acque di una splendida Laguna, in un magnifico pomeriggio di sole, il pesciolino Go, un piccolo ghiozzo vivace e curioso, si preparava a lasciare la sua casetta."
     ],
@@ -18,7 +18,7 @@
     "id": 2,
     "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/1_Cavalluccio_marino/cavalluccio%20marino1.mp4",
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/3_Go/Go.mp4",
-    "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_1-2.mp4",
+    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_1-2.mp4",
     "subtitle": [
       "Go viveva accarezzato dalle foglie verdi e morbide di Zostera, che ondeggiavano dolcemente con il movimento dell'acqua."
     ],
@@ -33,7 +33,7 @@
     "id": 3,
     "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/2_Cefalo/Cefalo.mp4",
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/10_paguro/Paguro.mp4",
-    "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_2.mp4",
+    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_2.mp4",
     "subtitle": [
       "Qui trovavano rifugio tanti piccoli animali come Mario il paguro, il suo amico di sempre, che viveva in una conchiglia tutta colorata e che ogni tanto, quando diventata troppo piccola, usava cambiare."
     ],
@@ -48,12 +48,12 @@
     "id": 4,
     "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/3_Go/Go.mp4",
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/9_stellamarina/Stellamarina.mp4",
-    "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_3%20v2.mp4",
+    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_3%20v2.mp4",
     "subtitle": [
       "Oltre a Mario lì vicino abitava Stella, la stella marina elegante e dolce a cui piaceva danzare al ritmo della corrente."
     ],
     "title": "Stella",
-    "description": "La stella cuscinetto è una piccola stella marina che vive nel mare e nella laguna di Venezia, ed è l’unica di quel tipo che troviamo qui! È speciale perché può ricrescere i suoi pezzetti se si rompono, e le piace stare dove l’acqua non è sempre uguale. Non si può mangiare, ma è una meraviglia da osservare!",
+    "description": "La stella cuscinetto è una piccola stella marina che vive nel mare e nella laguna di Venezia, ed è l'unica di quel tipo che troviamo qui! È speciale perché può ricrescere i suoi pezzetti se si rompono, e le piace stare dove l'acqua non è sempre uguale. Non si può mangiare, ma è una meraviglia da osservare!",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/9_stellamarina/9%20stella.jpg",
     "fontSize": 28,
     "alignment": "center",
@@ -63,10 +63,10 @@
     "id": 5,
     "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/4_Granchioblu/4%20granchioblu.jpg",
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/4_Granchioblu/granchio%20blu-.mp4",
-    "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_4%20v2.mp4",
+    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_4%20v2.mp4",
     "subtitle": [
       "\"Ciao Mario, Ciao Stella!\" esclamò Go.\nCome ogni giorno erano pronti per una giornata di giochi e avventure.\n\"Ciao Go\" disse Stella \n\"Ora manca solo Johnny all'appello!\"",
-      "“Il solito Johnny” pensò Go, sorridendo all’idea dell’amico sempre in ritardo.\n\"Perché invece di aspettarlo qui non andiamo verso casa sua?\""
+      "“Il solito Johnny” pensò Go, sorridendo all'idea dell'amico sempre in ritardo.\n\"Perché invece di aspettarlo qui non andiamo verso casa sua?\""
     ],
     "title": "Granchio Blu",
     "description": "Qui a Venezia abbiamo un nuovo \"vicino\" un po' invadente: si chiama granchio blu ed è grande e forte! È arrivato da lontano e gli piace tanto vivere nelle nostre lagune, mangiando vongole e altri animaletti. È bravissimo a nuotare e camminare, e si riconosce perché ha le chele blu (se è un maschio) e un ultimo paio di zampe fatte apposta per nuotare!",
@@ -79,11 +79,11 @@
     "id": 6,
     "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/10_paguro/Paguro.mp4",
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/10_paguro/Paguro.mp4",
-    "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_5%20v2.mp4",
+    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_5%20v2.mp4",
     "subtitle": [
       "\"Va bene\" disse Mario \"Ma non è che nel frattempo potremmo fare uno spuntino? Io ho una fame da squali…\" aggiunse il paguro, toccandosi con le chele la pancia che brontolava.",
       "Stella e Go si guardarono divertiti: nonostante le sue piccole dimensioni Mario aveva sempre un grande appetito.",
-      "Per fortuna c’era una corrente favorevole che trascinò via la grande nuvola di plastica.\n“Evviva!” esclamarono gli amici.\nGo, tra sé e sé, pensò “speriamo che tutta quella plastica venga presto raccolta e che gli esseri umani smettano di gettarla!”"
+      "Per fortuna c'era una corrente favorevole che trascinò via la grande nuvola di plastica.\n\"Evviva!\" esclamarono gli amici.\nGo, tra sé e sé, pensò \"speriamo che tutta quella plastica venga presto raccolta e che gli esseri umani smettano di gettarla!\""
     ],
     "title": "Paguro",
     "description": "Il suo corpo è fatto per la maggior parte di acqua, non nuota attivamente ma si sposta con la corrente. In laguna di Venezia ce ne sono di tante specie, le riesci a riconoscere?",
@@ -96,13 +96,13 @@
     "id": 7,
     "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/6_ostriche/Ostriche.mp4",
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/6_ostriche/Ostriche.mp4",
-    "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_6%20v1.mp4",
+    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_6%20v1.mp4",
     "subtitle": [
-      "Decisero quindi di fermarsi lungo la banchina vicino alla corrente, che era meglio di un ristorante:  grazie al movimento continuo dell’acqua, lì si trovavano sempre alghe fresche e mille altre delizie per le quali Go e i suoi amici andavano matti!",
+      "Decisero quindi di fermarsi lungo la banchina vicino alla corrente, che era meglio di un ristorante:  grazie al movimento continuo dell'acqua, lì si trovavano sempre alghe fresche e mille altre delizie per le quali Go e i suoi amici andavano matti!",
       "Arrivati alla banchina, iniziarono subito a mangiare, ma ognuno in modo diverso: Go frugava nel fondo alla ricerca di piccoli e croccanti crostacei, Mario raccoglieva minuziosamente le alghe e Stella cercava fra i detriti le conchiglie di cui andava ghiotta."
     ],
     "title": "Ostriche",
-    "description": "Qui a Venezia, e non solo, c’è un’ostrica un po’ speciale che è arrivata da molto lontano, dall’Asia. Si chiama ostrica concava e le piace tantissimo vivere sui fondali bassi e creare delle “case” tutte sue, dove vivono anche altri animaletti. È così brava a riprodursi che ce ne sono tantissime, e infatti è l’ostrica più allevata al mondo!",
+    "description": "Qui a Venezia, e non solo, c'è un'ostrica un po' speciale che è arrivata da molto lontano, dall'Asia. Si chiama ostrica concava e le piace tantissimo vivere sui fondali bassi e creare delle \"case\" tutte sue, dove vivono anche altri animaletti. È così brava a riprodursi che ce ne sono tantissime, e infatti è l'ostrica più allevata al mondo!",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/6_ostriche/6%20ostriche.jpg",
     "fontSize": 32,
     "alignment": "center",
@@ -111,14 +111,14 @@
   {
     "id": 8,
     "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/7_pinnanobilis/PInnaNobilis.mp4",
-    "secondary-url":"https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/7_pinnanobilis/PInnaNobilis.mp4",
-    "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_8%20v1.mp4",
+    "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/7_pinnanobilis/PInnaNobilis.mp4",
+    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_8%20v1.mp4",
     "subtitle": [
-      "All’improvviso Go notò da lontano una nuvola di plastica che galleggiava vicino a loro.\n\"Oh no, guardate!\" esclamò preoccupato. \"Speriamo non ci raggiunga\".",
+      "All'improvviso Go notò da lontano una nuvola di plastica che galleggiava vicino a loro.\n\"Oh no, guardate!\" esclamò preoccupato. \"Speriamo non ci raggiunga\".",
       "Succedeva di frequente che bottiglie, pezzi di grandi reti, sacchetti e ogni tipo di rifiuto inquinassero le acque e i fondali. I pezzi grandi intrappolavano gli animali, quelli piccoli e quasi invisibili li ingerivano per sbaglio. Era un vero pericolo!",
-      "Per fortuna c’era una corrente favorevole che trascinò via la grande nuvola di plastica.\n“Evviva!” esclamarono gli amici.\nGo, tra sé e sé, pensò “speriamo che tutta quella plastica venga presto raccolta e che gli esseri umani smettano di gettarla!”"
+      "Per fortuna c'era una corrente favorevole che trascinò via la grande nuvola di plastica.\n\"Evviva!\" esclamarono gli amici.\nGo, tra sé e sé, pensò \"speriamo che tutta quella plastica venga presto raccolta e che gli esseri umani smettano di gettarla!\""
     ],
-    "title": "Medusa",
+    "title": "Pinna Nobilis",
     "description": "La nacchera di mare è una conchiglia gigante e bellissima che vive sul fondo del nostro mare Mediterraneo. Può diventare molto vecchia, ma purtroppo ultimamente tanti di questi animali si stanno ammalando e stanno scomparendo. Dobbiamo proteggerle!",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/7_pinnanobilis/7%20pinnanobilis.jpg",
     "fontSize": 28,
@@ -129,11 +129,10 @@
     "id": 9,
     "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/7_pinnanobilis/PInnaNobilis.mp4",
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/5_medusa/medusa.mp4",
-
-    "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_8%20v1.mp4",
+    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_8%20v1.mp4",
     "subtitle": [
-      "Quand’ecco che, trasportata dalla corrente, comparve un’altra amica, Gina la medusa.\n“Amici!” gridò Gina. “Stavo venendo proprio a cercarvi! Johnny è scomparso!!”\n“Scomparso?! Cosa dici?” esclamò Stella.\n“Ne sei proprio sicura?” domandò Mario.",
-      "Sì, amici, sono andata a chiamarlo a casa sua e non mi ha risposto nessuno, allora sono andata nel suo posto preferito dove l’acqua è più salata e più pulita ma non c’era. Pensate, sono andata perfino a scuola per vedere se si fosse addormentato sul banco… ma niente, neanche lì, di Johnny nessuna traccia!"
+      "Quand'ecco che, trasportata dalla corrente, comparve un'altra amica, Gina la medusa.\n\"Amici!\" gridò Gina. \"Stavo venendo proprio a cercarvi! Johnny è scomparso!!\"\n\"Scomparso?! Cosa dici?\" esclamò Stella.\n\"Ne sei proprio sicura?\" domandò Mario.",
+      "Sì, amici, sono andata a chiamarlo a casa sua e non mi ha risposto nessuno, allora sono andata nel suo posto preferito dove l'acqua è più salata e più pulita ma non c'era. Pensate, sono andata perfino a scuola per vedere se si fosse addormentato sul banco… ma niente, neanche lì, di Johnny nessuna traccia!"
     ],
     "title": "Medusa",
     "description": "Il suo corpo è fatto per la maggior parte di acqua, non nuota attivamente ma si sposta con la corrente. In laguna di Venezia ce ne sono di tante specie, le riesci a riconoscere?",
@@ -145,14 +144,15 @@
   {
     "id": 10,
     "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/9_stellamarina/Stellamarina.mp4",
-    "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_9%20v1.mp4",
+    "secondary-url": "",
+    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_9%20v1.mp4",
     "subtitle": [
       "Allora il gruppo di amici preoccupati, decisero di andare a cercare Johnny.. e da qui iniziò la loro avventura.",
       "Nuotando tra le onde, la piccola ciurma passò dentro un giardino di alghe che ondeggiavano al ritmo della corrente. Go si avvicinò alla solerte alga Quercia.",
-      "“Sicuramente lei potrà aiutarci a trovare il nostro amico” pensò."
+      "\"Sicuramente lei potrà aiutarci a trovare il nostro amico\" pensò."
     ],
     "title": "Stella",
-    "description": "La stella cuscinetto è una piccola stella marina che vive nel mare e nella laguna di Venezia, ed è l’unica di quel tipo che troviamo qui! È speciale perché può ricrescere i suoi pezzetti se si rompono, e le piace stare dove l’acqua non è sempre uguale. Non si può mangiare, ma è una meraviglia da osservare!",
+    "description": "La stella cuscinetto è una piccola stella marina che vive nel mare e nella laguna di Venezia, ed è l'unica di quel tipo che troviamo qui! È speciale perché può ricrescere i suoi pezzetti se si rompono, e le piace stare dove l'acqua non è sempre uguale. Non si può mangiare, ma è una meraviglia da osservare!",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/9_stellamarina/9%20stella.jpg",
     "fontSize": 28,
     "alignment": "center",
@@ -162,14 +162,14 @@
     "id": 11,
     "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/10_paguro/Paguro.mp4",
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
-    "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_10%20v1.mp4",
+    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_10%20v1.mp4",
     "subtitle": [
-      "Ma Quercia cercava di comunicare con una coppia di alghe che parlavano solo in giapponese, Waka l’Undaria e Muti il Sargasso.",
-      "Queste due nuove alghe qualcuno le chiamava ‘aliene’ perché arrivate per caso in Laguna, avevano deciso di stabilirvisi.",
-      "“Niente amici, qui non c’è. Andiamo!” sospirò Go."
+      "Ma Quercia cercava di comunicare con una coppia di alghe che parlavano solo in giapponese, Waka l'Undaria e Muti il Sargasso.",
+      "Queste due nuove alghe qualcuno le chiamava 'aliene' perché arrivate per caso in Laguna, avevano deciso di stabilirvisi.",
+      "\"Niente amici, qui non c'è. Andiamo!\" sospirò Go."
     ],
     "title": "Undaria",
-    "description": "L’Undaria è un’alga arrivata da lontano, spesso chiamata ‘alga aliena’. Cresce velocemente e può occupare lo spazio delle alghe locali. Nonostante ciò, è importante perché offre rifugio e cibo a molti piccoli organismi marini.",
+    "description": "L'Undaria è un'alga arrivata da lontano, spesso chiamata 'alga aliena'. Cresce velocemente e può occupare lo spazio delle alghe locali. Nonostante ciò, è importante perché offre rifugio e cibo a molti piccoli organismi marini.",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undraia.png",
     "fontSize": 28,
     "alignment": "center",
@@ -179,13 +179,13 @@
     "id": 12,
     "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/6_ostriche/Ostriche.mp4",
-    "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_11%20v1.mp4",
+    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_11%20v1.mp4",
     "subtitle": [
-      "Ancorate alle briccole, Go scorse un gruppo di ostriche. “Chiediamo a loro! Magari hanno visto Johnny.”",
-      "Ma le ostriche erano troppo indaffarate: “Johnny? Noi dobbiamo filtrare l’acqua e costruire le case per noi e i nostri piccoli inquilini. Non abbiamo visto passare nessuno.”"
+      "Ancorate alle briccole, Go scorse un gruppo di ostriche. \"Chiediamo a loro! Magari hanno visto Johnny.\"",
+      "Ma le ostriche erano troppo indaffarate: \"Johnny? Noi dobbiamo filtrare l'acqua e costruire le case per noi e i nostri piccoli inquilini. Non abbiamo visto passare nessuno.\""
     ],
     "title": "Ostriche",
-    "description": "Qui a Venezia, e non solo, c’è un’ostrica un po’ speciale che è arrivata da molto lontano, dall’Asia. Si chiama ostrica concava e le piace tantissimo vivere sui fondali bassi e creare delle “case” tutte sue, dove vivono anche altri animaletti. È così brava a riprodursi che ce ne sono tantissime, e infatti è l’ostrica più allevata al mondo!",
+    "description": "Qui a Venezia, e non solo, c'è un'ostrica un po' speciale che è arrivata da molto lontano, dall'Asia. Si chiama ostrica concava e le piace tantissimo vivere sui fondali bassi e creare delle \"case\" tutte sue, dove vivono anche altri animaletti. È così brava a riprodursi che ce ne sono tantissime, e infatti è l'ostrica più allevata al mondo!",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/6_ostriche/6%20ostriche.jpg",
     "fontSize": 32,
     "alignment": "center",
@@ -195,10 +195,10 @@
     "id": 13,
     "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/7_pinnanobilis/PInnaNobilis.mp4",
-    "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_11%20v1.mp4",
+    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_11%20v1.mp4",
     "subtitle": [
-      "Ancorate alle briccole, Go scorse un gruppo di ostriche. “Chiediamo a loro! Magari hanno visto Johnny.”",
-      "Ma le ostriche erano troppo indaffarate: “Johnny? Noi dobbiamo filtrare l’acqua e costruire le case per noi e i nostri piccoli inquilini. Non abbiamo visto passare nessuno.”"
+      "Ancorate alle briccole, Go scorse un gruppo di ostriche. \"Chiediamo a loro! Magari hanno visto Johnny.\"",
+      "Ma le ostriche erano troppo indaffarate: \"Johnny? Noi dobbiamo filtrare l'acqua e costruire le case per noi e i nostri piccoli inquilini. Non abbiamo visto passare nessuno.\""
     ],
     "title": "Pinna Nobilis",
     "description": "La nacchera di mare è una conchiglia gigante e bellissima che vive sul fondo del nostro mare Mediterraneo. Può diventare molto vecchia, ma purtroppo ultimamente tanti di questi animali si stanno ammalando e stanno scomparendo. Dobbiamo proteggerle!",
@@ -211,10 +211,10 @@
     "id": 14,
     "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/7_pinnanobilis/PInnaNobilis.mp4",
-    "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_12%20v1.mp4",
+    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_12%20v1.mp4",
     "subtitle": [
       "Proprio lì vicino, nascosta tra le alghe, Go e i suoi amici notarono Nobi, una vecchia conchiglia grande e maestosa a cui piaceva raccontare storie. ",
-      "“Ciao Nobi! Per caso…” Go non fece in tempo a finire la frase che Nobi lo interruppe. “Sapete” disse “un tempo con i miei filamenti di bisso si produceva una seta finissima, la ‘seta del mare’ che i pescatori usavano per creare tessuti preziosi che brillavano come l’oro!”  "
+      "\"Ciao Nobi! Per caso…\" Go non fece in tempo a finire la frase che Nobi lo interruppe. \"Sapete\" disse \"un tempo con i miei filamenti di bisso si produceva una seta finissima, la 'seta del mare' che i pescatori usavano per creare tessuti preziosi che brillavano come l'oro!\" "
     ],
     "title": "Pinna Nobilis",
     "description": "La nacchera di mare è una conchiglia gigante e bellissima che vive sul fondo del nostro mare Mediterraneo. Può diventare molto vecchia, ma purtroppo ultimamente tanti di questi animali si stanno ammalando e stanno scomparendo. Dobbiamo proteggerle!",
@@ -227,10 +227,10 @@
     "id": 15,
     "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/4_Granchioblu/granchio%20blu-.mp4",
-    "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_13%20v1.mp4",
+    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_13%20v1.mp4",
     "subtitle": [
-      "Gli occhi di Stella si spalancarono. “Wow, seta marina! Sei davvero speciale, Nobi! Ma oggi siamo venuti qui per chiederti se per caso hai visto Johnny, il nostro amico… non lo troviamo da nessuna parte!” ",
-      "“Il vostro amico?” disse respirando profondamente “Non l’ho visto, mi dispiace!”"
+      "Gli occhi di Stella si spalancarono. \"Wow, seta marina! Sei davvero speciale, Nobi! Ma oggi siamo venuti qui per chiederti se per caso hai visto Johnny, il nostro amico… non lo troviamo da nessuna parte!\" ",
+      "\"Il vostro amico?\" disse respirando profondamente \"Non l'ho visto, mi dispiace!\""
     ],
     "title": "Granchio Blu",
     "description": "Qui a Venezia abbiamo un nuovo \"vicino\" un po' invadente: si chiama granchio blu ed è grande e forte! È arrivato da lontano e gli piace tanto vivere nelle nostre lagune, mangiando vongole e altri animaletti. È bravissimo a nuotare e camminare, e si riconosce perché ha le chele blu (se è un maschio) e un ultimo paio di zampe fatte apposta per nuotare!",
@@ -242,14 +242,14 @@
   {
     "id": 16,
     "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
-    "secondary_url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
-    "tertiary_url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_14%20v1.mp4",
+    "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
+    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_14%20v1.mp4",
     "subtitle": [
-      "Mentre stavano per salutare Nobi, Go notò passare un animale mai visto prima, con chele enormi del colore dell’oceano. “Ma chi è quello?” sussurrò curioso.",
-      "“È il Granchio Blu” disse Mario il paguro. “Viene dall’America e si è appena trasferito qui. Greeny, il mio amico granchio verde, dice che è un po’ prepotente perché si mangia tutto quello che trova e non lascia niente per gli altri. Però è anche forte e coraggioso! Pensate che ho sentito dire che è riuscito a tagliare le reti dei pescatori per far fuggire i suoi amici pesci.”"
+      "Mentre stavano per salutare Nobi, Go notò passare un animale mai visto prima, con chele enormi del colore dell'oceano. \"Ma chi è quello?\" sussurrò curioso.",
+      "\"È il Granchio Blu\" disse Mario il paguro. \"Viene dall'America e si è appena trasferito qui. Greeny, il mio amico granchio verde, dice che è un po' prepotente perché si mangia tutto quello che trova e non lascia niente per gli altri. Però è anche forte e coraggioso! Pensate che ho sentito dire che è riuscito a tagliare le reti dei pescatori per far fuggire i suoi amici pesci.\""
     ],
     "title": "Undaria",
-    "description": "L’Undaria è un’alga arrivata da lontano, spesso chiamata ‘alga aliena’. Cresce velocemente e può occupare lo spazio delle alghe locali. Nonostante ciò, è importante perché offre rifugio e cibo a molti piccoli organismi marini.",
+    "description": "L'Undaria è un'alga arrivata da lontano, spesso chiamata 'alga aliena'. Cresce velocemente e può occupare lo spazio delle alghe locali. Nonostante ciò, è importante perché offre rifugio e cibo a molti piccoli organismi marini.",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.png",
     "fontSize": 28,
     "alignment": "center",
@@ -258,14 +258,14 @@
   {
     "id": 17,
     "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
-    "secondary_url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
-    "tertiary_url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_14%20v1.mp4",
+    "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
+    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_14%20v1.mp4",
     "subtitle": [
-      "Mentre stavano per salutare Nobi, Go notò passare un animale mai visto prima, con chele enormi del colore dell’oceano. “Ma chi è quello?” sussurrò curioso.",
-      "“È il Granchio Blu” disse Mario il paguro. “Viene dall’America e si è appena trasferito qui. Greeny, il mio amico granchio verde, dice che è un po’ prepotente perché si mangia tutto quello che trova e non lascia niente per gli altri. Però è anche forte e coraggioso! Pensate che ho sentito dire che è riuscito a tagliare le reti dei pescatori per far fuggire i suoi amici pesci.”"
+      "Mentre stavano per salutare Nobi, Go notò passare un animale mai visto prima, con chele enormi del colore dell'oceano. \"Ma chi è quello?\" sussurrò curioso.",
+      "\"È il Granchio Blu\" disse Mario il paguro. \"Viene dall'America e si è appena trasferito qui. Greeny, il mio amico granchio verde, dice che è un po' prepotente perché si mangia tutto quello che trova e non lascia niente per gli altri. Però è anche forte e coraggioso! Pensate che ho sentito dire che è riuscito a tagliare le reti dei pescatori per far fuggire i suoi amici pesci.\""
     ],
     "title": "Undaria",
-    "description": "L’Undaria è un’alga arrivata da lontano, spesso chiamata ‘alga aliena’. Cresce velocemente e può occupare lo spazio delle alghe locali. Nonostante ciò, è importante perché offre rifugio e cibo a molti piccoli organismi marini.",
+    "description": "L'Undaria è un'alga arrivata da lontano, spesso chiamata 'alga aliena'. Cresce velocemente e può occupare lo spazio delle alghe locali. Nonostante ciò, è importante perché offre rifugio e cibo a molti piccoli organismi marini.",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.png",
     "fontSize": 28,
     "alignment": "center",
@@ -275,13 +275,13 @@
     "id": 18,
     "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/2_Cefalo/Cefalo.mp4",
-    "tertiary_url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_14%20v1.mp4",
+    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_14%20v1.mp4",
     "subtitle": [
-      "Mentre stavano per salutare Nobi, Go notò passare un animale mai visto prima, con chele enormi del colore dell’oceano. “Ma chi è quello?” sussurrò curioso.",
-      "“È il Granchio Blu” disse Mario il paguro. “Viene dall’America e si è appena trasferito qui. Greeny, il mio amico granchio verde, dice che è un po’ prepotente perché si mangia tutto quello che trova e non lascia niente per gli altri. Però è anche forte e coraggioso! Pensate che ho sentito dire che è riuscito a tagliare le reti dei pescatori per far fuggire i suoi amici pesci.”"
+      "Mentre stavano per salutare Nobi, Go notò passare un animale mai visto prima, con chele enormi del colore dell'oceano. \"Ma chi è quello?\" sussurrò curioso.",
+      "\"È il Granchio Blu\" disse Mario il paguro. \"Viene dall'America e si è appena trasferito qui. Greeny, il mio amico granchio verde, dice che è un po' prepotente perché si mangia tutto quello che trova e non lascia niente per gli altri. Però è anche forte e coraggioso! Pensate che ho sentito dire che è riuscito a tagliare le reti dei pescatori per far fuggire i suoi amici pesci.\""
     ],
     "title": "Cefalo",
-    "description": "Il cefalo verzelata è un pesce che ama vivere in gruppo, può sopportare sia il caldo che il freddo e mangia alghe e piccoli animaletti del fondale. Nasce in mare, ma i suoi cuccioli vengono a crescere nella laguna di Venezia e, a differenza di altri pesci, lui resta lì anche d’inverno perché non ha paura del freddo!",
+    "description": "Il cefalo verzelata è un pesce che ama vivere in gruppo, può sopportare sia il caldo che il freddo e mangia alghe e piccoli animaletti del fondale. Nasce in mare, ma i suoi cuccioli vengono a crescere nella laguna di Venezia e, a differenza di altri pesci, lui resta lì anche d'inverno perché non ha paura del freddo!",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/2_Cefalo/2%20cefalo.jpg",
     "fontSize": 28,
     "alignment": "center",
@@ -291,12 +291,12 @@
     "id": 19,
     "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/1_Cavalluccio_marino/cavalluccio%20marino1.mp4",
-    "tertiary_url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_14%20v1.mp4",
+    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_14%20v1.mp4",
     "subtitle": [
-      "Mentre stavano per salutare Nobi, Go notò passare un animale mai visto prima, con chele enormi del colore dell’oceano. “Ma chi è quello?” sussurrò curioso.",
-      "“È il Granchio Blu” disse Mario il paguro. “Viene dall’America e si è appena trasferito qui. Greeny, il mio amico granchio verde, dice che è un po’ prepotente perché si mangia tutto quello che trova e non lascia niente per gli altri. Però è anche forte e coraggioso! Pensate che ho sentito dire che è riuscito a tagliare le reti dei pescatori per far fuggire i suoi amici pesci.”"
+      "Mentre stavano per salutare Nobi, Go notò passare un animale mai visto prima, con chele enormi del colore dell'oceano. \"Ma chi è quello?\" sussurrò curioso.",
+      "\"È il Granchio Blu\" disse Mario il paguro. \"Viene dall'America e si è appena trasferito qui. Greeny, il mio amico granchio verde, dice che è un po' prepotente perché si mangia tutto quello che trova e non lascia niente per gli altri. Però è anche forte e coraggioso! Pensate che ho sentito dire che è riuscito a tagliare le reti dei pescatori per far fuggire i suoi amici pesci.\""
     ],
-    "title": "Cavalluccio",
+    "title": "Cavalluccio Marino",
     "description": "Il cavalluccio marino è un pesce speciale, famoso per la sua coda che usa per aggrapparsi. La cosa più curiosa è che il papà cavalluccio marino si prende cura delle uova, tenendole in una tasca sulla sua pancia finché non nascono i piccoli.",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/1_Cavalluccio_marino/1%20cavalluccio.jpg",
     "fontSize": 32,
@@ -307,12 +307,12 @@
     "id": 20,
     "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/1_Cavalluccio_marino/cavalluccio%20marino1.mp4",
-    "tertiary_url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_14%20v1.mp4",
+    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_14%20v1.mp4",
     "subtitle": [
-      "Mentre stavano per salutare Nobi, Go notò passare un animale mai visto prima, con chele enormi del colore dell’oceano. “Ma chi è quello?” sussurrò curioso.",
-      "“È il Granchio Blu” disse Mario il paguro. “Viene dall’America e si è appena trasferito qui. Greeny, il mio amico granchio verde, dice che è un po’ prepotente perché si mangia tutto quello che trova e non lascia niente per gli altri. Però è anche forte e coraggioso! Pensate che ho sentito dire che è riuscito a tagliare le reti dei pescatori per far fuggire i suoi amici pesci.”"
+      "Mentre stavano per salutare Nobi, Go notò passare un animale mai visto prima, con chele enormi del colore dell'oceano. \"Ma chi è quello?\" sussurrò curioso.",
+      "\"È il Granchio Blu\" disse Mario il paguro. \"Viene dall'America e si è appena trasferito qui. Greeny, il mio amico granchio verde, dice che è un po' prepotente perché si mangia tutto quello che trova e non lascia niente per gli altri. Però è anche forte e coraggioso! Pensate che ho sentito dire che è riuscito a tagliare le reti dei pescatori per far fuggire i suoi amici pesci.\""
     ],
-    "title": "Cavalluccio",
+    "title": "Cavalluccio Marino",
     "description": "Il cavalluccio marino è un pesce speciale, famoso per la sua coda che usa per aggrapparsi. La cosa più curiosa è che il papà cavalluccio marino si prende cura delle uova, tenendole in una tasca sulla sua pancia finché non nascono i piccoli.",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/1_Cavalluccio_marino/1%20cavalluccio.jpg",
     "fontSize": 32,
@@ -323,12 +323,12 @@
     "id": 21,
     "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/1_Cavalluccio_marino/cavalluccio%20marino1.mp4",
-    "tertiary_url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_14%20v1.mp4",
+    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_14%20v1.mp4",
     "subtitle": [
-      "Mentre stavano per salutare Nobi, Go notò passare un animale mai visto prima, con chele enormi del colore dell’oceano. “Ma chi è quello?” sussurrò curioso.",
-      "“È il Granchio Blu” disse Mario il paguro. “Viene dall’America e si è appena trasferito qui. Greeny, il mio amico granchio verde, dice che è un po’ prepotente perché si mangia tutto quello che trova e non lascia niente per gli altri. Però è anche forte e coraggioso! Pensate che ho sentito dire che è riuscito a tagliare le reti dei pescatori per far fuggire i suoi amici pesci.”"
+      "Mentre stavano per salutare Nobi, Go notò passare un animale mai visto prima, con chele enormi del colore dell'oceano. \"Ma chi è quello?\" sussurrò curioso.",
+      "\"È il Granchio Blu\" disse Mario il paguro. \"Viene dall'America e si è appena trasferito qui. Greeny, il mio amico granchio verde, dice che è un po' prepotente perché si mangia tutto quello che trova e non lascia niente per gli altri. Però è anche forte e coraggioso! Pensate che ho sentito dire che è riuscito a tagliare le reti dei pescatori per far fuggire i suoi amici pesci.\""
     ],
-    "title": "Cavalluccio",
+    "title": "Cavalluccio Marino",
     "description": "Il cavalluccio marino è un pesce speciale, famoso per la sua coda che usa per aggrapparsi. La cosa più curiosa è che il papà cavalluccio marino si prende cura delle uova, tenendole in una tasca sulla sua pancia finché non nascono i piccoli.",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/1_Cavalluccio_marino/1%20cavalluccio.jpg",
     "fontSize": 32,
@@ -339,12 +339,12 @@
     "id": 22,
     "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/1_Cavalluccio_marino/cavalluccio%20marino1.mp4",
-    "tertiary_url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_14%20v1.mp4",
+    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_14%20v1.mp4",
     "subtitle": [
-      "Mentre stavano per salutare Nobi, Go notò passare un animale mai visto prima, con chele enormi del colore dell’oceano. “Ma chi è quello?” sussurrò curioso.",
-      "“È il Granchio Blu” disse Mario il paguro. “Viene dall’America e si è appena trasferito qui. Greeny, il mio amico granchio verde, dice che è un po’ prepotente perché si mangia tutto quello che trova e non lascia niente per gli altri. Però è anche forte e coraggioso! Pensate che ho sentito dire che è riuscito a tagliare le reti dei pescatori per far fuggire i suoi amici pesci.”"
+      "Mentre stavano per salutare Nobi, Go notò passare un animale mai visto prima, con chele enormi del colore dell'oceano. \"Ma chi è quello?\" sussurrò curioso.",
+      "\"È il Granchio Blu\" disse Mario il paguro. \"Viene dall'America e si è appena trasferito qui. Greeny, il mio amico granchio verde, dice che è un po' prepotente perché si mangia tutto quello che trova e non lascia niente per gli altri. Però è anche forte e coraggioso! Pensate che ho sentito dire che è riuscito a tagliare le reti dei pescatori per far fuggire i suoi amici pesci.\""
     ],
-    "title": "Cavalluccio",
+    "title": "Cavalluccio Marino",
     "description": "Il cavalluccio marino è un pesce speciale, famoso per la sua coda che usa per aggrapparsi. La cosa più curiosa è che il papà cavalluccio marino si prende cura delle uova, tenendole in una tasca sulla sua pancia finché non nascono i piccoli.",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/1_Cavalluccio_marino/1%20cavalluccio.jpg",
     "fontSize": 32,
