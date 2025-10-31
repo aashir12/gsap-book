@@ -22,6 +22,13 @@ const PlayMenu = forwardRef<HTMLDivElement, PlayMenuProps>(
       onNext(); 
     };
 
+      const handlePrev = () => {
+        if (currentIndex === 0) {
+          setShowPrevButton(false);
+        }
+        onPrev();
+      };
+
     return (
       <div
         ref={ref}
@@ -77,7 +84,7 @@ const PlayMenu = forwardRef<HTMLDivElement, PlayMenuProps>(
           <div className="flex">
             {(currentIndex > 0 || showPrevButton) && (
               <button
-                onClick={onPrev}
+                onClick={handlePrev}
                 className="responsive-padding rounded-tl-2xl text-center border-2 border-gray-400 bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-[#b8ead9]/40 cursor-pointer transition-all duration-300"
               >
                 <Image
