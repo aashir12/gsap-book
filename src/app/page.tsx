@@ -181,10 +181,12 @@ export default function Home() {
       ease: "power2.inOut",
     }).call(() => {
       setCurrentView("book");
+      setCurrentIndex(0);
     });
   };
   const goToBookFromAZ = () => {
     setCurrentView("book");
+    setCurrentIndex(0);
   };
 
   const goToAZ = () => {
@@ -197,6 +199,7 @@ export default function Home() {
     )
       .call(() => {
         setCurrentView("a-z");
+        setCurrentIndex(0);
         setShowInfo(false);
       })
       .set({}, {}, "+=0.2");
