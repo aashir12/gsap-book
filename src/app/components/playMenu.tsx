@@ -8,10 +8,27 @@ interface PlayMenuProps {
   onInfo: () => void;
   onHome: () => void;
   onAZ: () => void;
+  currentIndex: number;
 }
 
 const PlayMenu = forwardRef<HTMLDivElement, PlayMenuProps>(
-  ({ onPrev, onNext, onInfo, onHome, onAZ }, ref) => {
+  ({ onPrev, onNext, onInfo, onHome, onAZ, currentIndex }, ref) => {
+    const [showPrevButton, setShowPrevButton] = React.useState(false);
+
+    const handleNext = () => {
+      if (currentIndex === 0) {
+        setShowPrevButton(true);
+      }
+      onNext(); 
+    };
+
+      const handlePrev = () => {
+        if (currentIndex === 0) {
+          setShowPrevButton(false);
+        }
+        onPrev();
+      };
+
     return (
       <div
         ref={ref}
@@ -32,6 +49,7 @@ const PlayMenu = forwardRef<HTMLDivElement, PlayMenuProps>(
                 className="object-contain responsive-icon-small"
               />
             </button>
+
             <button
               onClick={onAZ}
               className="responsive-padding rounded-tr-2xl text-center border-2 border-gray-400 border-l-0 bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-[#b8ead9]/40 cursor-pointer transition-all duration-300"
@@ -46,37 +64,43 @@ const PlayMenu = forwardRef<HTMLDivElement, PlayMenuProps>(
             </button>
           </div>
 
-          {/* Center Info (raised + bigger) */}
-          <button
-            onClick={onInfo}
-            className="responsive-mb-bottom responsive-padding cursor-pointer border-2 border-white rounded-full bg-[#A8C2AC]/40 backdrop-blur-sm "
-          >
-            <Image
-              src="/logo/info-icon.png"
-              alt="Info"
-              width={50}
-              height={50}
-              className="rounded-full object-contain responsive-icon-medium"
-            />
-          </button>
+          {/* Center Info Button */}
+          {![3, 4, 5, 6, 8, 14, 18, 19].includes(currentIndex) && (
+            <button
+              onClick={onInfo}
+              className="responsive-mb-bottom responsive-padding cursor-pointer border-2 border-white rounded-full bg-[#A8C2AC]/40 backdrop-blur-sm "
+            >
+              <Image
+                src="/logo/info-icon.png"
+                alt="Info"
+                width={50}
+                height={50}
+                className="rounded-full object-contain responsive-icon-medium"
+              />
+            </button>
+          )}
 
           {/* Right Group */}
           <div className="flex">
+            {(currentIndex > 0 || showPrevButton) && (
+              <button
+                onClick={handlePrev}
+                className="responsive-padding rounded-tl-2xl text-center border-2 border-gray-400 bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-[#b8ead9]/40 cursor-pointer transition-all duration-300"
+              >
+                <Image
+                  src="/logo/left-icon.png"
+                  alt="left-icon"
+                  width={40}
+                  height={40}
+                  className="object-contain responsive-icon-small"
+                />
+              </button>
+            )}
             <button
-              onClick={onPrev}
-              className="responsive-padding rounded-tl-2xl text-center border-2 border-gray-400 bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-[#b8ead9]/40 cursor-pointer transition-all duration-300"
-            >
-              <Image
-                src="/logo/left-icon.png"
-                alt="left-icon"
-                width={40}
-                height={40}
-                className="object-contain responsive-icon-small"
-              />{" "}
-            </button>
-            <button
-              onClick={onNext}
-              className="responsive-padding text-center border-2 border-gray-400 border-l-0 bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-[#b8ead9]/40 cursor-pointer transition-all duration-300"
+              onClick={handleNext}
+              className={`responsive-padding text-center border-2 border-gray-400 bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-[#b8ead9]/40 cursor-pointer transition-all duration-300 ${
+                showPrevButton === false ? "border-l-2" : "border-l-0"
+              }`}
             >
               <Image
                 src="/logo/right-icon.png"
@@ -84,7 +108,7 @@ const PlayMenu = forwardRef<HTMLDivElement, PlayMenuProps>(
                 width={40}
                 height={40}
                 className="object-contain responsive-icon-small"
-              />{" "}
+              />
             </button>
           </div>
         </div>
@@ -94,5 +118,4 @@ const PlayMenu = forwardRef<HTMLDivElement, PlayMenuProps>(
 );
 
 PlayMenu.displayName = "PlayMenu";
-
 export default PlayMenu;

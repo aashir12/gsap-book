@@ -58,10 +58,12 @@ const Subtitle = forwardRef<HTMLParagraphElement, SubtitleProps>(
             >
               <p
                 ref={ref}
-                className={`text-white archer-book-pro px-3 pt-10 font-semibold leading-snug responsive-subtitle ${getTextAlign(
+                className={`text-white leading-[38px] archer-book-pro px-3 pt-10 font-semibold leading-snug ${getTextAlign(
                   alignment
                 )}`}
-                style={{ fontSize: `${fontSize}px` }}
+                style={{
+                  fontSize: `${fontSize}px`
+                }}
               >
                 {formatText(text)}
               </p>
