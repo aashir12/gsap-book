@@ -162,6 +162,7 @@ export default function Home() {
         ease: "power2.inOut",
         onComplete: () => {
           setCurrentView("home");
+          setCurrentIndex(0);
           setShowInfo(false);
           // Reset home content position when going back to home
           gsap.set(homeContentRef.current, { y: 0 });
