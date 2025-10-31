@@ -15,10 +15,13 @@ import { LuArrowLeft } from "react-icons/lu";
 import { FaPlay } from "react-icons/fa";
 import Bubbles from "./components/Bubbles";
 import AnimatedBubbles from "./components/AnimatedBubbles ";
+import ClosingPage from "./components/ClosingPage";
+import ExtendedFooter from "./components/ExtendedFooter";
 import animations from "./json/animations.json";
 
+
 // Define the possible views
-type ViewType = "home" | "book" | "a-z";
+type ViewType = "home" | "book" | "a-z" | "closing";
 
 type ActiveItem = {
   id: number;
@@ -129,6 +132,16 @@ export default function Home() {
       return;
     }
 
+    // Check if we're at the very last subtitle of the very last video
+    const isLastVideo = currentIndex === videos.length - 1;
+    const isVeryLastSubtitle = isLastVideo && isLastSubtitle;
+
+    if (isVeryLastSubtitle) {
+      // Go to closing page instead of cycling back to the beginning
+      goToClosing();
+      return;
+    }
+
     const tl = gsap.timeline();
     tl.to([bookVideoRef.current, subtitleRef.current], {
       opacity: 0,
@@ -173,20 +186,52 @@ export default function Home() {
 
   const goToBook = () => {
     const tl = gsap.timeline();
-
+    const mainContent =
+      homeContentRef.current?.querySelector(".animated-content");
     // Animate the entire home content container upward
-    tl.to(homeContentRef.current, {
-      y: "-100vh",
-      duration: 2.5,
-      ease: "power2.inOut",
-    }).call(() => {
-      setCurrentView("book");
-      setCurrentIndex(0);
-    });
+ if (mainContent) {
+      tl.to(mainContent, {
+        y: "-100vh",
+        duration: 2.5,
+        ease: "power2.inOut",
+      }).call(() => {
+        setCurrentView("book");
+        setCurrentIndex(0);
+      });
+    }
+
   };
   const goToBookFromAZ = () => {
     setCurrentView("book");
     setCurrentIndex(0);
+  };
+
+  const goToClosing = () => {
+    // Fade out current view then switch to closing
+    gsap.to(
+      currentView === "book"
+        ? bookContainerRef.current
+        : currentView === "a-z"
+        ? azContainerRef.current
+        : homeContainerRef.current,
+      {
+        opacity: 0,
+        duration: 0.4,
+        ease: "power2.inOut",
+        onComplete: () => {
+          setCurrentView("closing");
+          setShowInfo(false);
+        },
+      }
+    );
+  };
+
+  const goToHomeFromClosing = () => {
+    // Reset book and subtitle indices to default (first ones)
+    setCurrentIndex(0);
+    setCurrentSubtitleIndex(0);
+    setCurrentView("home");
+    setShowInfo(false);
   };
 
   const goToAZ = () => {
@@ -304,8 +349,9 @@ export default function Home() {
         <div className="app-viewport text-black relative">
           <div
             ref={homeContainerRef}
-            className="app-frame archer-book-pro font-light overflow-hidden relative my-6 rounded-xl bg-[#5a6e5c] m-auto"
+            className="app-frame archer-book-pro font-light relative my-6 rounded-xl bg-[#5a6e5c] m-auto h-screen"
           >
+            {/* absolutely positioned green bg */}
             <video
               autoPlay
               loop
@@ -316,38 +362,42 @@ export default function Home() {
               <source src="/backgrounds/Home_page_BG.mp4" type="video/mp4" />
             </video>
 
-            {/* bubbles */}
+            {/* bubbles -- absolutely positioned*/}
             <AnimatedBubbles />
-
             <div
               ref={homeContentRef}
-              className="z-10 flex flex-col items-center mt-24 relative"
+              className="z-10 overflow-y-scroll h-full no-scrollbar   "
             >
-              <h1
-                className="text-[64px] leading-[68] font-medium text-black leading-tight text-center mb-12"
-                style={{
-                  fontFamily: "Archer",
-                  fontWeight: 500,
-                  lineHeight: "68px",
-                }}
-              >
-                Il viaggio di Go
-                <br />
-                nella Laguna
-                <br />
-                incantata
-              </h1>
-              <button
-                onClick={goToBook}
-                className="px-8 py-3 rounded-xl cursor-pointer border-2 border-[#C4A5FF] text-[#5800FF] font-medium bg-purple-200/10 backdrop-blur-md hover:bg-purple-200/20 transition-all duration-[3000ms] hover:rounded-4xl active:scale-95"
-                style={{ fontFamily: "Satoshi", fontSize: "24px" }}
-              >
-                Inizia a leggere
-              </button>
-            </div>
+              <div className="min-h-screen w-full h-screen flex flex-col justify-between">
+                <div className="pt-24 animated-content flex items-center flex-col">
+                  <h1
+                    className="text-[64px] leading-[68]  font-medium text-black leading-tight text-center mb-12"
+                    style={{ 
+                      fontFamily: "Archer",
+                      fontWeight: 500 ,
+                      lineHeight: "68px"
+                     }}
+                  >
+                    Il viaggio di Go
+                    <br />
+                    nella Laguna
+                    <br />
+                    incantata
+                  </h1>
+                  <button
+                    onClick={goToBook}
+                    className="px-8 py-3 pulse-button responsive-text-button rounded-xl cursor-pointer border-2 border-[#C4A5FF] text-[#5800FF] font-medium bg-purple-200/10 backdrop-blur-md hover:bg-purple-200/20 transition-all duration-500 hover:rounded-4xl active:scale-95"
+                    style={{ fontFamily: "Satoshi" , fontSize: "24px" }}
+                  >
+                    Inizia a leggere
+                  </button>
+                </div>
+                <div className="w-full">
+                  <Footer />
+                </div>
+              </div>
+              <ExtendedFooter />
 
-            <div className="absolute bottom-0 w-full z-10">
-              <Footer />
             </div>
           </div>
         </div>
@@ -513,6 +563,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+      )}
+
+      {/* CLOSING PAGE */}
+      {currentView === "closing" && (
+        <ClosingPage onGoToHome={goToHomeFromClosing} />
       )}
 
       <style jsx global>{`
