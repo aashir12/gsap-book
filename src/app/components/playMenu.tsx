@@ -65,7 +65,7 @@ const PlayMenu = forwardRef<HTMLDivElement, PlayMenuProps>(
           </div>
 
           {/* Center Info Button */}
-          {![3, 4, 5, 6, 8, 14, 18, 19].includes(currentIndex) && (
+          {![ 4, 5, 6, 8, 14, 18, 19].includes(currentIndex) && (
             <button
               onClick={onInfo}
               className="responsive-mb-bottom responsive-padding cursor-pointer border-2 border-white rounded-full bg-[#A8C2AC]/40 backdrop-blur-sm "
