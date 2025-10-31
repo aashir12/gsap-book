@@ -175,7 +175,7 @@ export default function Home() {
     // Animate the entire home content container upward
     tl.to(homeContentRef.current, {
       y: "-100vh",
-      duration: 1,
+      duration: 2.5,
       ease: "power2.inOut",
     }).call(() => {
       setCurrentView("book");
@@ -308,7 +308,7 @@ export default function Home() {
               playsInline
               className="absolute top-0 left-0 w-full h-full object-cover rounded-xl"
             >
-              <source src="/backgrounds/bgvideo.mp4" type="video/mp4" />
+              <source src="/backgrounds/Home_page_BG.mp4" type="video/mp4" />
             </video>
 
             {/* bubbles */}
@@ -319,8 +319,12 @@ export default function Home() {
               className="z-10 flex flex-col items-center mt-24 relative"
             >
               <h1
-                className="responsive-text-title font-medium text-black leading-tight text-center mb-12"
-                style={{ fontFamily: "Archer", fontWeight: 500 }}
+                className="text-[64px] leading-[68] font-medium text-black leading-tight text-center mb-12"
+                style={{
+                  fontFamily: "Archer",
+                  fontWeight: 500,
+                  lineHeight: "68px",
+                }}
               >
                 Il viaggio di Go
                 <br />
@@ -330,8 +334,8 @@ export default function Home() {
               </h1>
               <button
                 onClick={goToBook}
-                className="responsive-text-button rounded-xl cursor-pointer border-2 border-[#C4A5FF] text-[#5800FF] font-medium bg-purple-200/10 backdrop-blur-md hover:bg-purple-200/20 transition-all duration-500 hover:rounded-4xl active:scale-95"
-                style={{ fontFamily: "Satoshi" }}
+                className="px-8 py-3 rounded-xl cursor-pointer border-2 border-[#C4A5FF] text-[#5800FF] font-medium bg-purple-200/10 backdrop-blur-md hover:bg-purple-200/20 transition-all duration-[3000ms] hover:rounded-4xl active:scale-95"
+                style={{ fontFamily: "Satoshi", fontSize: "24px" }}
               >
                 Inizia a leggere
               </button>
@@ -353,7 +357,7 @@ export default function Home() {
           >
             <BackgroundVideo
               ref={bookVideoRef}
-              src={videos[currentIndex].url}
+              src={videos[currentIndex].teritary}
               className="absolute top-0 left-0 w-full h-full object-cover rounded-xl"
             />
 
@@ -376,7 +380,10 @@ export default function Home() {
             </div>
             {showInfo && (
               <PopupPlayer
-                url={videos[currentIndex]["secondary-url"]}
+                url={
+                  videos[currentIndex]["secondary-url"] ||
+                  videos[currentIndex].url
+                }
                 title={videos[currentIndex].title}
                 subtitle={videos[currentIndex].description}
                 onClose={() => setShowInfo(false)}
@@ -396,7 +403,7 @@ export default function Home() {
             {showInfo && activeItem && (
               <div className="absolute inset-0 z-50 archer-book-pro font-light">
                 <PopupPlayer
-                  url={activeItem["secondary-url"]}
+                  url={activeItem["secondary-url"] || activeItem.url}
                   title={activeItem.title}
                   subtitle={activeItem.description}
                   onClose={() => setShowInfo(false)}
@@ -409,20 +416,22 @@ export default function Home() {
                 <button
                   aria-label="Back"
                   onClick={goToBookFromAZ}
-                  className="w-[136px] h-12 cursor-pointer border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition responsive-text-subtitle"
+                  className="w-[136px] h-12 cursor-pointer border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center hover:bg-white/5 transition  border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm  hover:bg-white/10 transition cursor-pointer"
                   style={{
                     fontFamily: "Satoshi",
+                    fontSize: "18px",
                     fontWeight: "500",
                   }}
                 >
-                  <LuArrowLeft className="responsive-icon-arrow" />
+                  <LuArrowLeft size={18} />
                   <span className="ml-1">indietro</span>
                 </button>
                 <h1
-                  className="text-3xl font-medium text-white responsive-text-header"
+                  className="text-3xl font-medium text-white"
                   style={{
                     fontFamily: "Archer",
                     fontWeight: "400",
+                    fontSize: "48px",
                   }}
                 >
                   Lista delle Specie
@@ -456,7 +465,7 @@ export default function Home() {
                       />
                       <button
                         aria-label="Play"
-                        className="absolute bottom-2 right-2 w-10 h-10 border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer"
+                        className="absolute bottom-2 right-2 w-10 h-10 border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center hover:bg-white/10 transition cursor-pointer  border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm  hover:bg-white/10 transition cursor-pointer"
                         onClick={(e) => {
                           e.stopPropagation();
                           setActiveItem(item);
@@ -468,18 +477,20 @@ export default function Home() {
                     </div>
                     <div className="w-1/2 p-2 text-white">
                       <h2
-                        className="text-lg font-semibold leading-tight responsive-list-title"
+                        className="text-lg font-semibold leading-tight"
                         style={{
                           fontFamily: "Archer",
+                          fontSize: "18px",
                           fontWeight: "bold",
                         }}
                       >
                         {item.title.toUpperCase()}
                       </h2>
                       <p
-                        className="mt-1 responsive-list-desc"
+                        className="mt-1"
                         style={{
                           fontFamily: "Satoshi",
+                          fontSize: "15px",
                           fontWeight: "500",
                           opacity: "0.8",
                         }}
