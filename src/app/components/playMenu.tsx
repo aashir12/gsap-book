@@ -99,7 +99,7 @@ const PlayMenu = forwardRef<HTMLDivElement, PlayMenuProps>(
             <button
               onClick={handleNext}
               className={`responsive-padding text-center border-2 border-gray-400 bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-[#b8ead9]/40 cursor-pointer transition-all duration-300 ${
-                showPrevButton === false ? "border-l-2" : "border-l-0"
+                showPrevButton === false ? "border-l-2 rounded-l-xl" : "border-l-0"
               }`}
             >
               <Image

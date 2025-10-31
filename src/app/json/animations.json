@@ -5,8 +5,7 @@
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/3_Go/Go.mp4",
     "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_1%20v2.mp4",
     "subtitle": [
-      "Nelle acque di una splendida Laguna, in un magnifico pomeriggio di sole, il pesciolino Go, un piccolo ghiozzo vivace e curioso, si preparava a lasciare la sua casetta.",
-      "Go viveva accarezzato dalle foglie verdi e morbide di Zostera, che ondeggiavano dolcemente con il movimento dell'acqua."
+      "Nelle acque di una splendida Laguna, in un magnifico pomeriggio di sole, il pesciolino Go, un piccolo ghiozzo vivace e curioso, si preparava a lasciare la sua casetta."
     ],
     "title": "Go",
     "description": "Il ghiozzo gò, è un pesce piccolino e si attacca al fondo con le pinne come una ventosa. Il papà ghiozzo gò è un bravo costruttore: scava un nido per le uova e le chiama lì con dei suoni speciali. È un pesce goloso che mangia piccoli animaletti, e nella laguna di Venezia è così buono che tutti lo vogliono!",
@@ -17,9 +16,24 @@
   },
   {
     "id": 2,
-    "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/2_Cefalo/Cefalo.mp4",
-    "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/5_medusa/medusa.mp4",
+    "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/1_Cavalluccio_marino/cavalluccio%20marino1.mp4",
+    "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/3_Go/Go.mp4",
     "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_1-2.mp4",
+    "subtitle": [
+      "Go viveva accarezzato dalle foglie verdi e morbide di Zostera, che ondeggiavano dolcemente con il movimento dell'acqua."
+    ],
+    "title": "Go",
+    "description": "Il ghiozzo gò, è un pesce piccolino e si attacca al fondo con le pinne come una ventosa. Il papà ghiozzo gò è un bravo costruttore: scava un nido per le uova e le chiama lì con dei suoni speciali. È un pesce goloso che mangia piccoli animaletti, e nella laguna di Venezia è così buono che tutti lo vogliono!",
+    "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/3_Go/3%20go.jpg",
+    "fontSize": 32,
+    "alignment": "center",
+    "position": "center"
+  },
+  {
+    "id": 3,
+    "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/2_Cefalo/Cefalo.mp4",
+    "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/10_paguro/Paguro.mp4",
+    "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_2.mp4",
     "subtitle": [
       "Qui trovavano rifugio tanti piccoli animali come Mario il paguro, il suo amico di sempre, che viveva in una conchiglia tutta colorata e che ogni tanto, quando diventata troppo piccola, usava cambiare."
     ],

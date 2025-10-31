@@ -362,7 +362,7 @@ export default function Home() {
           >
             <BackgroundVideo
               ref={bookVideoRef}
-              src={animations[currentIndex].teritary}
+              src={videos[currentIndex].teritary}
               className="absolute top-0 left-0 w-full h-full object-cover rounded-xl"
             />
 
