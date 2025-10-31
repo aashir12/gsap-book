@@ -8,10 +8,11 @@ interface PlayMenuProps {
   onInfo: () => void;
   onHome: () => void;
   onAZ: () => void;
+  currentIndex: number;
 }
 
 const PlayMenu = forwardRef<HTMLDivElement, PlayMenuProps>(
-  ({ onPrev, onNext, onInfo, onHome, onAZ }, ref) => {
+  ({ onPrev, onNext, onInfo, onHome, onAZ,currentIndex }, ref) => {
     return (
       <div
         ref={ref}
@@ -45,21 +46,21 @@ const PlayMenu = forwardRef<HTMLDivElement, PlayMenuProps>(
               />
             </button>
           </div>
-
           {/* Center Info (raised + bigger) */}
-          <button
-            onClick={onInfo}
-            className="responsive-mb-bottom responsive-padding cursor-pointer border-2 border-white rounded-full bg-[#A8C2AC]/40 backdrop-blur-sm "
-          >
-            <Image
-              src="/logo/info-icon.png"
-              alt="Info"
-              width={50}
-              height={50}
-              className="rounded-full object-contain responsive-icon-medium"
-            />
-          </button>
-
+          {![3, 4, 5, 6, 8, 14, 18, 19].includes(currentIndex) && (
+            <button
+              onClick={onInfo}
+              className="responsive-mb-bottom responsive-padding cursor-pointer border-2 border-white rounded-full bg-[#A8C2AC]/40 backdrop-blur-sm "
+            >
+              <Image
+                src="/logo/info-icon.png"
+                alt="Info"
+                width={50}
+                height={50}
+                className="rounded-full object-contain responsive-icon-medium"
+              />
+            </button>
+          )}
           {/* Right Group */}
           <div className="flex">
             <button

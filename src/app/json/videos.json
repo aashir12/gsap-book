@@ -64,16 +64,16 @@
   {
     "id": 5,
     "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/10_paguro/Paguro.mp4",
-    "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/10_paguro/Paguro.mp4",
+    "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/5_medusa/medusa.mp4",
     "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_5%20v2.mp4",
     "subtitle": [
       "\"Va bene\" disse Mario \"Ma non è che nel frattempo potremmo fare uno spuntino? Io ho una fame da squali…\" aggiunse il paguro, toccandosi con le chele la pancia che brontolava.",
       "Stella e Go si guardarono divertiti: nonostante le sue piccole dimensioni Mario aveva sempre un grande appetito.",
       "Per fortuna c’era una corrente favorevole che trascinò via la grande nuvola di plastica.\n“Evviva!” esclamarono gli amici.\nGo, tra sé e sé, pensò “speriamo che tutta quella plastica venga presto raccolta e che gli esseri umani smettano di gettarla!”"
     ],
-    "title": "Paguro",
+    "title": "Medusa",
     "description": "Il suo corpo è fatto per la maggior parte di acqua, non nuota attivamente ma si sposta con la corrente. In laguna di Venezia ce ne sono di tante specie, le riesci a riconoscere?",
-    "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/10_paguro/10%20paguro.jpg",
+    "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/5_medusa/medusa_thumbnail.jpg",
     "fontSize": 32,
     "alignment": "center",
     "position": "center"
@@ -175,7 +175,7 @@
   "position": "center"
 },
 {
-  "id": 11,
+  "id": 12,
   "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
   "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
   "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_11%20v1.mp4",
@@ -191,7 +191,7 @@
   "position": "center"
 },
 {
-  "id": 12,
+  "id": 13,
   "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
   "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
   "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_12%20v1.mp4",
@@ -207,7 +207,7 @@
   "position": "center"
 },
 {
-  "id": 13,
+  "id": 14,
   "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
   "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
   "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_13%20v1.mp4",
@@ -223,7 +223,7 @@
   "position": "center"
 },
 {
-  "id": 14,
+  "id": 15,
   "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
   "secondary_url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
   "tertiary_url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_14%20v1.mp4",
@@ -238,5 +238,4 @@
   "alignment": "center",
   "position": "center"
 }
-
 ]

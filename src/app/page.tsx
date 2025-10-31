@@ -15,6 +15,7 @@ import { LuArrowLeft } from "react-icons/lu";
 import { FaPlay } from "react-icons/fa";
 import Bubbles from "./components/Bubbles";
 import AnimatedBubbles from "./components/AnimatedBubbles ";
+import animations from "./json/animations.json";
 
 // Define the possible views
 type ViewType = "home" | "book" | "a-z";
@@ -357,17 +358,19 @@ export default function Home() {
           >
             <BackgroundVideo
               ref={bookVideoRef}
-              src={videos[currentIndex].teritary}
+              src={animations[currentIndex].teritary}
               className="absolute top-0 left-0 w-full h-full object-cover rounded-xl"
             />
 
             <div ref={bookContentRef} className="absolute inset-0">
               <Subtitle
                 ref={subtitleRef}
-                text={videos[currentIndex].subtitle[currentSubtitleIndex] || ""}
-                fontSize={videos[currentIndex].fontSize}
-                alignment={videos[currentIndex].alignment}
-                position={videos[currentIndex].position}
+                text={
+                  animations[currentIndex].subtitle[currentSubtitleIndex] || ""
+                }
+                fontSize={animations[currentIndex].fontSize}
+                alignment={animations[currentIndex].alignment}
+                position={animations[currentIndex].position}
               />
               <PlayMenu
                 ref={playMenuRef}
@@ -376,16 +379,17 @@ export default function Home() {
                 onInfo={() => setShowInfo(true)}
                 onHome={goToHome}
                 onAZ={goToAZ}
+                currentIndex={currentIndex}
               />
             </div>
-            {showInfo && (
+            {showInfo && ![3, 4, 5, 6,8,14,18,19].includes(currentIndex) && (
               <PopupPlayer
                 url={
-                  videos[currentIndex]["secondary-url"] ||
-                  videos[currentIndex].url
+                  animations[currentIndex]["secondary-url"] ||
+                  animations[currentIndex].url
                 }
-                title={videos[currentIndex].title}
-                subtitle={videos[currentIndex].description}
+                title={animations[currentIndex].title}
+                subtitle={animations[currentIndex].description}
                 onClose={() => setShowInfo(false)}
               />
             )}
