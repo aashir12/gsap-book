@@ -23,27 +23,28 @@ const Subtitle = forwardRef<HTMLParagraphElement, SubtitleProps>(
     };
 
     // Helper function to get positioning
-    const getPositioning = (position: string) => {
-      switch (position) {
-        case "left":
-          return "justify-start";
-        case "right":
-          return "justify-end";
-        case "center":
-        default:
-          return "justify-center";
-      }
-    };
+const getPositioning = (position: string) => {
+  switch (position) {
+    case "left":
+      return "justify-start";
+    case "right":
+      return "justify-end";
+    case "center":
+    default:
+      return "justify-center";
+  }
+};
 
     // Helper function to format text with line breaks
-    const formatText = (text: string) => {
-      return text.split("\n").map((line, index) => (
-        <React.Fragment key={index}>
-          {line}
-          {index < text.split("\n").length - 1 && <br />}
-        </React.Fragment>
-      ));
-    };
+   const formatText = (text: string) => {
+     return text.split("\n").map((line, index) => (
+       <React.Fragment key={index}>
+         {line}
+         {index < text.split("\n").length - 1 && <br />}
+       </React.Fragment>
+     ));
+   };
+
 
     return (
       <div className={`absolute top-0 w-full pointer-events-none z-10`}>
@@ -62,7 +63,7 @@ const Subtitle = forwardRef<HTMLParagraphElement, SubtitleProps>(
                   alignment
                 )}`}
                 style={{
-                  fontSize: `${fontSize}px`
+                  fontSize: `${fontSize}px`,
                 }}
               >
                 {formatText(text)}
