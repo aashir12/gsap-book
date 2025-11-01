@@ -106,7 +106,7 @@ export default function Home() {
   const handleNext = () => {
     if (currentView !== "book") return;
     const isLastSubtitle =
-      currentSubtitleIndex === videos[currentIndex].subtitle.length - 1;
+      currentSubtitleIndex === animations[currentIndex].subtitle.length - 1;
     const willChangeVideo = isLastSubtitle;
     gsap.killTweensOf(subtitleRef.current);
     if (willChangeVideo) gsap.killTweensOf(bookVideoRef.current);
@@ -439,8 +439,7 @@ export default function Home() {
             {showInfo && ![4, 5, 6,8,14,18,19].includes(currentIndex) && (
               <PopupPlayer
                 url={
-                  animations[currentIndex]["secondary-url"] ||
-                  animations[currentIndex].url
+                  animations[currentIndex]["secondary-url"] 
                 }
                 title={animations[currentIndex].title}
                 subtitle={animations[currentIndex].description}
