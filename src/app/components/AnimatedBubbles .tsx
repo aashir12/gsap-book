@@ -18,20 +18,36 @@ export default function AnimatedBubbles() {
         const delay = index * 1;
         const duration = 20 + Math.random() * 5;
 
-        const animateBubble = () => {
-          gsap.fromTo(
-            bubble,
-            { y: 200, opacity: 0 },
-            {
-              y: exitPoint, // Use dynamic height-based exit point
-              opacity: 1,
-              duration,
-              ease: "sine.out",
-              onComplete: animateBubble,
-              delay,
-            }
-          );
-        };
+       const animateBubble = () => {
+         const tl = gsap.timeline({
+           onComplete: animateBubble, // loop
+           delay,
+         });
+
+         tl.fromTo(
+           bubble,
+           { y: 200, opacity: 0, x: 0 },
+           {
+             y: exitPoint,
+             opacity: 1,
+             duration,
+             ease: "sine.out",
+           }
+         );
+
+         tl.to(
+           bubble,
+           {
+             x: () => gsap.utils.random(-30, 30), // random shake left/right
+             duration: 1.2,
+             repeat: -1,
+             yoyo: true,
+             ease: "sine.inOut",
+           },
+           "<" // run at the same time
+         );
+       };
+
 
         animateBubble();
       });
