@@ -436,7 +436,7 @@ export default function Home() {
                 currentIndex={currentIndex}
               />
             </div>
-            {showInfo && ![4, 5, 6,8,14,18,19].includes(currentIndex) && (
+            {showInfo && ![4, 5, 6,9,14,18,19].includes(currentIndex) && (
               <PopupPlayer
                 url={
                   animations[currentIndex]["secondary-url"] 
