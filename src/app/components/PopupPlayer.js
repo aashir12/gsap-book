@@ -71,21 +71,29 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
         {/* Lower half: background image with title and subtitle */}
         <div className="relative h-1/2 bg-[url('/backgrounds/list-background.png')] flex flex-col justify-around py-6 bg-cover bg-center">
           {/* Controls */}
-          <div className="flex justify-center items-center gap-6 relative z-10 ">
+          <div className="flex justify-center items-center gap-[36px] py-[64px] relative z-10 ">
             {/* Mute / Unmute */}
             <button
               onClick={toggleMute}
-              className="responsive-control-small border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer"
+              className="responsive-control-small border-2 p-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer w-[64px] "
             >
-              {isMuted ? <FaVolumeMute size={14} /> : <FaVolumeUp size={14} />}
+              {isMuted ? (
+                <FaVolumeMute className="w-[48px] stroke-[2] fill-white" />
+              ) : (
+                <FaVolumeUp className="w-[48px] stroke-2 fill-white" />
+              )}
             </button>
 
             {/* Play / Pause */}
             <button
               onClick={togglePlay}
-              className="responsive-control-large border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer"
+              className="responsive-control-large p-2 border-2 border-[#b8ead9] text-white rounded-full w-[100px] flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer"
             >
-              {isPlaying ? <FaPause size={14} /> : <FaPlay size={14} />}
+              {isPlaying ? (
+                <FaPause className="w-[64px] stroke-[2] fill-white " />
+              ) : (
+                <FaPlay className="w-[64px] stroke-[2] fill-white" />
+              )}
             </button>
 
             {/* Fullscreen */}
@@ -95,9 +103,9 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
                   popupVideoRef.current.requestFullscreen();
                 }
               }}
-              className="responsive-control-small border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer"
+              className="responsive-control-small border-2 p-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer w-[64px]"
             >
-              <FaExpand size={14} />
+              <FaExpand className="stroke-[2] fill- w-[48px] " />
             </button>
           </div>
           <div>
@@ -133,14 +141,16 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
             <button
               aria-label="Back"
               onClick={onClose}
-              className="w-[136px] h-12 cursor-pointer border-2 border-[#b8ead9] text-white rounded-full hover:bg-white/10 transition flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm responsive-text-subtitle"
+              className="w-[136px] h-[48px] cursor-pointer border-2 border-[#b8ead9] text-white rounded-full hover:bg-white/10 transition flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm responsive-text-subtitle"
               style={{
                 fontFamily: "Satoshi",
                 fontWeight: "500",
               }}
             >
-              <LuArrowLeft className="responsive-icon-arrow" />
-              <span className="ml-1">indietro</span>
+              <div className="m-4 flex items-center text-center gap-2">
+                <LuArrowLeft className="responsive-icon-arrow" />
+                <span className="">indietro</span>
+              </div>
             </button>
           </div>
         </div>
