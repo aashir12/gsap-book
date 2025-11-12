@@ -13,7 +13,6 @@ import videos from "./json/videos.json";
 import Image from "next/image";
 import { LuArrowLeft } from "react-icons/lu";
 import { FaPlay } from "react-icons/fa";
-import Bubbles from "./components/Bubbles";
 import AnimatedBubbles from "./components/AnimatedBubbles ";
 import ClosingPage from "./components/ClosingPage";
 import ExtendedFooter from "./components/ExtendedFooter";

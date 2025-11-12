@@ -14,7 +14,9 @@ const Footer = ({ variant = "dark" }) => {
       className={`flex items-center justify-between gap-2 p-4 mt-10 rounded-2xl  ${textColor}`}
     >
       <div className="text-center">
-        <h6 className="text-[12px] font-bold pb-2">UN PROGETTO DI</h6>
+        <h6 className="font-[Archer] font-bold text-[10px] leading-[14px] pb-2">
+          UN PROGETTO DI
+        </h6>
 
         <Image
           src="/logo/logo1.png"
