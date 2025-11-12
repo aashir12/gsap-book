@@ -18,7 +18,6 @@ import ClosingPage from "./components/ClosingPage";
 import ExtendedFooter from "./components/ExtendedFooter";
 import animations from "./json/animations.json";
 
-
 // Define the possible views
 type ViewType = "home" | "book" | "a-z" | "closing";
 
@@ -188,7 +187,7 @@ export default function Home() {
     const mainContent =
       homeContentRef.current?.querySelector(".animated-content");
     // Animate the entire home content container upward
- if (mainContent) {
+    if (mainContent) {
       tl.to(mainContent, {
         y: "-100vh",
         duration: 2.5,
@@ -198,7 +197,6 @@ export default function Home() {
         setCurrentIndex(0);
       });
     }
-
   };
   const goToBookFromAZ = () => {
     setCurrentView("book");
@@ -371,11 +369,11 @@ export default function Home() {
                 <div className="pt-24 animated-content flex items-center flex-col">
                   <h1
                     className="text-[64px] leading-[68]  font-medium text-black leading-tight text-center mb-12"
-                    style={{ 
+                    style={{
                       fontFamily: "Archer",
-                      fontWeight: 500 ,
-                      lineHeight: "68px"
-                     }}
+                      fontWeight: 500,
+                      lineHeight: "68px",
+                    }}
                   >
                     Il viaggio di Go
                     <br />
@@ -385,8 +383,14 @@ export default function Home() {
                   </h1>
                   <button
                     onClick={goToBook}
-                    className="px-8 py-3 pulse-button responsive-text-button rounded-xl cursor-pointer border-2 border-[#C4A5FF] text-[#5800FF] font-medium bg-purple-200/10 backdrop-blur-md hover:bg-purple-200/20 transition-all duration-500 hover:rounded-4xl active:scale-95"
-                    style={{ fontFamily: "Satoshi" , fontSize: "24px" }}
+                    className="
+    px-8 py-3 pulse-button responsive-text-button
+    rounded-[16px] cursor-pointer border-2 border-[#C4A5FF]
+    text-[#5800FF] font-medium bg-purple-200/10 backdrop-blur-md
+    transition-all duration-500 hover:bg-purple-200/20 hover:rounded-[40px]
+    active:scale-95
+  "
+                    style={{ fontFamily: "Satoshi", fontSize: "24px" }}
                   >
                     Inizia a leggere
                   </button>
@@ -396,7 +400,6 @@ export default function Home() {
                 </div>
               </div>
               <ExtendedFooter />
-
             </div>
           </div>
         </div>
@@ -435,11 +438,9 @@ export default function Home() {
                 currentIndex={currentIndex}
               />
             </div>
-            {showInfo && ![4, 5, 6,9,14,18,19].includes(currentIndex) && (
+            {showInfo && ![4, 5, 6, 9, 14, 18, 19].includes(currentIndex) && (
               <PopupPlayer
-                url={
-                  animations[currentIndex]["secondary-url"] 
-                }
+                url={animations[currentIndex]["secondary-url"]}
                 title={animations[currentIndex].title}
                 subtitle={animations[currentIndex].description}
                 onClose={() => setShowInfo(false)}
