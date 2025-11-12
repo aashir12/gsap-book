@@ -18,36 +18,35 @@ export default function AnimatedBubbles() {
         const delay = index * 1;
         const duration = 20 + Math.random() * 5;
 
-       const animateBubble = () => {
-         const tl = gsap.timeline({
-           onComplete: animateBubble, // loop
-           delay,
-         });
+        const animateBubble = () => {
+          const tl = gsap.timeline({
+            onComplete: animateBubble, // loop
+            delay,
+          });
 
-         tl.fromTo(
-           bubble,
-           { y: 200, opacity: 0, x: 0 },
-           {
-             y: exitPoint,
-             opacity: 1,
-             duration,
-             ease: "sine.out",
-           }
-         );
+          // Keep opacity constant (always visible)
+          tl.fromTo(
+            bubble,
+            { y: 200, x: 0 },
+            {
+              y: exitPoint,
+              duration,
+              ease: "sine.out",
+            }
+          );
 
-         tl.to(
-           bubble,
-           {
-             x: () => gsap.utils.random(-30, 30), // random shake left/right
-             duration: 1.2,
-             repeat: -1,
-             yoyo: true,
-             ease: "sine.inOut",
-           },
-           "<" // run at the same time
-         );
-       };
-
+          tl.to(
+            bubble,
+            {
+              x: () => gsap.utils.random(-30, 30), // random shake left/right
+              duration: 1.2,
+              repeat: -1,
+              yoyo: true,
+              ease: "sine.inOut",
+            },
+            "<" // run at the same time
+          );
+        };
 
         animateBubble();
       });
@@ -57,7 +56,7 @@ export default function AnimatedBubbles() {
   return (
     <div
       ref={containerRef}
-      className="absolute inset-0 z-[99]  overflow-hidden pointer-events-none"
+      className="absolute inset-0 z-[99] overflow-hidden pointer-events-none"
     >
       {/* Large bubble */}
       <div className="absolute bottom-0 left-[5%] bubble">
@@ -78,6 +77,7 @@ export default function AnimatedBubbles() {
           alt="bubble"
         />
       </div>
+
       {/* Small bubble */}
       <div className="absolute bottom-0 left-[89%] bubble">
         <Image
@@ -228,8 +228,8 @@ export default function AnimatedBubbles() {
           alt="bubble"
         />
       </div>
-      {/* Additional bubbles to double the amount */}
-      {/* Medium bubble */}
+
+      {/* More duplicates */}
       <div className="absolute bottom-0 left-[15%] bubble">
         <Image
           src="/bolle_PNG/bolla-Medium.png"
@@ -239,7 +239,6 @@ export default function AnimatedBubbles() {
         />
       </div>
 
-      {/* Small bubble */}
       <div className="absolute bottom-0 left-[25%] bubble">
         <Image
           src="/bolle_PNG/bolla-Small.png"
@@ -249,7 +248,6 @@ export default function AnimatedBubbles() {
         />
       </div>
 
-      {/* Large bubble */}
       <div className="absolute bottom-0 left-[35%] bubble">
         <Image
           src="/bolle_PNG/bolla-Large.png"
@@ -259,7 +257,6 @@ export default function AnimatedBubbles() {
         />
       </div>
 
-      {/* Medium bubble */}
       <div className="absolute bottom-0 left-[60%] bubble">
         <Image
           src="/bolle_PNG/bolla-Medium.png"
