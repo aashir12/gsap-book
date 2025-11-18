@@ -75,24 +75,24 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
             {/* Mute / Unmute */}
             <button
               onClick={toggleMute}
-              className="responsive-control-small border-2 p-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer w-[64px] "
+              className=" border-2 p-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer w-[80px] h-[80px] "
             >
               {isMuted ? (
-                <FaVolumeMute className="w-[48px] stroke-[2] fill-white" />
+                <FaVolumeMute className="w-[48px] h-[48px] stroke-[2] fill-white" />
               ) : (
-                <FaVolumeUp className="w-[48px] stroke-2 fill-white" />
+                <FaVolumeUp className="w-[48px] h-[48px]  stroke-2 fill-white" />
               )}
             </button>
 
             {/* Play / Pause */}
             <button
               onClick={togglePlay}
-              className="responsive-control-large p-2 border-2 border-[#b8ead9] text-white rounded-full w-[100px] flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer"
+              className=" p-4 border-2 border-[#b8ead9] text-white rounded-full min-w-[120px] min-h-[120px] flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer"
             >
               {isPlaying ? (
-                <FaPause className="w-[64px] stroke-[2] fill-white " />
+                <FaPause className="w-[64px] h-[64px] fill-white " />
               ) : (
-                <FaPlay className="w-[64px] stroke-[2] fill-white" />
+                <FaPlay className="w-[64px] h-[64px]  fill-white" />
               )}
             </button>
 
@@ -103,9 +103,9 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
                   popupVideoRef.current.requestFullscreen();
                 }
               }}
-              className="responsive-control-small border-2 p-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer w-[64px]"
+              className=" border-2 p-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer w-[80px] h-[80px]"
             >
-              <FaExpand className="stroke-[2] fill- w-[48px] " />
+              <FaExpand className="stroke-[2] h-[48px] w-[48px] " />
             </button>
           </div>
           <div>
