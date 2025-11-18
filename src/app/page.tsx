@@ -13,7 +13,7 @@ import videos from "./json/videos.json";
 import Image from "next/image";
 import { LuArrowLeft } from "react-icons/lu";
 import { FaPlay } from "react-icons/fa";
-import AnimatedBubbles from "./components/AnimatedBubbles ";
+import AnimatedBubbles from "./components/AnimatedBubbles";
 import ClosingPage from "./components/ClosingPage";
 import ExtendedFooter from "./components/ExtendedFooter";
 import animations from "./json/animations.json";
@@ -568,19 +568,6 @@ export default function Home() {
       {currentView === "closing" && (
         <ClosingPage onGoToHome={goToHomeFromClosing} />
       )}
-
-      <style jsx global>{`
-        @font-face {
-          font-family: "Archer Book Pro";
-          src: url("/fonts/ArcherBookPro.otf") format("opentype");
-          font-weight: 400;
-          font-style: normal;
-          font-display: swap;
-        }
-        .archer-book-pro {
-          font-family: "Archer Book Pro", ui-sans-serif, system-ui, sans-serif;
-        }
-      `}</style>
     </div>
   );
 }

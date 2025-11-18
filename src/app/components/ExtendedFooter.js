@@ -41,7 +41,7 @@ const ExtendedFooter = () => {
             alt="Second Logo"
             width={100}
             height={100}
-            className="w- h-30 object-contain"
+            className=" h-30 object-contain"
             priority
             quality={100}
             unoptimized

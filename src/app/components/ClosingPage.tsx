@@ -3,7 +3,7 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import Footer from "./footer";
-import AnimatedBubbles from "./AnimatedBubbles ";
+import AnimatedBubbles from "./AnimatedBubbles";
 import ExtendedFooter from "./ExtendedFooter";
 import "../styles/bg.css";
 import "../styles/fonts.css";

@@ -114,3 +114,8 @@
   font-weight: 900;
   font-style: italic;
 }
+
+/* Utility class for Archer Book Pro */
+.archer-book-pro {
+  font-family: "Archer", ui-sans-serif, system-ui, sans-serif;
+}
