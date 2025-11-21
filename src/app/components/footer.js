@@ -5,7 +5,6 @@ import Image from "next/image";
 const Footer = ({ variant = "dark" }) => {
   const isLight = variant === "light";
   const textColor = isLight ? "text-white" : "text-black";
-  const borderColor = isLight ? "border-white/60" : "border-[#b8ead9]";
   const imgFilter = isLight
     ? { filter: "brightness(0) invert(1)" }
     : { filter: "brightness(0)" };
