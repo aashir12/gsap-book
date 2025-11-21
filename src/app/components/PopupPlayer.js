@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import {
@@ -8,6 +6,7 @@ import {
   FaVolumeMute,
   FaVolumeUp,
   FaExpand,
+  FaTimes,
 } from "react-icons/fa";
 import { LuArrowLeft } from "react-icons/lu";
 
@@ -53,7 +52,15 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
       ref={containerRef}
       className="absolute bottom-0 left-0 w-full h-full text-white p-0 rounded-t-xl z-50"
     >
-      <div className="flex flex-col h-full">
+      <div className="flex flex-col h-full relative">
+        {/* Fixed Close Button (Top Left) */}
+        <button
+          onClick={onClose}
+          className="absolute top-4 left-4 z-50 w-12 h-12 border-2 border-white/50 text-white rounded-full flex items-center justify-center bg-black/20 backdrop-blur-sm hover:bg-white/20 transition cursor-pointer"
+        >
+          <FaTimes className="w-6 h-6 fill-white" />
+        </button>
+
         {/* Upper half: looping video */}
         <div className="relative h-1/2 overflow-hidden">
           <video
@@ -69,30 +76,30 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
         </div>
 
         {/* Lower half: background image with title and subtitle */}
-        <div className="relative h-1/2 bg-[url('/backgrounds/list-background.png')] flex flex-col justify-around py-6 bg-cover bg-center">
+        <div className="relative h-1/2 bg-[url('/backgrounds/list-background.png')] flex flex-col justify-between py-6 bg-cover bg-center">
           {/* Controls */}
-          <div className="flex justify-center items-center gap-[36px] py-[64px] relative z-10 ">
+          <div className="flex justify-center items-center gap-[36px] pt-[32px] pb-[64px] relative z-10 ">
             {/* Mute / Unmute */}
             <button
               onClick={toggleMute}
-              className=" border-2 p-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer w-[80px] h-[80px] "
+              className=" border-2 p-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer w-[80px] h-[80px] responsive-control-small"
             >
               {isMuted ? (
-                <FaVolumeMute className="w-[48px] h-[48px] stroke-[2] fill-white" />
+                <FaVolumeMute className="w-[48px] h-[48px] stroke-[2] fill-white responsive-icon-small" />
               ) : (
-                <FaVolumeUp className="w-[48px] h-[48px]  stroke-2 fill-white" />
+                <FaVolumeUp className="w-[48px] h-[48px]  stroke-2 fill-white responsive-icon-small" />
               )}
             </button>
 
             {/* Play / Pause */}
             <button
               onClick={togglePlay}
-              className=" p-4 border-2 border-[#b8ead9] text-white rounded-full min-w-[120px] min-h-[120px] flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer"
+              className=" p-4 border-2 border-[#b8ead9] text-white rounded-full min-w-[120px] min-h-[120px] flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer responsive-control-large"
             >
               {isPlaying ? (
-                <FaPause className="w-[64px] h-[64px] fill-white " />
+                <FaPause className="w-[64px] h-[64px] fill-white responsive-icon-medium" />
               ) : (
-                <FaPlay className="w-[64px] h-[64px]  fill-white" />
+                <FaPlay className="w-[64px] h-[64px]  fill-white responsive-icon-medium" />
               )}
             </button>
 
@@ -103,16 +110,17 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
                   popupVideoRef.current.requestFullscreen();
                 }
               }}
-              className=" border-2 p-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer w-[80px] h-[80px]"
+              className=" border-2 p-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer w-[80px] h-[80px] responsive-control-small"
             >
-              <FaExpand className="stroke-[2] h-[48px] w-[48px] " />
+              <FaExpand className="stroke-[2] h-[48px] w-[48px] responsive-icon-small" />
             </button>
           </div>
-          <div>
+          
+          <div className="flex-1 flex flex-col justify-start">
             {/* Title */}
-            <div className="relative z-10 text-center">
+            <div className="relative z-10 text-center mb-4">
               <h2
-                className="text-2xl font-medium mb-2"
+                className="text-2xl font-medium mb-2 responsive-text-header"
                 style={{
                   fontFamily: "Archer",
                   fontSize: "48px",
@@ -125,7 +133,7 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
 
             {/* Subtitle inside popup (limited to 30 words) */}
             <div
-              className="relative z-10 text-center text-base font-light leading-snug px-14"
+              className="relative z-10 text-center text-base font-light leading-snug px-14 responsive-text-subtitle"
               style={{
                 fontFamily: "Satoshi",
                 fontSize: "18px",
@@ -137,7 +145,7 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
             </div>
           </div>
 
-          <div className=" flex justify-center z-10">
+          <div className=" flex justify-center z-10 mt-4">
             <button
               aria-label="Back"
               onClick={onClose}

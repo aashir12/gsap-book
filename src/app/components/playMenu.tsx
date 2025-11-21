@@ -66,18 +66,20 @@ const PlayMenu = forwardRef<HTMLDivElement, PlayMenuProps>(
 
           {/* Center Info Button */}
           {![ 4, 5, 6, 9, 14, 18, 19].includes(currentIndex) && (
-            <button
-              onClick={onInfo}
-              className="responsive-mb-bottom responsive-padding cursor-pointer border-2 border-white rounded-full bg-[#A8C2AC]/40 backdrop-blur-sm "
-            >
-              <Image
-                src="/logo/info-icon.png"
-                alt="Info"
-                width={50}
-                height={50}
-                className="rounded-full object-contain responsive-icon-medium"
-              />
-            </button>
+            <div className="absolute left-1/2 -translate-x-1/2 bottom-0 mb-6 responsive-mb-bottom z-10">
+               <button
+                onClick={onInfo}
+                className="responsive-padding cursor-pointer border-2 border-white rounded-full bg-[#A8C2AC]/40 backdrop-blur-sm "
+              >
+                <Image
+                  src="/logo/info-icon.png"
+                  alt="Info"
+                  width={50}
+                  height={50}
+                  className="rounded-full object-contain responsive-icon-medium"
+                />
+              </button>
+            </div>
           )}
 
           {/* Right Group */}
