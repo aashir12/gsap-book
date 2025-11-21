@@ -2,8 +2,6 @@
 
 import React, { useRef, useState, useEffect } from "react";
 import { gsap } from "gsap";
-import "./styles/bg.css";
-import "./styles/fonts.css";
 import Footer from "./components/footer";
 import PlayMenu from "./components/playMenu";
 import PopupPlayer from "./components/PopupPlayer";
