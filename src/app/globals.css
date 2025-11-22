@@ -1,5 +1,128 @@
 @import "tailwindcss";
 
+/* Font Face Declarations */
+@font-face {
+  font-family: "Archer";
+  src: url("/archer-2-cufonfonts/ArcherBoldPro.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Archer";
+  src: url("/archer-2-cufonfonts/ArcherBookPro.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Archer";
+  src: url("/archer-2-cufonfonts/ArcherBookItalPro.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Archer";
+  src: url("/archer-2-cufonfonts/ArcherHairlinePro.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Archer";
+  src: url("/archer-2-cufonfonts/ArcherLightPro.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Archer";
+  src: url("/archer-2-cufonfonts/ArcherLightItalPro.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Archer";
+  src: url("/archer-2-cufonfonts/ArcherMediumPro.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Archer";
+  src: url("/archer-2-cufonfonts/ArcherSemiboldPro.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Archer";
+  src: url("/archer-2-cufonfonts/ArcherXLightPro.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Satoshi Font Family */
+@font-face {
+  font-family: "Satoshi";
+  src: url("/satoshi/Satoshi-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/satoshi/Satoshi-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/satoshi/Satoshi-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/satoshi/Satoshi-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/satoshi/Satoshi-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/satoshi/Satoshi-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/satoshi/Satoshi-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/satoshi/Satoshi-BoldItalic.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/satoshi/Satoshi-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/satoshi/Satoshi-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Utility class for Archer Book Pro */
+.archer-book-pro {
+  font-family: "Archer", ui-sans-serif, system-ui, sans-serif;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
