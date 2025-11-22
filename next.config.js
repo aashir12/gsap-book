@@ -1,6 +1,4 @@
 const nextConfig = {
-    swcMinify: false,
-
   images: {
     remotePatterns: [
       {
