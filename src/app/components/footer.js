@@ -11,28 +11,14 @@ const Footer = ({ variant = "dark" }) => {
 
   return (
     <div
-      className={`flex items-center justify-between gap-2 p-4 mt-10 rounded-2xl  ${textColor}`}
+      className={`flex items-center justify-around gap-2 p-4 mt-10 rounded-2xl  ${textColor}`}
     >
-      <div className="text-center">
+      <div className="flex flex-col gap-2 text-center">
         <h6 className="font-[Archer] font-bold text-[10px] leading-[14px] pb-2">
           UN PROGETTO DI
         </h6>
-
         <Image
-          src="/logo/logo1.png"
-          alt="Logo 1"
-          width={80}
-          height={32}
-          className="h-8 w-auto object-contain"
-          style={imgFilter}
-        />
-      </div>
-      <div className="flex flex-col gap-2 text-center">
-        <h6 className="font-[Archer] font-bold text-[10px] leading-[14px] pb-2">
-          CON IL SUPPORTO DI
-        </h6>
-        <Image
-          src="/logo/logo2.png"
+          src="/footer/footer-logo.png"
           alt="Logo 2"
           width={80}
           height={32}
