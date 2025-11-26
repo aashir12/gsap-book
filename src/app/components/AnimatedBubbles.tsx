@@ -18,16 +18,16 @@ export default function AnimatedBubbles() {
         const delay = index * 1;
         const duration = 20 + Math.random() * 5;
 
-        const animateBubble = () => {
+        const animateBubble = (isFirstRun = false) => {
           const tl = gsap.timeline({
-            onComplete: animateBubble, // loop
-            delay,
+            onComplete: () => animateBubble(false), // loop without delay
+            delay: isFirstRun ? delay : 0,
           });
 
           // Keep opacity constant (always visible)
           tl.fromTo(
             bubble,
-            { y: 200, x: 0 },
+            { y: 200, x: 0, opacity: 1 },
             {
               y: exitPoint,
               duration,
@@ -48,7 +48,7 @@ export default function AnimatedBubbles() {
           );
         };
 
-        animateBubble();
+        animateBubble(true);
       });
     }
   }, []);

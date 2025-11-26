@@ -12,7 +12,7 @@ const ExtendedFooter = () => {
       <div className="text-black pb-6">
         {/* Project Description */}
         <div className="text-center">
-          <p className="text-[13px] leading-relaxed max-w-4xl mx-auto">
+          <p className="font-[Archer] font-semibold text-[14px] leading-[18px] max-w-4xl mx-auto">
             Pubblicazione realizzata nell’ambito delle iniziative promosse dal
             Biodiversity Gateway del National Biodiversity Future Center (NBFC),
             in riferimento al Piano Nazionale di Ripresa e Resilienza (PNRR) -

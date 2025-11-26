@@ -197,15 +197,21 @@ body {
   }
 
   .responsive-icon-small {
-    width: 38px !important; /* 48px * 0.8 */
-    height: 38px !important;
+    width: 19px !important; /* 24px * 0.8 */
+    height: 19px !important;
   }
-
+.responsive-icon-small-home{
+  width:38px !important;
+  height:38px !important;
+}
   .responsive-icon-medium {
-    width: 51px !important; /* 64px * 0.8 */
-    height: 51px !important;
+    width: 19px !important; /* 24px * 0.8 */
+    height: 19px !important;
   }
-
+.responsive-icon-medium-home{
+  width:51px !important;
+  height:51px !important;
+}
   .responsive-text-title {
     font-size: 51px !important; /* 64px * 0.8 */
   }
@@ -248,13 +254,13 @@ body {
   }
 
   .responsive-control-small {
-    width: 64px !important; /* 80px * 0.8 */
-    height: 64px !important;
+    width: 38px !important; /* 48px * 0.8 */
+    height: 38px !important;
   }
 
   .responsive-control-large {
-    width: 96px !important; /* 120px * 0.8 */
-    height: 96px !important;
+    width: 51px !important; /* 64px * 0.8 */
+    height: 51px !important;
   }
 }
 
@@ -266,13 +272,22 @@ body {
   }
 
   .responsive-icon-small {
-    width: 48px !important;
-    height: 48px !important;
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .responsive-icon-small-home{
+    width:48px !important;
+    height:48px !important;
   }
 
   .responsive-icon-medium {
-    width: 64px !important;
-    height: 64px !important;
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .responsive-icon-medium-home{
+    width:64px !important;
+    height:64px !important;
   }
 
   .responsive-text-title {
@@ -317,28 +332,34 @@ body {
   }
 
   .responsive-control-small {
-    width: 80px !important;
-    height: 80px !important;
+    width: 48px !important;
+    height: 48px !important;
   }
 
   .responsive-control-large {
-    width: 120px !important;
-    height: 120px !important;
+    width: 64px !important;
+    height: 64px !important;
   }
 }
 
 /* LARGE TABLETS (iPad Pro 12.9") - Scale factor: ~1.2 (+20%) */
 @media (min-width: 1195px) {
   .responsive-icon-small {
-    width: 58px !important; /* 48px * 1.2 */
-    height: 58px !important;
+    width: 29px !important; /* 24px * 1.2 */
+    height: 29px !important;
   }
-
+.responsive-icon-small-home{
+  width:58px !important;
+  height:58px !important;
+}
   .responsive-icon-medium {
-    width: 77px !important; /* 64px * 1.2 */
-    height: 77px !important;
+    width: 29px !important; /* 24px * 1.2 */
+    height: 29px !important;
   }
-
+.responsive-icon-medium-home{
+  width:77px !important;
+  height:77px !important;
+}
   .responsive-text-title {
     font-size: 77px !important; /* 64px * 1.2 */
   }
@@ -381,13 +402,13 @@ body {
   }
 
   .responsive-control-small {
-    width: 96px !important; /* 80px * 1.2 */
-    height: 96px !important;
+    width: 58px !important; /* 48px * 1.2 */
+    height: 58px !important;
   }
 
   .responsive-control-large {
-    width: 144px !important; /* 120px * 1.2 */
-    height: 144px !important;
+    width: 77px !important; /* 64px * 1.2 */
+    height: 77px !important;
   }
 }
 

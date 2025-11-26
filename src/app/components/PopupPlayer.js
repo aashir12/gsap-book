@@ -83,7 +83,7 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
             {/* Mute / Unmute */}
             <button
               onClick={toggleMute}
-              className=" border-2 p-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer w-[80px] h-[80px] responsive-control-small"
+              className=" border-2 p-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer responsive-control-small"
             >
               {isMuted ? (
                 <FaVolumeMute className="w-[48px] h-[48px] stroke-[2] fill-white responsive-icon-small" />
@@ -95,7 +95,7 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
             {/* Play / Pause */}
             <button
               onClick={togglePlay}
-              className=" p-4 border-2 border-[#b8ead9] text-white rounded-full min-w-[120px] min-h-[120px] flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer responsive-control-large"
+              className=" p-4 border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer responsive-control-large"
             >
               {isPlaying ? (
                 <FaPause className="w-[64px] h-[64px] fill-white responsive-icon-medium" />
@@ -111,7 +111,7 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
                   popupVideoRef.current.requestFullscreen();
                 }
               }}
-              className=" border-2 p-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer w-[80px] h-[80px] responsive-control-small"
+              className=" border-2 p-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer responsive-control-small"
             >
               <FaExpand className="stroke-[2] h-[48px] w-[48px] responsive-icon-small" />
             </button>
@@ -154,11 +154,12 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
               style={{
                 fontFamily: "Satoshi",
                 fontWeight: "500",
+                fontSize: "18px",
               }}
             >
-              <div className="m-4 flex items-center text-center gap-2">
+              <div className="flex items-center justify-center gap-1">
                 <LuArrowLeft className="responsive-icon-arrow" />
-                <span className="">indietro</span>
+                <span>indietro</span>
               </div>
             </button>
           </div>

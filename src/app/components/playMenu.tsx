@@ -46,7 +46,7 @@ const PlayMenu = forwardRef<HTMLDivElement, PlayMenuProps>(
                 alt="home icon"
                 width={40}
                 height={40}
-                className="object-contain responsive-icon-small"
+                className="object-contain responsive-icon-small-home"
               />
             </button>
 
@@ -59,7 +59,7 @@ const PlayMenu = forwardRef<HTMLDivElement, PlayMenuProps>(
                 alt="a-z icon"
                 width={40}
                 height={40}
-                className="object-contain responsive-icon-small"
+                className="object-contain responsive-icon-small-home"
               />
             </button>
           </div>
@@ -76,7 +76,7 @@ const PlayMenu = forwardRef<HTMLDivElement, PlayMenuProps>(
                   alt="Info"
                   width={50}
                   height={50}
-                  className="rounded-full object-contain responsive-icon-medium"
+                  className="rounded-full object-contain responsive-icon-medium-home"
                 />
               </button>
             </div>
@@ -94,7 +94,7 @@ const PlayMenu = forwardRef<HTMLDivElement, PlayMenuProps>(
                   alt="left-icon"
                   width={40}
                   height={40}
-                  className="object-contain responsive-icon-small"
+                  className="object-contain responsive-icon-small-home"
                 />
               </button>
             )}
@@ -109,7 +109,7 @@ const PlayMenu = forwardRef<HTMLDivElement, PlayMenuProps>(
                 alt="right-icon"
                 width={40}
                 height={40}
-                className="object-contain responsive-icon-small"
+                className="object-contain responsive-icon-small-home"
               />
             </button>
           </div>
