@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ExtendedFooter = () => {
   return (
-    <div className=" px-3  w-full">
+    <div className=" px-3 w-full bg-white">
       {/* Divider Line - Black color */}
       <div className="border-t-2 border-black my-6"></div>
 

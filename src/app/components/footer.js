@@ -28,7 +28,9 @@ const Footer = ({ variant = "dark" }) => {
         />
       </div>
       <div className="flex flex-col gap-2 text-center">
-        <h6 className="font-[Archer] font-bold text-[10px] leading-[14px] pb-2">CON IL SUPPORTO DI</h6>
+        <h6 className="font-[Archer] font-bold text-[10px] leading-[14px] pb-2">
+          CON IL SUPPORTO DI
+        </h6>
         <Image
           src="/logo/logo2.png"
           alt="Logo 2"
@@ -40,7 +42,9 @@ const Footer = ({ variant = "dark" }) => {
       </div>
 
       <div className="text-center">
-        <h6 className="font-[Archer] font-bold text-[10px] leading-[14px] pb-2">DISEGNI E GRAFICA </h6>
+        <h6 className="font-[Archer] font-bold text-[10px] leading-[14px] pb-2">
+          DISEGNI E GRAFICA{" "}
+        </h6>
         <div>
           <h1 className="text-[12px] font-bold">Tommaso Lodi</h1>
           <p className="link flex flex-row items-center text-center">
@@ -57,7 +61,9 @@ const Footer = ({ variant = "dark" }) => {
         </div>
       </div>
       <div className="text-center">
-        <h6 className="font-[Archer] font-bold text-[10px] leading-[14px] pb-2">ANIMAZIONE </h6>
+        <h6 className="font-[Archer] font-bold text-[10px] leading-[14px] pb-2">
+          ANIMAZIONE{" "}
+        </h6>
         <div>
           <h1 className="text-[12px] font-bold">Mateo Stocco</h1>
           <p className="link flex flex-row items-center text-center">
@@ -69,12 +75,14 @@ const Footer = ({ variant = "dark" }) => {
               className="h-4 w-auto object-contain"
               style={imgFilter}
             />
-            kinnouts
+            kinonauts.com
           </p>
         </div>
       </div>
       <div className="text-center">
-        <h6 className="font-[Archer] font-bold text-[10px] leading-[14px] pb-2">CODICE</h6>
+        <h6 className="font-[Archer] font-bold text-[10px] leading-[14px] pb-2">
+          CODICE
+        </h6>
         <div>
           <h1 className="text-[12px] font-bold">Anqa Digital Agency</h1>
           <p className="link flex flex-row items-center text-center">
