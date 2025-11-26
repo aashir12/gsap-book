@@ -86,9 +86,9 @@ export default function Home() {
     })
       .call(() => {
         const prevVideoIndex =
-          currentIndex === 0 ? videos.length - 1 : currentIndex - 1;
+          currentIndex === 0 ? animations.length - 1 : currentIndex - 1;
         setCurrentIndex(prevVideoIndex);
-        setCurrentSubtitleIndex(videos[prevVideoIndex].subtitle.length - 1);
+        setCurrentSubtitleIndex(animations[prevVideoIndex].subtitle.length - 1);
       })
       .set([bookVideoRef.current, subtitleRef.current], { x: -50 })
       .to([bookVideoRef.current, subtitleRef.current], {
@@ -129,7 +129,7 @@ export default function Home() {
     }
 
     // Check if we're at the very last subtitle of the very last video
-    const isLastVideo = currentIndex === videos.length - 1;
+    const isLastVideo = currentIndex === animations.length - 1;
     const isVeryLastSubtitle = isLastVideo && isLastSubtitle;
 
     if (isVeryLastSubtitle) {
@@ -147,7 +147,7 @@ export default function Home() {
     })
       .call(() => {
         const nextVideoIndex =
-          currentIndex === videos.length - 1 ? 0 : currentIndex + 1;
+          currentIndex === animations.length - 1 ? 0 : currentIndex + 1;
         setCurrentIndex(nextVideoIndex);
         setCurrentSubtitleIndex(0);
       })
