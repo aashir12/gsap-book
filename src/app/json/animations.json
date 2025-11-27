@@ -76,8 +76,7 @@
     "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_5%20v2.mp4",
     "subtitle": [
       "\"Va bene\" disse Mario \"Ma non è che nel frattempo potremmo fare uno spuntino? Io ho una fame da squali…\" aggiunse il paguro, toccandosi con le chele la pancia che brontolava.",
-      "Stella e Go si guardarono divertiti: nonostante le sue piccole dimensioni Mario aveva sempre un grande appetito.",
-      "Per fortuna c'era una corrente favorevole che trascinò via la grande nuvola di plastica.\n\"Evviva!\" esclamarono gli amici.\nGo, tra sé e sé, pensò \"speriamo che tutta quella plastica venga presto raccolta e che gli esseri umani smettano di gettarla!\""
+      "Stella e Go si guardarono divertiti: nonostante le sue piccole dimensioni Mario aveva sempre un grande appetito."
     ],
     "title": "Paguro",
     "description": "Il suo corpo è fatto per la maggior parte di acqua, non nuota attivamente ma si sposta con la corrente. In laguna di Venezia ce ne sono di tante specie, le riesci a riconoscere?",
@@ -150,15 +149,17 @@
   },
   {
     "id": 11,
-    "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undaria.mp4",
+    "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/Sargasso_Undaria.mp4",
+    "secondary-url-2": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/7_pinnanobilis/PInnaNobilis.mp4",
     "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_10%20v1.mp4",
     "subtitle": [
       "Ma Quercia cercava di comunicare con una coppia di alghe che parlavano solo in giapponese, Waka l'Undaria e Muti il Sargasso.",
-      "Queste due nuove alghe qualcuno le chiamava \n aliene \n perché arrivate per caso in Laguna, avevano deciso di stabilirvisi.",
-      "\nNiente amici, qui non c'è. Andiamo!\n sospirò Go."
+      "Queste due nuove alghe  qualcuno le chiamava ‘aliene’ perché arrivate per caso in Laguna, avevano deciso di stabilirvisi. “Niente amici, qui non c’è. Andiamo!”  sospirò Go."
     ],
     "title": "Undaria",
     "description": "L'Undaria è un'alga arrivata da lontano, spesso chiamata 'alga aliena'. Cresce velocemente e può occupare lo spazio delle alghe locali. Nonostante ciò, è importante perché offre rifugio e cibo a molti piccoli organismi marini.",
+    "title-2": "Sargasso",
+    "description-2": "Il sargasso è un'alga marrone gigante, venuta da lontano, che sta diventando un po' invadente qui nella Laguna di Venezia. Le piace tanto aggrapparsi ovunque e galleggiare grazie a delle \"palline\" speciali. Nonostante sia un po' \"pestifera\" per le altre alghe, è un importante habitat per molti microrganismi e può essere anche usata per fare medicine e costruzioni!",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undraia.png",
     "fontSize": 28,
     "alignment": "center",
@@ -199,8 +200,7 @@
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/7_pinnanobilis/PInnaNobilis.mp4",
     "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_13%20v1.mp4",
     "subtitle": [
-      "Gli occhi di Stella si spalancarono.\nWow, seta marina! Sei davvero speciale, Nobi! Ma oggi siamo venuti qui per chiederti se per caso hai visto Johnny, il nostro amico… non lo troviamo da nessuna parte!\n Il vostro amico? disse respirando profondamente \nNon l’ho visto, mi dispiace!",
-      "“Il vostro amico?” disse respirando profondamente “Non l’ho visto, mi dispiace!”"
+      "Gli occhi di Stella si spalancarono.\nWow, seta marina! Sei davvero speciale, Nobi! Ma oggi siamo venuti qui per chiederti se per caso hai visto Johnny, il nostro amico… non lo troviamo da nessuna parte!\n Il vostro amico? disse respirando profondamente \nNon l’ho visto, mi dispiace!"
     ],
     "title": "Pinna Nobilis",
     "description": "La nacchera di mare è una conchiglia gigante e bellissima che vive sul fondo del nostro mare Mediterraneo. Può diventare molto vecchia, ma purtroppo ultimamente tanti di questi animali si stanno ammalando e stanno scomparendo. Dobbiamo proteggerle!",
@@ -211,10 +211,10 @@
   },
   {
     "id": 15,
-    "secondary-url": "",
+    "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/4_Granchioblu/granchio%20blu-.mp4",
     "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/15.mp4",
     "subtitle": [
-      "Mentre stavano per salutare Nobi, Go notò passare un animale mai visto prima, con chele enormi del colore dell’oceano.Ma chi è quello? sussurrò curioso.",
+      "Mentre stavano per salutare Nobi, Go notò passare un animale mai visto prima, con chele enormi del colore dell’oceano. Ma chi è quello? sussurrò curioso.",
       "È il Granchio Blu disse Mario il paguro.\nViene dall’America e si è appena trasferito qui. Greeny, il mio amico granchio verde, dice che è un po’ prepotente perché si mangia tutto quello che trova e non lascia niente per gli altri. Però è anche forte e coraggioso! Pensate che ho sentito dire che è riuscito tagliare le reti dei pescatori per far fuggire i suoi amici pesci."
     ],
     "title": "GRANCHIO BLU",
@@ -229,7 +229,7 @@
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/7_pinnanobilis/PInnaNobilis.mp4",
     "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/16.mp4",
     "subtitle": [
-      "Gira a destra, poi a sinistra, avanti tra le barene e le velme, vicino alla bocca di porto, tra le distese di sabbia, gli amici si ritrovarono in una bellissima prateria verdeggiante, piena di vita, dove i piccoli pesciolini si divertivano a giocare con le bolle di ossigeno. Ma niente, di Johnny ancora nessuna traccia. "
+      "Go pensò a come le cose in laguna stavano cambiando in fretta, tra plastica, nuovi arrivati e tante barche che passavano ininterrottamente… era molto diversa da quando era solo un piccolo pesciolino.\n “Andiamo” disse Go “non possiamo arrenderci!”. Gli amici ripartirono, direzione Mare!"
     ],
     "title": "GRANCHIO BLU",
     "description": "La nacchera di mare è una conchiglia gigante e bellissima che vive sul fondo del nostro mare Mediterraneo. Può diventare molto vecchia, ma purtroppo ultimamente tanti di questi animali si stanno ammalando e stanno scomparendo. Dobbiamo proteggerle!",
@@ -243,7 +243,7 @@
     "secondary-url": "",
     "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/17.mp4",
     "subtitle": [
-      "Ma all’improvviso videro un movimento tra le alghe più lontane… un nasino appuntito! “Che cos’è quello?” chiese Mario. Non fece in tempo a terminare la frase che dalle fronde spuntò Johnny l’ippocampo! Eccolo finalmente! "
+      "Gira a destra, poi a sinistra, avanti tra le barene e le velme, vicino alla bocca di porto, tra le distese di sabbia, gli amici si ritrovarono in una bellissima prateria verdeggiante, piena di vita, dove i piccoli pesciolini si divertivano a giocare con le bolle di ossigeno. Ma niente, di Johnny ancora nessuna traccia. "
     ],
     "title": "GRANCHIO BLU",
     "description": "La nacchera di mare è una conchiglia gigante e bellissima che vive sul fondo del nostro mare Mediterraneo. Può diventare molto vecchia, ma purtroppo ultimamente tanti di questi animali si stanno ammalando e stanno scomparendo. Dobbiamo proteggerle!",
@@ -256,7 +256,7 @@
     "secondary-url": "",
     "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/18.mp4",
     "subtitle": [
-      "“Johnny! ti abbiamo cercato dappertutto!” esclamò Go andando ad abbracciare l’amico.“Scusate ragazzi” disse Johnny con il suo sguardo trasognato “Mi sono nascosto per non farmi vedere da un grosso cefalo, e ho perso la cognizione del tempo, però venite, ho una cosa da farvi vedere!” "
+      "Ormai la notte stava arrivando, e scoraggiati gli amici si preparavano a ritornare a casa. \n Ma all’improvviso videro un movimento tra le alghe più lontane… un nasino appuntito! \n “Che cos’è quello?” chiese Mario. Non fece in tempo a terminare la frase che dalle fronde spuntò Johnny l’ippocampo! Eccolo finalmente!"
     ],
     "title": "GRANCHIO BLU",
     "description": "La nacchera di mare è una conchiglia gigante e bellissima che vive sul fondo del nostro mare Mediterraneo. Può diventare molto vecchia, ma purtroppo ultimamente tanti di questi animali si stanno ammalando e stanno scomparendo. Dobbiamo proteggerle!",
@@ -270,7 +270,7 @@
     "secondary-url": "",
     "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/19.mp4",
     "subtitle": [
-      "Oggi Johnny e ne aveva scoperto uno: alle ultime luci della sera, improvvisamente l’acqua si illuminò, tante piccole microalghe diventarono brillanti e iniziarono a danzare avanti e indietro, in alto e in basso. "
+      "“Johnny! ti abbiamo cercato dappertutto!” esclamò Go andando ad abbracciare l’amico.\n“Scusate ragazzi” disse Johnny con il suo sguardo trasognato “Mi sono nascosto per non farmi vedere da un grosso cefalo, e ho perso la cognizione del tempo, però venite, ho una cosa da farvi vedere!”"
     ],
     "title": "GRANCHIO BLU",
     "description": "La nacchera di mare è una conchiglia gigante e bellissima che vive sul fondo del nostro mare Mediterraneo. Può diventare molto vecchia, ma purtroppo ultimamente tanti di questi animali si stanno ammalando e stanno scomparendo. Dobbiamo proteggerle!",
@@ -284,7 +284,7 @@
     "secondary-url": "",
     "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/20.mp4",
     "subtitle": [
-      "“E sapete bimbi… dico proprio a voi piccoli umani!” esclamo Go “Questa magica laguna non è solo casa nostra, ma anche casa vostra! Quando venite a esplorarla insieme a noi?”"
+      "La passione di Johnny era il mondo invisibile. Sì, avete capito bene, invisibile: fatto da esserini così minuscoli, chiamati microplancton, che non si vedono ad occhio nudo e che nascondono tanti segreti!\n—\nOggi Johnny e ne aveva scoperto uno: alle ultime luci della sera, improvvisamente l’acqua si illuminò, tante piccole microalghe diventarono brillanti e iniziarono a danzare avanti e indietro, in alto e in basso."
     ],
     "title": "GRANCHIO BLU",
     "description": "La nacchera di mare è una conchiglia gigante e bellissima che vive sul fondo del nostro mare Mediterraneo. Può diventare molto vecchia, ma purtroppo ultimamente tanti di questi animali si stanno ammalando e stanno scomparendo. Dobbiamo proteggerle!",
@@ -298,8 +298,7 @@
     "secondary-url": "",
     "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/21.mp4",
     "subtitle": [
-      "“E sapete bimbi… dico proprio a voi piccoli umani!” esclamo Go “Questa magica laguna non è solo casa nostra, ma anche casa vostra! Quando venite a esplorarla insieme a noi?” ",
-      "E così gli amici rimasero lì, a guardare quel magico spettacolo, felici di essere di nuovo insieme."
+      "“E sapete bimbi… dico proprio a voi piccoli umani!” esclamo Go “Questa magica laguna non è solo casa nostra, ma anche casa vostra! Quando venite a esplorarla insieme a noi?”\n E così gli amici rimasero lì, a guardare quel magico spettacolo, felici di essere di nuovo insieme."
     ],
     "title": "GRANCHIO BLU",
     "description": "La nacchera di mare è una conchiglia gigante e bellissima che vive sul fondo del nostro mare Mediterraneo. Può diventare molto vecchia, ma purtroppo ultimamente tanti di questi animali si stanno ammalando e stanno scomparendo. Dobbiamo proteggerle!",

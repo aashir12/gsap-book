@@ -8,49 +8,43 @@ export default function AnimatedBubbles() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const bubbles = containerRef.current?.querySelectorAll(".bubble");
-    if (bubbles) {
-      // Get the actual device height and add some buffer
-      const deviceHeight = window.innerHeight;
-      const exitPoint = -(deviceHeight + 200); // Exit beyond device height + buffer
+    const ctx = gsap.context(() => {
+      const bubbles = containerRef.current?.querySelectorAll(".bubble");
+      if (bubbles) {
+        // Get the actual device height and add some buffer
+        const deviceHeight = window.innerHeight;
+        const exitPoint = -(deviceHeight + 200); // Exit beyond device height + buffer
 
-      bubbles.forEach((bubble, index) => {
-        const delay = index * 1;
-        const duration = 20 + Math.random() * 5;
+        bubbles.forEach((bubble, index) => {
+          const delay = index * 1;
+          const duration = 20 + Math.random() * 5;
 
-        const animateBubble = (isFirstRun = false) => {
-          const tl = gsap.timeline({
-            onComplete: () => animateBubble(false), // loop without delay
-            delay: isFirstRun ? delay : 0,
-          });
-
-          // Keep opacity constant (always visible)
-          tl.fromTo(
+          // Vertical movement (Infinite Loop)
+          gsap.fromTo(
             bubble,
-            { y: 200, x: 0, opacity: 1 },
+            { y: 200, opacity: 1 },
             {
               y: exitPoint,
-              duration,
+              duration: duration,
               ease: "sine.out",
+              repeat: -1,
+              delay: delay,
             }
           );
 
-          tl.to(
-            bubble,
-            {
-              x: () => gsap.utils.random(-30, 30), // random shake left/right
-              duration: 1.2,
-              repeat: -1,
-              yoyo: true,
-              ease: "sine.inOut",
-            },
-            "<" // run at the same time
-          );
-        };
+          // Horizontal shake (Infinite Loop)
+          gsap.to(bubble, {
+            x: () => gsap.utils.random(-30, 30),
+            duration: 1.2,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut",
+          });
+        });
+      }
+    }, containerRef);
 
-        animateBubble(true);
-      });
-    }
+    return () => ctx.revert();
   }, []);
 
   return (

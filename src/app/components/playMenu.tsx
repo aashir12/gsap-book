@@ -6,13 +6,14 @@ interface PlayMenuProps {
   onPrev: () => void;
   onNext: () => void;
   onInfo: () => void;
+  onInfoSecondary?: () => void;
   onHome: () => void;
   onAZ: () => void;
   currentIndex: number;
 }
 
 const PlayMenu = forwardRef<HTMLDivElement, PlayMenuProps>(
-  ({ onPrev, onNext, onInfo, onHome, onAZ, currentIndex }, ref) => {
+  ({ onPrev, onNext, onInfo, onInfoSecondary, onHome, onAZ, currentIndex }, ref) => {
     const [showPrevButton, setShowPrevButton] = React.useState(false);
 
     const handleNext = () => {
@@ -65,8 +66,8 @@ const PlayMenu = forwardRef<HTMLDivElement, PlayMenuProps>(
           </div>
 
           {/* Center Info Button */}
-          {![ 4, 5, 6, 9, 14, 18, 19].includes(currentIndex) && (
-            <div className="absolute left-1/2 -translate-x-1/2 bottom-0 mb-6 responsive-mb-bottom z-10">
+          {![ 4, 5, 6, 7, 9, 15, 18, 19].includes(currentIndex) && (
+            <div className="absolute left-1/2 -translate-x-1/2 bottom-0 mb-6 responsive-mb-bottom z-10 flex gap-4">
                <button
                 onClick={onInfo}
                 className="responsive-padding cursor-pointer border-2 border-white rounded-full bg-[#A8C2AC]/40 backdrop-blur-sm "
@@ -79,6 +80,20 @@ const PlayMenu = forwardRef<HTMLDivElement, PlayMenuProps>(
                   className="rounded-full object-contain responsive-icon-medium-home"
                 />
               </button>
+              {onInfoSecondary && (
+                <button
+                  onClick={onInfoSecondary}
+                  className="responsive-padding cursor-pointer border-2 border-white rounded-full bg-[#A8C2AC]/40 backdrop-blur-sm "
+                >
+                  <Image
+                    src="/logo/info-icon.png"
+                    alt="Info 2"
+                    width={50}
+                    height={50}
+                    className="rounded-full object-contain responsive-icon-medium-home"
+                  />
+                </button>
+              )}
             </div>
           )}
 
