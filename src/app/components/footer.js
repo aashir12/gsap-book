@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = ({ variant = "dark" }) => {
   const isLight = variant === "light";
@@ -34,7 +35,6 @@ const Footer = ({ variant = "dark" }) => {
           <h1 className="text-[12px] font-bold ">Christian Toson </h1>
           <h1 className="text-[12px] font-bold leading-[0.5]">& </h1>
           <h1 className="text-[12px] font-bold ">Laura Cannarozzi </h1>
-      
         </div>
       </div>
       <div className="text-center">
@@ -52,7 +52,9 @@ const Footer = ({ variant = "dark" }) => {
               className="h-4 w-auto object-contain"
               style={imgFilter}
             />
-            nerone.design
+            <Link href="https://nerone.design" target="_blank">
+              nerone.design
+            </Link>
           </p>
         </div>
       </div>
@@ -71,7 +73,7 @@ const Footer = ({ variant = "dark" }) => {
               className="h-4 w-auto object-contain"
               style={imgFilter}
             />
-            kinonauts.com
+            <Link href="https://kinonauts.com" target="_blank">kinonauts.com</Link>
           </p>
         </div>
       </div>
@@ -90,7 +92,7 @@ const Footer = ({ variant = "dark" }) => {
               className="h-4 ml-5 w-auto object-contain text-center"
               style={imgFilter}
             />
-            anqa.it
+            <Link href="https://anqa.it" target="_blank">anqa.it</Link>
           </p>
         </div>
       </div>
