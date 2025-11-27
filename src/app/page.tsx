@@ -475,31 +475,35 @@ export default function Home() {
                 ref={playMenuRef}
                 onPrev={handlePrev}
                 onNext={handleNext}
-                  onInfo={() => setShowInfo("primary")}
-                  onInfoSecondary={
-                    animations[currentIndex].id === 11
-                      ? () => setShowInfo("secondary")
-                      : undefined
-                  }
-                  onHome={goToHome}
-                  onAZ={goToAZ}
-                  currentIndex={currentIndex}
-                />
-              </div>
-              {showInfo && ![4, 5, 6, 7, 9, 15, 18, 19].includes(currentIndex) && (
+                onInfo={() => setShowInfo("primary")}
+                onInfoSecondary={
+                  animations[currentIndex].id === 11
+                    ? () => setShowInfo("secondary")
+                    : undefined
+                }
+                onHome={goToHome}
+                onAZ={goToAZ}
+                currentIndex={currentIndex}
+              />
+            </div>
+            {showInfo &&
+              ![4, 5, 6, 7, 9, 15, 18, 19, 20].includes(currentIndex) && (
                 <PopupPlayer
                   url={
-                    showInfo === "secondary" && animations[currentIndex].id === 11
+                    showInfo === "secondary" &&
+                    animations[currentIndex].id === 11
                       ? animations[currentIndex]["secondary-url-2"]
                       : animations[currentIndex]["secondary-url"]
                   }
                   title={
-                    showInfo === "secondary" && animations[currentIndex].id === 11
+                    showInfo === "secondary" &&
+                    animations[currentIndex].id === 11
                       ? animations[currentIndex]["title-2"]
                       : animations[currentIndex].title
                   }
                   subtitle={
-                    showInfo === "secondary" && animations[currentIndex].id === 11
+                    showInfo === "secondary" &&
+                    animations[currentIndex].id === 11
                       ? animations[currentIndex]["description-2"]
                       : animations[currentIndex].description
                   }
