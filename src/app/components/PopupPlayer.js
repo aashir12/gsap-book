@@ -17,12 +17,23 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(true);
 
-  // On URL change, just ensure mute state; rely on muted autoplay to start
+  // On URL change, reload the video source
+  useEffect(() => {
+    if (popupVideoRef.current) {
+      popupVideoRef.current.load();
+      popupVideoRef.current.muted = isMuted;
+      if (isPlaying) {
+        popupVideoRef.current.play().catch((e) => console.log("Autoplay prevented", e));
+      }
+    }
+  }, [url]);
+
+  // Sync mute state
   useEffect(() => {
     if (popupVideoRef.current) {
       popupVideoRef.current.muted = isMuted;
     }
-  }, [url, isMuted]);
+  }, [isMuted]);
 
   const togglePlay = () => {
     if (!popupVideoRef.current) return;
@@ -80,18 +91,6 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
         <div className="relative h-1/2 bg-[url('/backgrounds/list-background.png')] flex flex-col justify-between py-6 bg-cover bg-center">
           {/* Controls */}
           <div className="flex justify-center items-center gap-[36px] pt-[32px] pb-[64px] relative z-10 ">
-            {/* Mute / Unmute */}
-            <button
-              onClick={toggleMute}
-              className=" border-2 p-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer responsive-control-small"
-            >
-              {isMuted ? (
-                <FaVolumeMute className="w-[48px] h-[48px] stroke-[2] fill-white responsive-icon-small" />
-              ) : (
-                <FaVolumeUp className="w-[48px] h-[48px]  stroke-2 fill-white responsive-icon-small" />
-              )}
-            </button>
-
             {/* Play / Pause */}
             <button
               onClick={togglePlay}
@@ -111,9 +110,9 @@ export default function PopupPlayer({ url, title, subtitle, onClose }) {
                   popupVideoRef.current.requestFullscreen();
                 }
               }}
-              className=" border-2 p-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer responsive-control-small"
+              className=" p-4 border-2 border-[#b8ead9] text-white rounded-full flex items-center justify-center bg-[#A8C2AC]/40 backdrop-blur-sm hover:bg-white/10 transition cursor-pointer responsive-control-large"
             >
-              <FaExpand className="stroke-[2] h-[48px] w-[48px] responsive-icon-small" />
+              <FaExpand className="stroke-[2] w-[64px] h-[64px] responsive-icon-medium" />
             </button>
           </div>
           

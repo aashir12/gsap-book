@@ -23,9 +23,12 @@ type ActiveItem = {
   id: number;
   url: string;
   "secondary-url"?: string;
+  "secondary-url-2"?: string;
   subtitle: string[];
   title: string;
+  "title-2"?: string;
   description: string;
+  "description-2"?: string;
   image: string;
   fontSize: number;
   alignment: string;
@@ -36,7 +39,7 @@ export default function Home() {
   const [currentView, setCurrentView] = useState<ViewType>("home");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentSubtitleIndex, setCurrentSubtitleIndex] = useState(0);
-  const [showInfo, setShowInfo] = useState(false);
+  const [showInfo, setShowInfo] = useState<string | null>(null);
   const [activeItem, setActiveItem] = useState<ActiveItem | null>(null);
   const [showThumbnail, setShowThumbnail] = useState(false);
 
@@ -173,7 +176,7 @@ export default function Home() {
         onComplete: () => {
           setCurrentView("home");
           setCurrentIndex(0);
-          setShowInfo(false);
+          setShowInfo(null);
           // Reset home content position when going back to home
           gsap.set(homeContentRef.current, { y: 0 });
         },
@@ -216,7 +219,7 @@ export default function Home() {
         ease: "power2.inOut",
         onComplete: () => {
           setCurrentView("closing");
-          setShowInfo(false);
+          setShowInfo(null);
         },
       }
     );
@@ -227,7 +230,7 @@ export default function Home() {
     setCurrentIndex(0);
     setCurrentSubtitleIndex(0);
     setCurrentView("home");
-    setShowInfo(false);
+    setShowInfo(null);
   };
 
   const goToAZ = () => {
@@ -241,7 +244,7 @@ export default function Home() {
       .call(() => {
         setCurrentView("a-z");
         setCurrentIndex(0);
-        setShowInfo(false);
+        setShowInfo(null);
       })
       .set({}, {}, "+=0.2");
   };
@@ -470,20 +473,37 @@ export default function Home() {
                 ref={playMenuRef}
                 onPrev={handlePrev}
                 onNext={handleNext}
-                onInfo={() => setShowInfo(true)}
-                onHome={goToHome}
-                onAZ={goToAZ}
-                currentIndex={currentIndex}
-              />
-            </div>
-            {showInfo && ![4, 5, 6, 9, 14, 18, 19].includes(currentIndex) && (
-              <PopupPlayer
-                url={animations[currentIndex]["secondary-url"]}
-                title={animations[currentIndex].title}
-                subtitle={animations[currentIndex].description}
-                onClose={() => setShowInfo(false)}
-              />
-            )}
+                  onInfo={() => setShowInfo("primary")}
+                  onInfoSecondary={
+                    animations[currentIndex].id === 11
+                      ? () => setShowInfo("secondary")
+                      : undefined
+                  }
+                  onHome={goToHome}
+                  onAZ={goToAZ}
+                  currentIndex={currentIndex}
+                />
+              </div>
+              {showInfo && ![4, 5, 6, 7, 9, 15, 18, 19].includes(currentIndex) && (
+                <PopupPlayer
+                  url={
+                    showInfo === "secondary" && animations[currentIndex].id === 11
+                      ? animations[currentIndex]["secondary-url-2"]
+                      : animations[currentIndex]["secondary-url"]
+                  }
+                  title={
+                    showInfo === "secondary" && animations[currentIndex].id === 11
+                      ? animations[currentIndex]["title-2"]
+                      : animations[currentIndex].title
+                  }
+                  subtitle={
+                    showInfo === "secondary" && animations[currentIndex].id === 11
+                      ? animations[currentIndex]["description-2"]
+                      : animations[currentIndex].description
+                  }
+                  onClose={() => setShowInfo(null)}
+                />
+              )}
           </div>
         </div>
       )}
@@ -501,7 +521,7 @@ export default function Home() {
                   url={activeItem["secondary-url"] || activeItem.url}
                   title={activeItem.title}
                   subtitle={activeItem.description}
-                  onClose={() => setShowInfo(false)}
+                  onClose={() => setShowInfo(null)}
                 />
               </div>
             )}
@@ -546,7 +566,7 @@ export default function Home() {
                     tabIndex={0}
                     onClick={() => {
                       setActiveItem(item);
-                      setShowInfo(true);
+                      setShowInfo("primary");
                     }}
                     className="relative flex items-center py-5 overflow-hidden cursor-pointer select-none transition-colors duration-150 hover:bg-white/10 active:scale-[0.98]"
                   >
@@ -564,7 +584,7 @@ export default function Home() {
                         onClick={(e) => {
                           e.stopPropagation();
                           setActiveItem(item);
-                          setShowInfo(true);
+                          setShowInfo("primary");
                         }}
                       >
                         <FaPlay size={10} />
