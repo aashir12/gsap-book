@@ -282,6 +282,8 @@ export default function Home() {
       }
     }, 1000);
 
+    console.log("thumbnail", animations[currentIndex].thumbnail);
+
     return () => {
       window.clearInterval(intervalId);
     };
