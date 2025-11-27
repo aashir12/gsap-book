@@ -26,7 +26,17 @@ const Footer = ({ variant = "dark" }) => {
           style={imgFilter}
         />
       </div>
-
+      <div className="text-center">
+        <h6 className="font-[Archer] font-bold text-[10px] leading-[14px] pb-2">
+          TESTI DI{" "}
+        </h6>
+        <div>
+          <h1 className="text-[12px] font-bold ">Christian Toson </h1>
+          <h1 className="text-[12px] font-bold leading-[0.5]">& </h1>
+          <h1 className="text-[12px] font-bold ">Laura Cannarozzi </h1>
+      
+        </div>
+      </div>
       <div className="text-center">
         <h6 className="font-[Archer] font-bold text-[10px] leading-[14px] pb-2">
           DISEGNI E GRAFICA{" "}
@@ -51,7 +61,7 @@ const Footer = ({ variant = "dark" }) => {
           ANIMAZIONE{" "}
         </h6>
         <div>
-          <h1 className="text-[12px] font-bold">Mateo Stocco</h1>
+          <h1 className="text-[12px] font-bold">Matteo Stocco</h1>
           <p className="link flex flex-row items-center text-center">
             <Image
               src="/icons/link_18.png"
