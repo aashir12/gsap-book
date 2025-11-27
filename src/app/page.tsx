@@ -38,6 +38,7 @@ export default function Home() {
   const [currentSubtitleIndex, setCurrentSubtitleIndex] = useState(0);
   const [showInfo, setShowInfo] = useState(false);
   const [activeItem, setActiveItem] = useState<ActiveItem | null>(null);
+  const [showThumbnail, setShowThumbnail] = useState(false);
 
   const homeContainerRef = useRef<HTMLDivElement>(null);
   const homeContentRef = useRef<HTMLDivElement>(null);
@@ -257,6 +258,32 @@ export default function Home() {
     if (currentView === "book") setCurrentSubtitleIndex(0);
   }, [currentView]);
 
+  // Show thumbnail for 2 seconds with a console countdown whenever a new animation is shown in the book view
+  useEffect(() => {
+    if (currentView !== "book") {
+      setShowThumbnail(false);
+      return;
+    }
+
+    setShowThumbnail(true);
+    let remaining = 2;
+    console.log("Thumbnail countdown:", remaining, "seconds");
+
+    const intervalId = window.setInterval(() => {
+      remaining -= 1;
+      console.log("Thumbnail countdown:", remaining, "seconds");
+
+      if (remaining <= 0) {
+        setShowThumbnail(false);
+        window.clearInterval(intervalId);
+      }
+    }, 1000);
+
+    return () => {
+      window.clearInterval(intervalId);
+    };
+  }, [currentView, currentIndex]);
+
   useEffect(() => {
     if (currentView === "home" && homeContainerRef.current) {
       gsap.set(homeContainerRef.current, { opacity: 0, y: 20 });
@@ -413,10 +440,23 @@ export default function Home() {
             <BackgroundVideo
               ref={bookVideoRef}
               src={animations[currentIndex].tertiary}
+              // Show thumbnail while animation video is loading
+              poster={animations[currentIndex].thumbnail as string}
               className="absolute top-0 left-0 w-full h-full object-cover rounded-xl"
             />
 
-            <div ref={bookContentRef} className="absolute inset-0">
+            {/* Thumbnail overlay for first 2 seconds of each animation */}
+            {showThumbnail && animations[currentIndex].thumbnail && (
+              <Image
+                src={animations[currentIndex].thumbnail as string}
+                alt={animations[currentIndex].title}
+                fill
+                unoptimized
+                className="absolute top-0 left-0 w-full h-full object-cover rounded-xl z-10"
+              />
+            )}
+
+            <div ref={bookContentRef} className="absolute inset-0 z-20">
               <Subtitle
                 ref={subtitleRef}
                 text={

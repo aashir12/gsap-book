@@ -9,6 +9,7 @@
     "title": "Go",
     "description": "Il ghiozzo gò, è un pesce piccolino e si attacca al fondo con le pinne come una ventosa. Il papà ghiozzo gò è un bravo costruttore: scava un nido per le uova e le chiama lì con dei suoni speciali. È un pesce goloso che mangia piccoli animaletti, e nella laguna di Venezia è così buono che tutti lo vogliono!",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/3_Go/3%20go.jpg",
+    "thumbnail": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/PosterImage/1.png",
     "fontSize": 32,
     "alignment": "center",
     "position": "center"
@@ -23,6 +24,7 @@
     "title": "Go",
     "description": "Il ghiozzo gò, è un pesce piccolino e si attacca al fondo con le pinne come una ventosa. Il papà ghiozzo gò è un bravo costruttore: scava un nido per le uova e le chiama lì con dei suoni speciali. È un pesce goloso che mangia piccoli animaletti, e nella laguna di Venezia è così buono che tutti lo vogliono!",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/3_Go/3%20go.jpg",
+    "thumbnail": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/PosterImage/2.png",
     "fontSize": 32,
     "alignment": "center",
     "position": "center"
@@ -37,6 +39,7 @@
     "title": "Paguro",
     "description": "È un piccolo crostaceo con il corpo molle. Per proteggersi utilizza le conchiglie dei molluschi (gasteropodi) che ogni volta che cresce ha bisogno di cambiare. Vive sul fondo, nascosto sotto la sabbia o in mezzo alle rocce, tra le alghe o le praterie di fanerogame.",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/10_paguro/10%20paguro.jpg",
+    "thumbnail": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/PosterImage/3.png",
     "fontSize": 28,
     "alignment": "center",
     "position": "center"
@@ -51,6 +54,7 @@
     "title": "Stella",
     "description": "La stella cuscinetto è una piccola stella marina che vive nel mare e nella laguna di Venezia, ed è l'unica di quel tipo che troviamo qui! È speciale perché può ricrescere i suoi pezzetti se si rompono, e le piace stare dove l'acqua non è sempre uguale. Non si può mangiare, ma è una meraviglia da osservare!",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/9_stellamarina/9%20stella.jpg",
+    "thumbnail": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/PosterImage/4.png",
     "fontSize": 28,
     "alignment": "center",
     "position": "center"
@@ -66,6 +70,7 @@
     "title": "Granchio Blu",
     "description": "Qui a Venezia abbiamo un nuovo \"vicino\" un po' invadente: si chiama granchio blu ed è grande e forte! È arrivato da lontano e gli piace tanto vivere nelle nostre lagune, mangiando vongole e altri animaletti. È bravissimo a nuotare e camminare, e si riconosce perché ha le chele blu (se è un maschio) e un ultimo paio di zampe fatte apposta per nuotare!",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/4_Granchioblu/4%20granchioblu.jpg",
+    "thumbnail": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/PosterImage/4.png",
     "fontSize": 32,
     "alignment": "center",
     "position": "center"
@@ -82,6 +87,7 @@
     "title": "Paguro",
     "description": "Il suo corpo è fatto per la maggior parte di acqua, non nuota attivamente ma si sposta con la corrente. In laguna di Venezia ce ne sono di tante specie, le riesci a riconoscere?",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/10_paguro/10%20paguro.jpg",
+    "thumbnail": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/PosterImage/5.png",
     "fontSize": 32,
     "alignment": "center",
     "position": "center"
@@ -97,6 +103,7 @@
     "title": "Ostriche",
     "description": "Qui a Venezia, e non solo, c'è un'ostrica un po' speciale che è arrivata da molto lontano, dall'Asia. Si chiama ostrica concava e le piace tantissimo vivere sui fondali bassi e creare delle \"case\" tutte sue, dove vivono anche altri animaletti. È così brava a riprodursi che ce ne sono tantissime, e infatti è l'ostrica più allevata al mondo!",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/6_ostriche/6%20ostriche.jpg",
+    "thumbnail": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/PosterImage/6.png",
     "fontSize": 32,
     "alignment": "center",
     "position": "center"
@@ -113,6 +120,7 @@
     "title": "Pinna Nobilis",
     "description": "La nacchera di mare è una conchiglia gigante e bellissima che vive sul fondo del nostro mare Mediterraneo. Può diventare molto vecchia, ma purtroppo ultimamente tanti di questi animali si stanno ammalando e stanno scomparendo. Dobbiamo proteggerle!",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/7_pinnanobilis/7%20pinnanobilis.jpg",
+    "thumbnail": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/PosterImage/7.png",
     "fontSize": 28,
     "alignment": "center",
     "position": "center"
@@ -128,6 +136,7 @@
     "title": "Medusa",
     "description": "Il suo corpo è fatto per la maggior parte di acqua, non nuota attivamente ma si sposta con la corrente. In laguna di Venezia ce ne sono di tante specie, le riesci a riconoscere?",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/5_medusa/medusa_thumbnail.jpg",
+    "thumbnail": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/PosterImage/8.png",
     "fontSize": 32,
     "alignment": "center",
     "position": "center"
@@ -139,11 +148,11 @@
     "subtitle": [
       "Allora il gruppo di amici preoccupati, decisero di andare a cercare Johnny.. e da qui iniziò la loro avventura.",
       "Nuotando tra le onde, la piccola ciurma passò dentro un giardino di alghe che ondeggiavano al ritmo della corrente. Go si avvicinò alla solerte alga Quercia.\"Sicuramente lei potrà aiutarci a trovare il nostro amico\" pensò."
-  
     ],
     "title": "Stella",
     "description": "La stella cuscinetto è una piccola stella marina che vive nel mare e nella laguna di Venezia, ed è l'unica di quel tipo che troviamo qui! È speciale perché può ricrescere i suoi pezzetti se si rompono, e le piace stare dove l'acqua non è sempre uguale. Non si può mangiare, ma è una meraviglia da osservare!",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/9_stellamarina/9%20stella.jpg",
+    "thumbnail": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/PosterImage/9.png",
     "fontSize": 28,
     "alignment": "center",
     "position": "center"
@@ -160,6 +169,7 @@
     "title": "Undaria",
     "description": "L'Undaria è un'alga arrivata da lontano, spesso chiamata 'alga aliena'. Cresce velocemente e può occupare lo spazio delle alghe locali. Nonostante ciò, è importante perché offre rifugio e cibo a molti piccoli organismi marini.",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/11_undaria/undraia.png",
+    "thumbnail": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/PosterImage/10.png",
     "fontSize": 28,
     "alignment": "center",
     "position": "center"
@@ -175,6 +185,7 @@
     "title": "Ostriche",
     "description": "Qui a Venezia, e non solo, c'è un'ostrica un po' speciale che è arrivata da molto lontano, dall'Asia. Si chiama ostrica concava e le piace tantissimo vivere sui fondali bassi e creare delle \"case\" tutte sue, dove vivono anche altri animaletti. È così brava a riprodursi che ce ne sono tantissime, e infatti è l'ostrica più allevata al mondo!",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/6_ostriche/6%20ostriche.jpg",
+    "thumbnail": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/PosterImage/11.png",
     "fontSize": 32,
     "alignment": "center",
     "position": "center"
@@ -190,6 +201,7 @@
     "title": "PINNA NOBILIS",
     "description": "La nacchera di mare è una conchiglia gigante e bellissima che vive sul fondo del nostro mare Mediterraneo. Può diventare molto vecchia, ma purtroppo ultimamente tanti di questi animali si stanno ammalando e stanno scomparendo. Dobbiamo proteggerle!",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/7_pinnanobilis/7%20pinnanobilis.jpg",
+    "thumbnail": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/PosterImage/12.png",
     "fontSize": 28,
     "alignment": "center",
     "position": "center"
@@ -205,6 +217,7 @@
     "title": "Pinna Nobilis",
     "description": "La nacchera di mare è una conchiglia gigante e bellissima che vive sul fondo del nostro mare Mediterraneo. Può diventare molto vecchia, ma purtroppo ultimamente tanti di questi animali si stanno ammalando e stanno scomparendo. Dobbiamo proteggerle!",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/7_pinnanobilis/7%20pinnanobilis.jpg",
+    "thumbnail": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/PosterImage/13.png",
     "fontSize": 28,
     "alignment": "center",
     "position": "center"
@@ -220,6 +233,7 @@
     "title": "GRANCHIO BLU",
     "description": "Go pensò a come le cose in laguna stavano cambiando in fretta, tra plastica, nuovi arrivati e tante barche che passavano ininterrottamente… era molto diversa da quando era solo un piccolo pesciolino.",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/7_pinnanobilis/7%20pinnanobilis.jpg",
+    "thumbnail": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/PosterImage/14.png",
     "fontSize": 28,
     "alignment": "center",
     "position": "center"
@@ -227,13 +241,14 @@
   {
     "id": 16,
     "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/7_pinnanobilis/PInnaNobilis.mp4",
-    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/16.mp4",
+    "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/15.mp4",
     "subtitle": [
       "Gira a destra, poi a sinistra, avanti tra le barene e le velme, vicino alla bocca di porto, tra le distese di sabbia, gli amici si ritrovarono in una bellissima prateria verdeggiante, piena di vita, dove i piccoli pesciolini si divertivano a giocare con le bolle di ossigeno. Ma niente, di Johnny ancora nessuna traccia. "
     ],
     "title": "GRANCHIO BLU",
     "description": "La nacchera di mare è una conchiglia gigante e bellissima che vive sul fondo del nostro mare Mediterraneo. Può diventare molto vecchia, ma purtroppo ultimamente tanti di questi animali si stanno ammalando e stanno scomparendo. Dobbiamo proteggerle!",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/7_pinnanobilis/7%20pinnanobilis.jpg",
+    "thumbnail": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/PosterImage/16.png",
     "fontSize": 28,
     "alignment": "center",
     "position": "center"
@@ -248,10 +263,12 @@
     "title": "GRANCHIO BLU",
     "description": "La nacchera di mare è una conchiglia gigante e bellissima che vive sul fondo del nostro mare Mediterraneo. Può diventare molto vecchia, ma purtroppo ultimamente tanti di questi animali si stanno ammalando e stanno scomparendo. Dobbiamo proteggerle!",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/7_pinnanobilis/7%20pinnanobilis.jpg",
+    "thumbnail": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/PosterImage/17.png",
     "fontSize": 28,
     "alignment": "center",
     "position": "center"
-  },{
+  },
+  {
     "id": 18,
     "secondary-url": "",
     "tertiary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/18.mp4",
@@ -261,6 +278,7 @@
     "title": "GRANCHIO BLU",
     "description": "La nacchera di mare è una conchiglia gigante e bellissima che vive sul fondo del nostro mare Mediterraneo. Può diventare molto vecchia, ma purtroppo ultimamente tanti di questi animali si stanno ammalando e stanno scomparendo. Dobbiamo proteggerle!",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/7_pinnanobilis/7%20pinnanobilis.jpg",
+    "thumbnail": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/PosterImage/18.png",
     "fontSize": 28,
     "alignment": "center",
     "position": "center"
@@ -275,6 +293,7 @@
     "title": "GRANCHIO BLU",
     "description": "La nacchera di mare è una conchiglia gigante e bellissima che vive sul fondo del nostro mare Mediterraneo. Può diventare molto vecchia, ma purtroppo ultimamente tanti di questi animali si stanno ammalando e stanno scomparendo. Dobbiamo proteggerle!",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/7_pinnanobilis/7%20pinnanobilis.jpg",
+    "thumbnail": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/PosterImage/19.png",
     "fontSize": 28,
     "alignment": "center",
     "position": "center"
@@ -289,6 +308,7 @@
     "title": "GRANCHIO BLU",
     "description": "La nacchera di mare è una conchiglia gigante e bellissima che vive sul fondo del nostro mare Mediterraneo. Può diventare molto vecchia, ma purtroppo ultimamente tanti di questi animali si stanno ammalando e stanno scomparendo. Dobbiamo proteggerle!",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/7_pinnanobilis/7%20pinnanobilis.jpg",
+    "thumbnail": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/PosterImage/20.png",
     "fontSize": 28,
     "alignment": "center",
     "position": "center"
@@ -304,6 +324,7 @@
     "title": "GRANCHIO BLU",
     "description": "La nacchera di mare è una conchiglia gigante e bellissima che vive sul fondo del nostro mare Mediterraneo. Può diventare molto vecchia, ma purtroppo ultimamente tanti di questi animali si stanno ammalando e stanno scomparendo. Dobbiamo proteggerle!",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/7_pinnanobilis/7%20pinnanobilis.jpg",
+    "thumbnail": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/PosterImage/21.png",
     "fontSize": 28,
     "alignment": "center",
     "position": "center"
