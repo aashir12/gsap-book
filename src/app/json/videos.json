@@ -17,14 +17,14 @@
   },
   {
     "id": 2,
-    "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/2_Cefalo/Cefalo.mp4",
-    "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/2_Cefalo/Cefalo.mp4",
+    "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/2_Cefalo/branzini.mp4",
+    "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/2_Cefalo/branzini.mp4",
     "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_1-2.mp4",
     "subtitle": [
       "Qui trovavano rifugio tanti piccoli animali come Mario il paguro, il suo amico di sempre, che viveva in una conchiglia tutta colorata e che ogni tanto, quando diventata troppo piccola, usava cambiare."
     ],
-    "title": "Cefalo",
-    "description": "Il cefalo verzelata è un pesce che ama vivere in gruppo, può sopportare sia il caldo che il freddo e mangia alghe e piccoli animaletti del fondale. Nasce in mare, ma i suoi cuccioli vengono a crescere nella laguna di Venezia e, a differenza di altri pesci, lui resta lì anche d’inverno perché non ha paura del freddo!",
+    "title": "BRANZINO o SPIGOLA",
+    "description": "La spigola (detta anche branzino) è forse il più noto pesce predatore degli ambiti costieri della nostra penisola. Non per niente ci si riferisce spesso a questa specie con l’iconico nomignolo “la regina”",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/2_Cefalo/2%20cefalo.jpg",
     "fontSize": 28,
     "alignment": "center",
@@ -80,15 +80,15 @@
   },
   {
     "id": 6,
-    "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/6_ostriche/Ostriche.mp4",
-    "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/6_ostriche/Ostriche.mp4",
+    "url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/6_ostriche/Mitili.mp4",
+    "secondary-url": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/6_ostriche/Mitili.mp4",
     "teritary": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/animations/TAV_6%20v1.mp4",
     "subtitle": [
       "Decisero quindi di fermarsi lungo la banchina vicino alla corrente, che era meglio di un ristorante:  grazie al movimento continuo dell’acqua, lì si trovavano sempre alghe fresche e mille altre delizie per le quali Go e i suoi amici andavano matti!",
       "Arrivati alla banchina, iniziarono subito a mangiare, ma ognuno in modo diverso: Go frugava nel fondo alla ricerca di piccoli e croccanti crostacei, Mario raccoglieva minuziosamente le alghe e Stella cercava fra i detriti le conchiglie di cui andava ghiotta."
     ],
-    "title": "Ostriche",
-    "description": "Qui a Venezia, e non solo, c’è un’ostrica un po’ speciale che è arrivata da molto lontano, dall’Asia. Si chiama ostrica concava e le piace tantissimo vivere sui fondali bassi e creare delle “case” tutte sue, dove vivono anche altri animaletti. È così brava a riprodursi che ce ne sono tantissime, e infatti è l’ostrica più allevata al mondo!",
+    "title": "MITILI",
+    "description": "I mitili sono molluschi bivalvi filtratori che vivono fissati a superfici dure con il bisso: una fibra particolarmente resistente. Sono molto apprezzati in cucina",
     "image": "https://pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev/6_ostriche/6%20ostriche.jpg",
     "fontSize": 32,
     "alignment": "center",
