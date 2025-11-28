@@ -487,7 +487,7 @@ export default function Home() {
               />
             </div>
             {showInfo &&
-              ![4, 5, 6, 7, 9, 15, 18, 19, 20].includes(currentIndex) && (
+              ![4, 5, 6, 7, 9, 15, 19, 20].includes(currentIndex) && (
                 <PopupPlayer
                   url={
                     showInfo === "secondary" &&
