@@ -416,13 +416,13 @@ export default function Home() {
                     className="
     px-8 py-3 pulse-button responsive-text-button
     rounded-[16px] cursor-pointer border-2 border-[#C4A5FF]
-    text-[#5800FF] font-medium bg-purple-200/10 backdrop-blur-md
+    text-[#5800FF] font-bold bg-purple-200/10 backdrop-blur-md
     transition-all duration-500 hover:bg-purple-200/20 hover:rounded-[40px] hover:scale-105
     active:scale-95
   "
                     style={{ fontFamily: "Satoshi", fontSize: "24px" }}
                   >
-                    Inizia a leggere
+                    inizia a leggere
                   </button>
                 </div>
                 <div className="w-full">

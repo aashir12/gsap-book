@@ -73,7 +73,7 @@ export default function ClosingPage({ onGoToHome }: ClosingPageProps) {
               </h1>
               <button
                 onClick={onGoToHome}
-                className="pulse-button responsive-text-button rounded-[16px] cursor-pointer border-2 border-[#C4A5FF] text-[#5800FF] font-medium bg-purple-200/10 backdrop-blur-md hover:bg-purple-200/20 transition-all duration-500 hover:rounded-[40px] hover:scale-105 active:scale-95"
+                className="pulse-button responsive-text-button rounded-[16px] cursor-pointer border-2 border-[#C4A5FF] text-[#5800FF] font-bold bg-purple-200/10 backdrop-blur-md hover:bg-purple-200/20 transition-all duration-500 hover:rounded-[40px] hover:scale-105 active:scale-95"
                 style={{ fontFamily: "Satoshi" }}
               >
                 torna all&apos;inizio
