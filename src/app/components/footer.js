@@ -43,14 +43,7 @@ const Footer = ({ variant = "dark" }) => {
         </h6>
         <div>
           <h1 className="text-[12px] font-bold flex text-center justify-center mb-1">
-            <Image
-              src="/logo/loho-hd.png"
-              alt="Logo 2"
-              width={52}
-              height={34}
-              className="h-8 text-center w-auto object-contain"
-              style={imgFilter}
-            />
+            Laguna Project
           </h1>
           <p className="link flex flex-row items-center text-center">
             <Image

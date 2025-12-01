@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link"
 
 const ExtendedFooter = () => {
   return (
@@ -77,6 +78,16 @@ const ExtendedFooter = () => {
             quality={100}
             unoptimized
           />
+        </div>
+        <div className="text-center">
+          <div className="flex flex-col items-center justify-center">
+            <h1 className="text-[12px] font-bold">
+              Fatto a mano, in codice da{" "}
+              <Link href="https://anqa.it" target="_blank" className="text-lg">
+                anqa.it
+              </Link>
+            </h1>
+          </div>
         </div>
       </div>
     </div>
