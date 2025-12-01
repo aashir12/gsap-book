@@ -81,10 +81,9 @@ export default function ClosingPage({ onGoToHome }: ClosingPageProps) {
             </div>
             <div className="w-full">
               <Footer />
+              <ExtendedFooter />
             </div>
           </div>
-
-          <ExtendedFooter />
         </div>
       </div>
     </div>

@@ -42,7 +42,6 @@ export default function Home() {
   const [showInfo, setShowInfo] = useState<string | null>(null);
   const [activeItem, setActiveItem] = useState<ActiveItem | null>(null);
   const [showThumbnail, setShowThumbnail] = useState(false);
-
   const homeContainerRef = useRef<HTMLDivElement>(null);
   const homeContentRef = useRef<HTMLDivElement>(null);
   const bookContainerRef = useRef<HTMLDivElement>(null);
@@ -429,6 +428,7 @@ export default function Home() {
                   <Footer />
                 </div>
               </div>
+
               <ExtendedFooter />
             </div>
           </div>
