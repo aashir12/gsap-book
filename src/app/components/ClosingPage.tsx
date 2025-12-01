@@ -76,7 +76,7 @@ export default function ClosingPage({ onGoToHome }: ClosingPageProps) {
                 className="pulse-button responsive-text-button rounded-[16px] cursor-pointer border-2 border-[#C4A5FF] text-[#5800FF] font-medium bg-purple-200/10 backdrop-blur-md hover:bg-purple-200/20 transition-all duration-500 hover:rounded-[40px] hover:scale-105 active:scale-95"
                 style={{ fontFamily: "Satoshi" }}
               >
-                Torna all&apos;inizio
+                torna all&apos;inizio
               </button>
             </div>
             <div className="w-full">
