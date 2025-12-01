@@ -13,6 +13,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "pub-3fc12084b01f4c4f920f3fefbc9570a3.r2.dev",
       },
+      {
+        protocol: "https",
+        hostname: "www.lagunaproject.it",
+      }
     ],
   },
 };

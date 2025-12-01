@@ -39,6 +39,36 @@ const Footer = ({ variant = "dark" }) => {
       </div>
       <div className="text-center">
         <h6 className="font-[Archer] font-bold text-[10px] leading-[14px] pb-2">
+          CON IL SUPPORTO DI{" "}
+        </h6>
+        <div>
+          <h1 className="text-[12px] font-bold flex text-center justify-center mb-1">
+            <Image
+              src="/logo/loho-hd.png"
+              alt="Logo 2"
+              width={52}
+              height={34}
+              className="h-8 text-center w-auto object-contain"
+              style={imgFilter}
+            />
+          </h1>
+          <p className="link flex flex-row items-center text-center">
+            <Image
+              src="/icons/link_18.png"
+              alt="Logo 2"
+              width={24}
+              height={24}
+              className="h-4 w-auto object-contain"
+              style={imgFilter}
+            />
+            <Link href="https://www.lagunaproject.it" target="_blank">
+              lagunaproject.it
+            </Link>
+          </p>
+        </div>
+      </div>
+      <div className="text-center">
+        <h6 className="font-[Archer] font-bold text-[10px] leading-[14px] pb-2">
           DISEGNI E GRAFICA{" "}
         </h6>
         <div>
@@ -73,29 +103,13 @@ const Footer = ({ variant = "dark" }) => {
               className="h-4 w-auto object-contain"
               style={imgFilter}
             />
-            <Link href="https://kinonauts.com" target="_blank">kinonauts.com</Link>
+            <Link href="https://kinonauts.com" target="_blank">
+              kinonauts.com
+            </Link>
           </p>
         </div>
       </div>
-      <div className="text-center">
-        <h6 className="font-[Archer] font-bold text-[10px] leading-[14px] pb-2">
-          CODICE
-        </h6>
-        <div>
-          <h1 className="text-[12px] font-bold">Anqa Digital Agency</h1>
-          <p className="link flex flex-row items-center text-center">
-            <Image
-              src="/icons/link_18.png"
-              alt="Logo 2"
-              width={24}
-              height={24}
-              className="h-4 ml-5 w-auto object-contain text-center"
-              style={imgFilter}
-            />
-            <Link href="https://anqa.it" target="_blank">anqa.it</Link>
-          </p>
-        </div>
-      </div>
+    
     </div>
   );
 };
