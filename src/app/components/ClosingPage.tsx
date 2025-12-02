@@ -53,7 +53,7 @@ export default function ClosingPage({ onGoToHome }: ClosingPageProps) {
           playsInline
           className="absolute top-0 left-0 w-full h-full object-cover rounded-xl"
         >
-          <source src="/backgrounds/bgvideo.mp4" type="video/mp4" />
+          <source src="/backgrounds/Home_page_BG.mp4" type="video/mp4" />
         </video>
 
         {/* bubbles */}
